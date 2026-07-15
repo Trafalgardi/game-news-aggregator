@@ -1,0 +1,38 @@
+name: Network smoke
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  collect-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Validate configuration
+        run: python -m game_news validate-config
+
+      - name: Collect selected sources without writing
+        run: |
+          python -m game_news collect \
+            --hours 168 \
+            --dry-run \
+            --source app2top-ru,pocketgamer-biz,blog-unity-com \
+            --strict-min-success 1
