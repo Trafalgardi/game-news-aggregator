@@ -19,7 +19,7 @@
 - 92 источника из истории HYPER NEWS;
 - 30 источников включены по умолчанию;
 - 1 183 исторические ссылки импортированы в `data/articles.jsonl`;
-- исходный экспорт канала сохранён в `data/imports/hyper_news_result.json`;
+- сырой Telegram-экспорт не публикуется в репозитории;
 - расписание: 07:17 и 19:17 в `Europe/Amsterdam`;
 - GitHub Pages: HTML, `latest.json`, `status.json`, дневной архив;
 - CI: конфигурация, Ruff и Pytest;
@@ -46,11 +46,12 @@ Set-ExecutionPolicy -Scope Process Bypass
 python -m game_news validate-config
 python -m game_news collect --hours 36
 python -m game_news collect --dry-run --source app2top-ru
-python -m game_news import-telegram --input data/imports/hyper_news_result.json
 python -m game_news build-site
 python -m pytest
 python -m ruff check src tests
 ```
+
+Команда импорта Telegram остаётся доступной для локальной работы, но исходный JSON не должен коммититься в публичный репозиторий.
 
 ## Публичные файлы
 
