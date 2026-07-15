@@ -1,0 +1,143 @@
+topics:
+  unity_engine:
+    weight: 12
+    keywords:
+      - unity
+      - unity 6
+      - urp
+      - shader graph
+      - addressables
+      - dots
+      - ecs
+      - burst
+      - il2cpp
+      - profiler
+      - rendering
+      - physics
+      - input system
+
+  mobile_platforms:
+    weight: 11
+    keywords:
+      - android
+      - ios
+      - google play
+      - app store
+      - play console
+      - app review
+      - privacy sandbox
+      - target api
+      - sdk requirement
+      - store policy
+
+  monetization:
+    weight: 12
+    keywords:
+      - monetization
+      - rewarded ads
+      - interstitial
+      - mediation
+      - in-app purchase
+      - iap
+      - subscription
+      - arpu
+      - arpdau
+      - ltv
+      - revenue
+      - ad revenue
+
+  user_acquisition:
+    weight: 11
+    keywords:
+      - user acquisition
+      - cpi
+      - creative
+      - creatives
+      - aso
+      - conversion
+      - install rate
+      - ad network
+      - marketing
+      - roas
+      - ua
+
+  retention_liveops:
+    weight: 11
+    keywords:
+      - retention
+      - live ops
+      - liveops
+      - progression
+      - engagement
+      - churn
+      - battle pass
+      - event system
+      - session length
+
+  hyper_hybrid_casual:
+    weight: 12
+    keywords:
+      - hyper-casual
+      - hyper casual
+      - hybrid-casual
+      - hybrid casual
+      - casual games
+      - prototype testing
+      - marketability
+
+  engineering_performance:
+    weight: 12
+    keywords:
+      - performance
+      - optimization
+      - memory
+      - allocation
+      - garbage collection
+      - draw calls
+      - batching
+      - gpu
+      - cpu
+      - frame time
+      - crash
+      - anr
+
+  ai_tools:
+    weight: 9
+    keywords:
+      - artificial intelligence
+      - generative ai
+      - ai tools
+      - llm
+      - copilot
+      - agent
+      - code generation
+      - procedural generation
+
+  market_business:
+    weight: 8
+    keywords:
+      - acquisition
+      - merger
+      - investment
+      - funding
+      - publisher
+      - studio closure
+      - layoffs
+      - downloads
+      - market report
+      - mobile market
+      - game industry
+
+  regulation_privacy:
+    weight: 12
+    keywords:
+      - privacy
+      - consent
+      - gdpr
+      - dma
+      - dsa
+      - regulation
+      - law
+      - children
+      - coppa
+      - antitrust

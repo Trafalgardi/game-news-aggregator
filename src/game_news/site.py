@@ -1,0 +1,98 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+INDEX_HTML = r'''<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Game News Intelligence</title>
+  <style>
+    :root { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; }
+    body { margin: 0; background: #0e1117; color: #e6edf3; }
+    header, main { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 42px 0 22px; }
+    h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 52px); }
+    .muted { color: #8b949e; }
+    .toolbar { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; margin: 22px 0; }
+    input, select, button { border: 1px solid #30363d; border-radius: 8px; background: #161b22; color: inherit; padding: 10px 12px; }
+    .stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 26px; }
+    .stat { border: 1px solid #30363d; border-radius: 10px; padding: 10px 14px; background: #161b22; }
+    .article { border: 1px solid #30363d; border-radius: 12px; padding: 18px; margin: 12px 0; background: #161b22; }
+    .article h2 { margin: 0 0 9px; font-size: 20px; line-height: 1.3; }
+    .article a { color: #58a6ff; text-decoration: none; }
+    .meta, .topics { display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; color: #8b949e; }
+    .summary { line-height: 1.55; }
+    .badge { border: 1px solid #30363d; border-radius: 999px; padding: 3px 8px; }
+    .score { font-weight: 700; color: #3fb950; }
+    .error { color: #f85149; }
+    footer { padding: 40px 0 70px; color: #8b949e; }
+    @media (max-width: 720px) { .toolbar { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Game News Intelligence</h1>
+  <div class="muted">Автоматический сбор новостей игровой и мобильной индустрии</div>
+</header>
+<main>
+  <div class="toolbar">
+    <input id="query" placeholder="Фильтр по заголовку, источнику или теме">
+    <select id="topic"><option value="">Все темы</option></select>
+    <select id="sort"><option value="date">Сначала новые</option><option value="score">По важности</option></select>
+  </div>
+  <div id="stats" class="stats"></div>
+  <div id="articles"></div>
+  <footer>Данные: <a href="latest.json">latest.json</a> · Состояние: <a href="status.json">status.json</a></footer>
+</main>
+<script>
+const state = { articles: [], topic: '', query: '', sort: 'date' };
+const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+const fmtDate = value => value ? new Intl.DateTimeFormat('ru-RU', {dateStyle:'medium', timeStyle:'short'}).format(new Date(value)) : 'дата не определена';
+function render() {
+  const q = state.query.toLowerCase();
+  let items = state.articles.filter(a => {
+    const haystack = `${a.title} ${a.source_name} ${(a.matched_topics || []).join(' ')}`.toLowerCase();
+    return (!q || haystack.includes(q)) && (!state.topic || (a.matched_topics || []).includes(state.topic));
+  });
+  items.sort((a,b) => state.sort === 'score' ? (b.importance_score-a.importance_score) : String(b.published_at).localeCompare(String(a.published_at)));
+  document.getElementById('articles').innerHTML = items.map(a => `
+    <article class="article">
+      <h2><a href="${escapeHtml(a.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(a.title)}</a></h2>
+      <div class="meta">
+        <span>${escapeHtml(a.source_name)}</span><span>·</span><span>${fmtDate(a.published_at)}</span><span>·</span><span class="score">${a.importance_score}/100</span>
+      </div>
+      ${a.summary ? `<p class="summary">${escapeHtml(a.summary)}</p>` : ''}
+      <div class="topics">${(a.matched_topics || []).map(t => `<span class="badge">${escapeHtml(t)}</span>`).join('')}${(a.duplicate_sources || []).length ? `<span class="badge">+${a.duplicate_sources.length} дубл.</span>` : ''}</div>
+    </article>`).join('') || '<p class="muted">Материалов по текущему фильтру нет.</p>';
+}
+Promise.all([fetch('./latest.json', {cache:'no-store'}).then(r=>r.json()), fetch('./status.json', {cache:'no-store'}).then(r=>r.json())])
+  .then(([feed,status]) => {
+    state.articles = feed.articles || [];
+    const topics = [...new Set(state.articles.flatMap(a => a.matched_topics || []))].sort();
+    document.getElementById('topic').innerHTML += topics.map(t=>`<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join('');
+    document.getElementById('stats').innerHTML = `
+      <div class="stat"><b>${feed.article_count || 0}</b><br><span class="muted">материалов</span></div>
+      <div class="stat"><b>${status.ok || 0}/${status.source_count || 0}</b><br><span class="muted">источников работают</span></div>
+      <div class="stat"><b>${feed.window_hours || 0} ч</b><br><span class="muted">окно выборки</span></div>
+      <div class="stat"><b>${fmtDate(feed.generated_at)}</b><br><span class="muted">обновлено</span></div>`;
+    render();
+  })
+  .catch(error => document.getElementById('articles').innerHTML = `<p class="error">Не удалось загрузить данные: ${escapeHtml(error)}</p>`);
+document.getElementById('query').addEventListener('input', e => { state.query=e.target.value; render(); });
+document.getElementById('topic').addEventListener('change', e => { state.topic=e.target.value; render(); });
+document.getElementById('sort').addEventListener('change', e => { state.sort=e.target.value; render(); });
+</script>
+</body>
+</html>
+'''
+
+
+def build_site(public_dir: Path) -> Path:
+    public_dir.mkdir(parents=True, exist_ok=True)
+    output = public_dir / "index.html"
+    output.write_text(INDEX_HTML, encoding="utf-8")
+    (public_dir / ".nojekyll").touch()
+    return output
