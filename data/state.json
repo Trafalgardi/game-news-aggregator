@@ -1,5 +1,371 @@
 {
   "schema_version": 1,
-  "last_run_at": null,
-  "sources": {}
+  "last_run_at": "2026-07-15T19:38:21Z",
+  "sources": {
+    "80-lv": {
+      "last_checked_at": "2026-07-15T19:37:41Z",
+      "status": "ok",
+      "method": "feed-common",
+      "new_count": 10,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://80.lv/feed"
+      ],
+      "discovered_sitemaps": []
+    },
+    "app2top-ru": {
+      "last_checked_at": "2026-07-15T19:37:38Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 40,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://app2top.ru//feed/",
+        "https://app2top.ru//feed/atom/",
+        "https://app2top.ru/feed",
+        "https://app2top.ru/comments/feed",
+        "https://app2top.ru/homepage/feed"
+      ],
+      "discovered_sitemaps": []
+    },
+    "appmagic-rocks": {
+      "last_checked_at": "2026-07-15T19:37:43Z",
+      "status": "ok",
+      "method": "sitemap",
+      "new_count": 8,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [],
+      "discovered_sitemaps": [
+        "https://appmagic.rocks/sitemap.xml"
+      ]
+    },
+    "appquantum-com": {
+      "last_checked_at": "2026-07-15T19:37:46Z",
+      "status": "warning",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [],
+      "discovered_sitemaps": [
+        "https://appquantum.com/sitemap.xml"
+      ]
+    },
+    "azurgames-com": {
+      "last_checked_at": "2026-07-15T19:37:44Z",
+      "status": "warning",
+      "method": "feed-common",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [
+        "https://azurgames.com/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "businessofapps-com": {
+      "last_checked_at": "2026-07-15T19:37:40Z",
+      "status": "error",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 1,
+      "last_error": "HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/",
+      "discovered_feeds": [],
+      "discovered_sitemaps": []
+    },
+    "crazylabs-com": {
+      "last_checked_at": "2026-07-15T19:37:46Z",
+      "status": "warning",
+      "method": "feed",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [
+        "https://www.crazylabs.com/feed/",
+        "https://www.crazylabs.com/comments/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "deconstructoroffun-com": {
+      "last_checked_at": "2026-07-15T19:37:38Z",
+      "status": "ok",
+      "method": "sitemap",
+      "new_count": 2,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [],
+      "discovered_sitemaps": [
+        "https://www.deconstructoroffun.com/sitemap.xml"
+      ]
+    },
+    "dev-by": {
+      "last_checked_at": "2026-07-15T19:37:41Z",
+      "status": "ok",
+      "method": "feed-common",
+      "new_count": 30,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://devby.io/rss"
+      ],
+      "discovered_sitemaps": []
+    },
+    "devby-io": {
+      "last_checked_at": "2026-07-15T19:37:42Z",
+      "status": "ok",
+      "method": "feed-common",
+      "new_count": 30,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://devby.io/rss"
+      ],
+      "discovered_sitemaps": []
+    },
+    "dtf-ru": {
+      "last_checked_at": "2026-07-15T19:37:40Z",
+      "status": "ok",
+      "method": "feed-common",
+      "new_count": 12,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://dtf.ru/rss"
+      ],
+      "discovered_sitemaps": []
+    },
+    "gamedeveloper-com": {
+      "last_checked_at": "2026-07-15T19:37:42Z",
+      "status": "ok",
+      "method": "feed-common",
+      "new_count": 23,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://www.gamedeveloper.com/rss.xml"
+      ],
+      "discovered_sitemaps": []
+    },
+    "gameanalytics-com": {
+      "last_checked_at": "2026-07-15T19:37:46Z",
+      "status": "warning",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [],
+      "discovered_sitemaps": [
+        "https://www.gameanalytics.com/sitemap.xml"
+      ]
+    },
+    "newsletter-gamediscover-co": {
+      "last_checked_at": "2026-07-15T19:37:38Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 1,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://newsletter.gamediscover.co/feed"
+      ],
+      "discovered_sitemaps": []
+    },
+    "gamerefinery-com": {
+      "last_checked_at": "2026-07-15T19:37:45Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 1,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://www.gamerefinery.com/feed/",
+        "https://www.gamerefinery.com/comments/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "gamesindustry-biz": {
+      "last_checked_at": "2026-07-15T19:37:39Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 27,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://www.gamesindustry.biz/feed"
+      ],
+      "discovered_sitemaps": []
+    },
+    "gamingonphone-com": {
+      "last_checked_at": "2026-07-15T19:37:42Z",
+      "status": "error",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 1,
+      "last_error": "HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/",
+      "discovered_feeds": [],
+      "discovered_sitemaps": []
+    },
+    "homagames-com": {
+      "last_checked_at": "2026-07-15T19:37:46Z",
+      "status": "warning",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [],
+      "discovered_sitemaps": [
+        "https://www.homagames.com/sitemap.xml"
+      ]
+    },
+    "howtomarketagame-com": {
+      "last_checked_at": "2026-07-15T19:37:38Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 3,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://howtomarketagame.com/feed/",
+        "https://howtomarketagame.com/comments/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "mobidictum-com": {
+      "last_checked_at": "2026-07-15T19:37:39Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 6,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://mobidictum.com/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "maf-ad": {
+      "last_checked_at": "2026-07-15T19:37:45Z",
+      "status": "warning",
+      "method": "feed",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [
+        "https://maf.ad/en/feed/",
+        "https://maf.ad/en/comments/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "mobilegamer-biz": {
+      "last_checked_at": "2026-07-15T19:37:39Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 9,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://mobilegamer.biz/feed/",
+        "https://mobilegamer.biz/comments/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "naavik-co": {
+      "last_checked_at": "2026-07-15T19:37:38Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 2,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://naavik.co/feed/",
+        "https://naavik.co/comments/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "playliner-com": {
+      "last_checked_at": "2026-07-15T19:37:38Z",
+      "status": "warning",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [],
+      "discovered_sitemaps": [
+        "https://sensortower.com:443/sitemap.xml"
+      ]
+    },
+    "pocketgamer-biz": {
+      "last_checked_at": "2026-07-15T19:37:38Z",
+      "status": "ok",
+      "method": "feed-common",
+      "new_count": 50,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://www.pocketgamer.biz/index.rss"
+      ],
+      "discovered_sitemaps": []
+    },
+    "supersonic-com": {
+      "last_checked_at": "2026-07-15T19:37:43Z",
+      "status": "warning",
+      "method": "feed",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [
+        "https://supersonic.com/feed/",
+        "https://supersonic.com/comments/feed/"
+      ],
+      "discovered_sitemaps": []
+    },
+    "tap-nation-io": {
+      "last_checked_at": "2026-07-15T19:37:45Z",
+      "status": "warning",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [],
+      "discovered_sitemaps": [
+        "https://www.tap-nation.io/sitemap.xml"
+      ]
+    },
+    "blog-udonis-co": {
+      "last_checked_at": "2026-07-15T19:37:45Z",
+      "status": "ok",
+      "method": "feed",
+      "new_count": 1,
+      "consecutive_errors": 0,
+      "last_error": null,
+      "discovered_feeds": [
+        "https://www.blog.udonis.co/rss.xml"
+      ],
+      "discovered_sitemaps": []
+    },
+    "blog-unity-com": {
+      "last_checked_at": "2026-07-15T19:37:46Z",
+      "status": "warning",
+      "method": "feed-common",
+      "new_count": 0,
+      "consecutive_errors": 0,
+      "last_error": "No recent dated articles found",
+      "discovered_feeds": [
+        "https://unity.com/blog/rss"
+      ],
+      "discovered_sitemaps": []
+    },
+    "venturebeat-com": {
+      "last_checked_at": "2026-07-15T19:37:40Z",
+      "status": "error",
+      "method": "none",
+      "new_count": 0,
+      "consecutive_errors": 1,
+      "last_error": "RetryError: HTTPSConnectionPool(host='venturebeat.com', port=443): Max retries exceeded with url: / (Caused by ResponseError('too many 429 error responses'))",
+      "discovered_feeds": [],
+      "discovered_sitemaps": []
+    }
+  }
 }
