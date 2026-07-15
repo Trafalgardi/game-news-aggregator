@@ -1,0 +1,1 @@
+CI smoke test for initial repository verification.
