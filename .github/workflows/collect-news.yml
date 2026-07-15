@@ -1,6 +1,10 @@
 name: Collect and publish news
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/collect-news.yml"
   workflow_dispatch:
     inputs:
       window_hours:
