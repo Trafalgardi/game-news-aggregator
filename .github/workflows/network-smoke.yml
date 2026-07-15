@@ -34,5 +34,7 @@ jobs:
           python -m game_news collect \
             --hours 168 \
             --dry-run \
-            --source app2top-ru,pocketgamer-biz,blog-unity-com \
+            --source app2top-ru \
+            --source pocketgamer-biz \
+            --source blog-unity-com \
             --strict-min-success 1
