@@ -1,13 +1,10 @@
 {
-  "schema_version": 2,
+  "schema_version": 1,
   "generated_at": "2026-07-16T06:52:30Z",
   "source_count": 92,
-  "ok": 45,
-  "warning": 47,
-  "error": 0,
   "failure_summary": {
-    "no_recent_articles": 26,
     "blocked": 7,
+    "no_recent_articles": 26,
     "unknown": 14
   },
   "sources": [
