@@ -18,21 +18,19 @@ class HttpResponse:
 
 class HttpClient:
     def __init__(self, user_agent: str, timeout_seconds: int = 20) -> None:
-        # Full audits touch many third-party domains. Keep the per-request budget
-        # bounded so a handful of dead or blocked sites cannot consume the job.
-        self.timeout_seconds = min(timeout_seconds, 12)
+        # A daily all-source audit must have a bounded runtime. Transient failures
+        # are retained in diagnostics and retried naturally on the next daily run.
+        self.timeout_seconds = min(timeout_seconds, 8)
         self.session = requests.Session()
         retry = Retry(
-            total=1,
-            connect=1,
-            read=1,
-            status=1,
-            backoff_factor=0.5,
-            status_forcelist=(429, 500, 502, 503, 504),
+            total=0,
+            connect=0,
+            read=0,
+            status=0,
             allowed_methods=frozenset({"GET", "HEAD"}),
             respect_retry_after_header=True,
         )
-        adapter = HTTPAdapter(max_retries=retry, pool_connections=24, pool_maxsize=24)
+        adapter = HTTPAdapter(max_retries=retry, pool_connections=32, pool_maxsize=32)
         self.session.mount("http://", adapter)
         self.session.mount("https://", adapter)
         self.session.headers.update(
