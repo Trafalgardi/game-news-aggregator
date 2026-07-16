@@ -1,6 +1,14 @@
 name: Collect and publish news
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/collect-news.yml"
+      - "src/game_news/collector.py"
+      - "src/game_news/discovery.py"
+      - "src/game_news/models.py"
+      - "src/game_news/cli.py"
   workflow_dispatch:
     inputs:
       window_hours:
@@ -55,13 +63,32 @@ jobs:
       - name: Run tests
         run: python -m pytest
 
-      - name: Collect news and build static site
+      - name: Collect all configured sources
+        shell: bash
         run: |
+          set -o pipefail
           python -m game_news collect \
+            --all-sources \
             --hours "$WINDOW_HOURS" \
-            --strict-min-success "$STRICT_MIN_SUCCESS"
+            --strict-min-success "$STRICT_MIN_SUCCESS" \
+            2>&1 | tee public/collection-console.log
 
-      - name: Commit generated history and public feed
+      - name: Print problem summary
+        if: always()
+        shell: bash
+        run: |
+          echo "=== Collection run ==="
+          cat public/collection-run.log 2>/dev/null || true
+          echo "=== Problem sources ==="
+          if [ -f public/diagnostics.md ]; then
+            sed -n '1,240p' public/diagnostics.md
+          else
+            echo "diagnostics.md was not generated"
+          fi
+
+      - name: Commit generated history, feed, and diagnostics
+        if: always()
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -69,7 +96,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
           else
-            git commit -m "data: update game news feed"
+            git commit -m "data: update game news feed and diagnostics"
             git pull --rebase origin main
             git push origin HEAD:main
           fi
@@ -85,6 +112,7 @@ jobs:
 
   deploy:
     needs: collect
+    if: always() && needs.collect.result == 'success'
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to GitHub Pages

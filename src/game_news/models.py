@@ -76,8 +76,10 @@ class SourceResult:
     new_count: int = 0
     elapsed_ms: int = 0
     error: str | None = None
+    failure_kind: str | None = None
     discovered_feeds: list[str] = field(default_factory=list)
     discovered_sitemaps: list[str] = field(default_factory=list)
+    attempts: list[dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import time
+from collections import Counter
 from collections.abc import Iterable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime, timedelta
@@ -32,6 +34,23 @@ from game_news.storage import (
 def _within_days(value: str | None, days: int) -> bool:
     parsed = parse_datetime(value)
     return parsed is not None and parsed >= datetime.now(UTC) - timedelta(days=days)
+
+
+def _failure_kind(error: str | None, attempts: list[dict]) -> str:
+    text = " ".join([error or "", *(str(item.get("error") or "") for item in attempts)]).lower()
+    if "403" in text or "forbidden" in text or "cloudflare" in text:
+        return "blocked"
+    if "429" in text or "too many requests" in text:
+        return "rate_limited"
+    if "timeout" in text or "timed out" in text:
+        return "timeout"
+    if "name resolution" in text or "dns" in text or "resolve host" in text:
+        return "dns"
+    if "ssl" in text or "certificate" in text or "tls" in text:
+        return "tls"
+    if any(item.get("outcome") == "empty" for item in attempts):
+        return "no_recent_articles"
+    return "unknown"
 
 
 def _article_from_candidate(
@@ -83,12 +102,19 @@ def _article_from_candidate(
     )
 
 
-def _collect_source(source: SourceConfig, config: AppConfig, known_urls: set[str]) -> tuple[list[Article], SourceResult]:
+def _collect_source(
+    source: SourceConfig,
+    config: AppConfig,
+    known_urls: set[str],
+) -> tuple[list[Article], SourceResult]:
     started = time.perf_counter()
     checked_at = now_iso()
+    attempts: list[dict] = []
     try:
         client = HttpClient(config.user_agent, config.timeout_seconds)
-        candidates, method, feeds, sitemaps = collect_candidates(source, client, config.max_age_days)
+        candidates, method, feeds, sitemaps, attempts = collect_candidates(
+            source, client, config.max_age_days
+        )
         articles: list[Article] = []
         accepted_urls: set[str] = set()
         for candidate in candidates:
@@ -99,6 +125,7 @@ def _collect_source(source: SourceConfig, config: AppConfig, known_urls: set[str
             articles.append(article)
         new_count = sum(1 for article in articles if article.canonical_url not in known_urls)
         status = "ok" if articles else "warning"
+        error = None if articles else "No recent dated articles found"
         return articles, SourceResult(
             source_id=source.id,
             source_name=source.name,
@@ -111,27 +138,86 @@ def _collect_source(source: SourceConfig, config: AppConfig, known_urls: set[str
             elapsed_ms=round((time.perf_counter() - started) * 1000),
             discovered_feeds=feeds,
             discovered_sitemaps=sitemaps,
-            error=None if articles else "No recent dated articles found",
+            error=error,
+            failure_kind=None if articles else _failure_kind(error, attempts),
+            attempts=attempts,
         )
     except Exception as exc:
+        error = f"{type(exc).__name__}: {exc}"
         return [], SourceResult(
             source_id=source.id,
             source_name=source.name,
             status="error",
             checked_at=checked_at,
             elapsed_ms=round((time.perf_counter() - started) * 1000),
-            error=f"{type(exc).__name__}: {exc}",
+            error=error,
+            failure_kind=_failure_kind(error, attempts),
+            attempts=attempts,
         )
 
 
-def _select_sources(config: AppConfig, source_ids: Iterable[str] | None) -> list[SourceConfig]:
+def _select_sources(
+    config: AppConfig,
+    source_ids: Iterable[str] | None,
+    all_sources: bool,
+) -> list[SourceConfig]:
     requested = set(source_ids or [])
     if requested:
         unknown = requested - {source.id for source in config.sources}
         if unknown:
             raise ValueError(f"Unknown source ids: {', '.join(sorted(unknown))}")
         return [source for source in config.sources if source.id in requested]
+    if all_sources:
+        return list(config.sources)
     return [source for source in config.sources if source.enabled]
+
+
+def _write_diagnostics(public_dir: Path, generated_at: str, results: list[SourceResult]) -> None:
+    failures = Counter(result.failure_kind or "none" for result in results if result.status != "ok")
+    payload = {
+        "schema_version": 1,
+        "generated_at": generated_at,
+        "source_count": len(results),
+        "failure_summary": dict(sorted(failures.items())),
+        "sources": [result.to_dict() for result in results],
+    }
+    write_json_atomic(public_dir / "diagnostics.json", payload)
+
+    lines = [
+        "# Диагностика источников",
+        "",
+        f"Обновлено: `{generated_at}`",
+        "",
+        "## Сводка",
+        "",
+    ]
+    for kind, count in sorted(failures.items(), key=lambda item: (-item[1], item[0])):
+        lines.append(f"- `{kind}`: **{count}**")
+    lines.extend(["", "## Проблемные источники", ""])
+    for result in results:
+        if result.status == "ok":
+            continue
+        lines.extend(
+            [
+                f"### {result.source_name} (`{result.source_id}`)",
+                "",
+                f"- Статус: `{result.status}`",
+                f"- Категория ошибки: `{result.failure_kind or 'unknown'}`",
+                f"- Метод: `{result.method}`",
+                f"- Время: `{result.elapsed_ms} ms`",
+                f"- Ошибка: `{result.error or 'нет свежих датированных материалов'}`",
+                f"- Попыток: `{len(result.attempts)}`",
+                "",
+            ]
+        )
+        for attempt in result.attempts:
+            lines.append(
+                f"  - `{attempt.get('stage')}` → `{attempt.get('outcome')}` — "
+                f"{attempt.get('url')}"
+                + (f" — {attempt.get('error')}" if attempt.get("error") else "")
+            )
+        lines.append("")
+    (public_dir / "diagnostics.md").write_text("\n".join(lines), encoding="utf-8")
 
 
 def collect(
@@ -141,11 +227,12 @@ def collect(
     source_ids: Iterable[str] | None = None,
     dry_run: bool = False,
     strict_min_success: int = 0,
+    all_sources: bool = False,
 ) -> dict:
     articles_path = root / "data/articles.jsonl"
     state_path = root / "data/state.json"
     public_dir = root / "public"
-    selected_sources = _select_sources(config, source_ids)
+    selected_sources = _select_sources(config, source_ids, all_sources)
     existing = load_articles(articles_path)
     known_urls = {article.canonical_url for article in existing}
 
@@ -202,15 +289,19 @@ def collect(
     write_json_atomic(public_dir / "archive" / f"{archive_date}.json", latest_payload)
 
     status_payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": generated_at,
         "source_count": len(results),
         "ok": sum(1 for result in results if result.status == "ok"),
         "warning": sum(1 for result in results if result.status == "warning"),
         "error": sum(1 for result in results if result.status == "error"),
+        "failure_summary": dict(
+            Counter(result.failure_kind or "none" for result in results if result.status != "ok")
+        ),
         "sources": [result.to_dict() for result in results],
     }
     write_json_atomic(public_dir / "status.json", status_payload)
+    _write_diagnostics(public_dir, generated_at, results)
 
     state = read_json(state_path, {"schema_version": 1, "last_run_at": None, "sources": {}})
     state["last_run_at"] = generated_at
@@ -229,18 +320,23 @@ def collect(
             "new_count": result.new_count,
             "consecutive_errors": consecutive_errors,
             "last_error": result.error,
+            "failure_kind": result.failure_kind,
             "discovered_feeds": result.discovered_feeds,
             "discovered_sitemaps": result.discovered_sitemaps,
         }
     write_json_atomic(state_path, state)
     build_site(public_dir)
 
-    return {
+    run_log = {
         "generated_at": generated_at,
         "selected_sources": len(selected_sources),
         "successful_sources": success_count,
         "candidate_count": len(all_candidates),
         "added_count": added_count,
         "latest_count": len(clustered),
-        "status": status_payload,
+        "failure_summary": status_payload["failure_summary"],
     }
+    (public_dir / "collection-run.log").write_text(
+        json.dumps(run_log, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    return {**run_log, "status": status_payload}
