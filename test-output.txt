@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0 -- /opt/hostedtoolcache/Python/3.12.13/x64/bin/python
+cachedir: .pytest_cache
+rootdir: /home/runner/work/game-news-aggregator/game-news-aggregator
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-6.3.0
+collecting ... collected 11 items
+
+tests/test_collector_pipeline.py::test_collect_writes_public_payload PASSED [  9%]
+tests/test_config.py::test_repository_config_is_valid PASSED             [ 18%]
+tests/test_dedupe.py::test_cluster_articles_keeps_best_primary PASSED    [ 27%]
+tests/test_normalize.py::test_normalize_url_removes_tracking_and_www PASSED [ 36%]
+tests/test_normalize.py::test_normalized_title_is_comparable PASSED      [ 45%]
+tests/test_normalize.py::test_stable_id_is_deterministic PASSED          [ 54%]
+tests/test_parsers.py::test_parse_feed PASSED                            [ 63%]
+tests/test_parsers.py::test_parse_sitemap PASSED                         [ 72%]
+tests/test_seed_history.py::test_seed_history_contains_telegram_urls FAILED [ 81%]
+tests/test_site.py::test_build_site PASSED                               [ 90%]
+tests/test_telegram_import.py::test_import_telegram_extracts_visible_and_hidden_links PASSED [100%]
+
+=================================== FAILURES ===================================
+___________________ test_seed_history_contains_telegram_urls ___________________
+
+    def test_seed_history_contains_telegram_urls() -> None:
+        root = Path(__file__).resolve().parents[1]
+        articles = load_articles(root / "data/articles.jsonl")
+>       assert len(articles) == 1183
+E       AssertionError: assert 1408 == 1183
+E        +  where 1408 = len([Article(id='8dc5c2c25b5819173ca9', url='https://app2top.ru/games-2/obshhee-chislo-skachivanij-igr-i-prilozhenij-gismart-prevy-silo-1-mlrd-193457.html', canonical_url='https://app2top.ru/games-2/obshhee-chislo-skachivanij-igr-i-prilozhenij-gismart-prevy-silo-1-mlrd-193457.html', title='Obshhee chislo skachivanij igr i prilozhenij gismart prevy silo 1 mlrd 193457', source_id='legacy-app2top-ru', source_name='HYPER NEWS', source_domain='app2top.ru', source_category='historical_import', source_priority=0, published_at='2021-12-02T14:15:36Z', discovered_at='2021-12-02T14:15:36Z', date_source='telegram_message_date', date_confidence='medium', summary='', author='', language='', matched_topics=[], importance_score=0, duplicate_of=None, duplicate_urls=[], duplicate_sources=[], origin='telegram_import', telegram_post='https://t.me/hyper_casual_news/8'), Article(id='73cb9e5077c2dae3162d', url='https://azurgames.com/ru/blog-ru/marketingovye-kreativy-101-kak-privlech-igrokov', canonical_url='https://azurgames.com/ru/blog-ru/marketingovye-kreativy-101-kak-privlech-igrokov', title='Marketingovye kreativy 101 kak privlech igrokov', source_id='legacy-azurgames-com', source_name='HYPER NEWS', so..._import', source_priority=0, published_at='2021-12-08T01:38:52Z', discovered_at='2021-12-08T01:38:52Z', date_source='telegram_message_date', date_confidence='medium', summary='', author='', language='', matched_topics=[], importance_score=0, duplicate_of=None, duplicate_urls=[], duplicate_sources=[], origin='telegram_import', telegram_post='https://t.me/hyper_casual_news/12'), Article(id='4d5c9e9c2937bfba45bc', url='https://app2top.ru/industry/itogi-2021-evgenij-sidorov-iz-freeplay-o-glavnom-za-god-193919.html', canonical_url='https://app2top.ru/industry/itogi-2021-evgenij-sidorov-iz-freeplay-o-glavnom-za-god-193919.html', title='Itogi 2021 evgenij sidorov iz freeplay o glavnom za god 193919', source_id='legacy-app2top-ru', source_name='HYPER NEWS', source_domain='app2top.ru', source_category='historical_import', source_priority=0, published_at='2021-12-11T01:28:55Z', discovered_at='2021-12-11T01:28:55Z', date_source='telegram_message_date', date_confidence='medium', summary='', author='', language='', matched_topics=[], importance_score=0, duplicate_of=None, duplicate_urls=[], duplicate_sources=[], origin='telegram_import', telegram_post='https://t.me/hyper_casual_news/13'), ...])
+
+tests/test_seed_history.py:9: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_seed_history.py::test_seed_history_contains_telegram_urls - AssertionError: assert 1408 == 1183
+ +  where 1408 = len([Article(id='8dc5c2c25b5819173ca9', url='https://app2top.ru/games-2/obshhee-chislo-skachivanij-igr-i-prilozhenij-gismart-prevy-silo-1-mlrd-193457.html', canonical_url='https://app2top.ru/games-2/obshhee-chislo-skachivanij-igr-i-prilozhenij-gismart-prevy-silo-1-mlrd-193457.html', title='Obshhee chislo skachivanij igr i prilozhenij gismart prevy silo 1 mlrd 193457', source_id='legacy-app2top-ru', source_name='HYPER NEWS', source_domain='app2top.ru', source_category='historical_import', source_priority=0, published_at='2021-12-02T14:15:36Z', discovered_at='2021-12-02T14:15:36Z', date_source='telegram_message_date', date_confidence='medium', summary='', author='', language='', matched_topics=[], importance_score=0, duplicate_of=None, duplicate_urls=[], duplicate_sources=[], origin='telegram_import', telegram_post='https://t.me/hyper_casual_news/8'), Article(id='73cb9e5077c2dae3162d', url='https://azurgames.com/ru/blog-ru/marketingovye-kreativy-101-kak-privlech-igrokov', canonical_url='https://azurgames.com/ru/blog-ru/marketingovye-kreativy-101-kak-privlech-igrokov', title='Marketingovye kreativy 101 kak privlech igrokov', source_id='legacy-azurgames-com', source_name='HYPER NEWS', so..._import', source_priority=0, published_at='2021-12-08T01:38:52Z', discovered_at='2021-12-08T01:38:52Z', date_source='telegram_message_date', date_confidence='medium', summary='', author='', language='', matched_topics=[], importance_score=0, duplicate_of=None, duplicate_urls=[], duplicate_sources=[], origin='telegram_import', telegram_post='https://t.me/hyper_casual_news/12'), Article(id='4d5c9e9c2937bfba45bc', url='https://app2top.ru/industry/itogi-2021-evgenij-sidorov-iz-freeplay-o-glavnom-za-god-193919.html', canonical_url='https://app2top.ru/industry/itogi-2021-evgenij-sidorov-iz-freeplay-o-glavnom-za-god-193919.html', title='Itogi 2021 evgenij sidorov iz freeplay o glavnom za god 193919', source_id='legacy-app2top-ru', source_name='HYPER NEWS', source_domain='app2top.ru', source_category='historical_import', source_priority=0, published_at='2021-12-11T01:28:55Z', discovered_at='2021-12-11T01:28:55Z', date_source='telegram_message_date', date_confidence='medium', summary='', author='', language='', matched_topics=[], importance_score=0, duplicate_of=None, duplicate_urls=[], duplicate_sources=[], origin='telegram_import', telegram_post='https://t.me/hyper_casual_news/13'), ...])
+========================= 1 failed, 10 passed in 0.71s =========================
+exit_code=1
