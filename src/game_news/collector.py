@@ -7,7 +7,6 @@ from collections.abc import Iterable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
-from urllib.parse import urlparse
 
 from game_news.dedupe import cluster_articles
 from game_news.discovery import collect_candidates
