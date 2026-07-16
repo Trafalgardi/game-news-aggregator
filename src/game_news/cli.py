@@ -29,6 +29,11 @@ def _parser() -> argparse.ArgumentParser:
     collect_parser.add_argument("--keywords-config", default="config/keywords.yaml")
     collect_parser.add_argument("--hours", type=int, default=None)
     collect_parser.add_argument("--source", action="append", default=[])
+    collect_parser.add_argument(
+        "--all-sources",
+        action="store_true",
+        help="Collect every configured source, including sources marked enabled: false",
+    )
     collect_parser.add_argument("--dry-run", action="store_true")
     collect_parser.add_argument("--strict-min-success", type=int, default=0)
 
@@ -66,6 +71,7 @@ def main(argv: list[str] | None = None) -> int:
                 source_ids=args.source,
                 dry_run=args.dry_run,
                 strict_min_success=args.strict_min_success,
+                all_sources=args.all_sources,
             )
             print(json.dumps(result, ensure_ascii=False, indent=2))
             return 0
