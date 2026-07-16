@@ -7,6 +7,7 @@ from collections.abc import Iterable
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime, timedelta
 from pathlib import Path
+from urllib.parse import urlparse
 
 from game_news.dedupe import cluster_articles
 from game_news.discovery import collect_candidates
@@ -30,16 +31,27 @@ from game_news.storage import (
     write_json_atomic,
 )
 
+# Confirmed manually by the repository owner on 2026-07-16.
+DROPPED_SOURCE_IDS = {
+    "playliner-com",
+    "appmetrica-yandex-ru",
+    "appmetrica-yandex-com",
+    "press-kwalee-com",
+    "rbc-ru",
+}
+
 
 def _within_days(value: str | None, days: int) -> bool:
     parsed = parse_datetime(value)
     return parsed is not None and parsed >= datetime.now(UTC) - timedelta(days=days)
 
 
-def _failure_kind(error: str | None, attempts: list[dict]) -> str:
+def _failure_kind(error: str | None, attempts: list[dict], rejection_summary: dict[str, int]) -> str:
     text = " ".join([error or "", *(str(item.get("error") or "") for item in attempts)]).lower()
     if "403" in text or "forbidden" in text or "cloudflare" in text:
         return "blocked"
+    if "401" in text or "unauthorized" in text:
+        return "unauthorized"
     if "429" in text or "too many requests" in text:
         return "rate_limited"
     if "timeout" in text or "timed out" in text:
@@ -48,9 +60,32 @@ def _failure_kind(error: str | None, attempts: list[dict]) -> str:
         return "dns"
     if "ssl" in text or "certificate" in text or "tls" in text:
         return "tls"
-    if any(item.get("outcome") == "empty" for item in attempts):
+    if rejection_summary.get("too_old", 0) > 0:
         return "no_recent_articles"
+    if rejection_summary.get("missing_date", 0) > 0:
+        return "missing_dates"
+    if rejection_summary.get("invalid_url", 0) > 0:
+        return "invalid_articles"
+    if any(item.get("outcome") == "empty" for item in attempts):
+        return "no_articles_found"
     return "unknown"
+
+
+def _candidate_reason(candidate: dict, source: SourceConfig, config: AppConfig) -> tuple[str | None, str | None]:
+    raw_url = str(candidate.get("url") or "").strip()
+    if not raw_url:
+        return "missing_url", None
+    canonical = normalize_url(raw_url, source.home_url)
+    if not canonical.startswith(("http://", "https://")):
+        return "invalid_url", canonical
+    published_at = candidate.get("published_at")
+    if not published_at:
+        return "missing_date", canonical
+    if parse_datetime(published_at) is None:
+        return "unparseable_date", canonical
+    if not _within_days(published_at, config.max_age_days):
+        return "too_old", canonical
+    return None, canonical
 
 
 def _article_from_candidate(
@@ -58,16 +93,9 @@ def _article_from_candidate(
     candidate: dict,
     config: AppConfig,
     discovered_at: str,
-) -> Article | None:
-    raw_url = str(candidate.get("url") or "").strip()
-    if not raw_url:
-        return None
-    canonical = normalize_url(raw_url, source.home_url)
-    if not canonical.startswith(("http://", "https://")):
-        return None
+    canonical: str,
+) -> Article:
     published_at = candidate.get("published_at")
-    if not _within_days(published_at, config.max_age_days):
-        return None
     title = normalize_whitespace(str(candidate.get("title") or title_from_url(canonical)))
     summary = normalize_whitespace(str(candidate.get("summary") or ""))[:1200]
     date_confidence = str(candidate.get("date_confidence") or "none")
@@ -102,6 +130,91 @@ def _article_from_candidate(
     )
 
 
+def _manual_check_for(
+    source: SourceConfig,
+    method: str,
+    feeds: list[str],
+    sitemaps: list[str],
+    attempts: list[dict],
+    failure_kind: str | None,
+    rejection_summary: dict[str, int],
+) -> dict | None:
+    if failure_kind == "no_recent_articles":
+        return None
+
+    successful_feed = next(
+        (
+            attempt.get("final_url") or attempt.get("url")
+            for attempt in attempts
+            if str(attempt.get("stage", "")).startswith("feed")
+            and attempt.get("outcome") == "ok"
+        ),
+        None,
+    )
+    successful_sitemap = next(
+        (
+            attempt.get("final_url") or attempt.get("url")
+            for attempt in attempts
+            if str(attempt.get("stage", "")).startswith("sitemap")
+            and attempt.get("outcome") == "ok"
+        ),
+        None,
+    )
+    homepage_attempt = next((item for item in attempts if item.get("stage") == "homepage"), None)
+    final_home = (homepage_attempt or {}).get("final_url")
+    redirected_domain = domain_of(str(final_home or ""))
+    expected_domain = source.domain.removeprefix("www.")
+
+    if redirected_domain and redirected_domain.removeprefix("www.") != expected_domain:
+        return {
+            "priority": "high",
+            "reason": "redirected_to_other_domain",
+            "url": source.home_url,
+            "instruction": f"Открыть источник и подтвердить, что редирект на {redirected_domain} ожидаем. Если бренд поглощён или закрыт — удалить либо объединить источник.",
+        }
+    if successful_feed and rejection_summary.get("missing_date", 0):
+        return {
+            "priority": "high",
+            "reason": "feed_items_without_dates",
+            "url": str(successful_feed),
+            "instruction": "Открыть RSS и проверить названия полей даты у первых 3 элементов. Сохранить XML или сообщить фактический тег даты.",
+        }
+    if successful_feed and rejection_summary.get("unparseable_date", 0):
+        return {
+            "priority": "high",
+            "reason": "unparseable_feed_dates",
+            "url": str(successful_feed),
+            "instruction": "Открыть RSS и прислать пример значения даты, которое не распознаётся.",
+        }
+    if failure_kind == "blocked":
+        return {
+            "priority": "medium",
+            "reason": "blocked_on_github_runner",
+            "url": feeds[0] if feeds else source.home_url,
+            "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси.",
+        }
+    if successful_sitemap:
+        return {
+            "priority": "medium",
+            "reason": "sitemap_needs_path_filter",
+            "url": str(successful_sitemap),
+            "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой.",
+        }
+    if method != "none" and successful_feed:
+        return {
+            "priority": "medium",
+            "reason": "feed_reachable_but_no_accepted_items",
+            "url": str(successful_feed),
+            "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации.",
+        }
+    return {
+        "priority": "low",
+        "reason": "source_structure_unknown",
+        "url": source.home_url,
+        "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL.",
+    }
+
+
 def _collect_source(
     source: SourceConfig,
     config: AppConfig,
@@ -117,15 +230,34 @@ def _collect_source(
         )
         articles: list[Article] = []
         accepted_urls: set[str] = set()
+        rejection_summary: Counter[str] = Counter()
+        rejection_examples: dict[str, list[str]] = {}
+
         for candidate in candidates:
-            article = _article_from_candidate(source, candidate, config, checked_at)
-            if article is None or article.canonical_url in accepted_urls:
+            reason, canonical = _candidate_reason(candidate, source, config)
+            if reason:
+                rejection_summary[reason] += 1
+                example = canonical or str(candidate.get("url") or candidate.get("title") or "")
+                if example:
+                    rejection_examples.setdefault(reason, [])
+                    if len(rejection_examples[reason]) < 3:
+                        rejection_examples[reason].append(example)
                 continue
-            accepted_urls.add(article.canonical_url)
-            articles.append(article)
+            assert canonical is not None
+            if canonical in accepted_urls:
+                rejection_summary["duplicate_in_source"] += 1
+                continue
+            accepted_urls.add(canonical)
+            articles.append(_article_from_candidate(source, candidate, config, checked_at, canonical))
+
         new_count = sum(1 for article in articles if article.canonical_url not in known_urls)
         status = "ok" if articles else "warning"
-        error = None if articles else "No recent dated articles found"
+        error = None if articles else "No accepted recent dated articles"
+        summary_dict = dict(sorted(rejection_summary.items()))
+        failure_kind = None if articles else _failure_kind(error, attempts, summary_dict)
+        manual_check = _manual_check_for(
+            source, method, feeds, sitemaps, attempts, failure_kind, summary_dict
+        )
         return articles, SourceResult(
             source_id=source.id,
             source_name=source.name,
@@ -139,11 +271,15 @@ def _collect_source(
             discovered_feeds=feeds,
             discovered_sitemaps=sitemaps,
             error=error,
-            failure_kind=None if articles else _failure_kind(error, attempts),
+            failure_kind=failure_kind,
             attempts=attempts,
+            rejection_summary=summary_dict,
+            rejection_examples=rejection_examples,
+            manual_check=manual_check,
         )
     except Exception as exc:
         error = f"{type(exc).__name__}: {exc}"
+        failure_kind = _failure_kind(error, attempts, {})
         return [], SourceResult(
             source_id=source.id,
             source_name=source.name,
@@ -151,8 +287,9 @@ def _collect_source(
             checked_at=checked_at,
             elapsed_ms=round((time.perf_counter() - started) * 1000),
             error=error,
-            failure_kind=_failure_kind(error, attempts),
+            failure_kind=failure_kind,
             attempts=attempts,
+            manual_check=_manual_check_for(source, "none", [], [], attempts, failure_kind, {}),
         )
 
 
@@ -161,23 +298,28 @@ def _select_sources(
     source_ids: Iterable[str] | None,
     all_sources: bool,
 ) -> list[SourceConfig]:
+    active_sources = [source for source in config.sources if source.id not in DROPPED_SOURCE_IDS]
     requested = set(source_ids or [])
     if requested:
-        unknown = requested - {source.id for source in config.sources}
+        dropped = requested & DROPPED_SOURCE_IDS
+        if dropped:
+            raise ValueError(f"Dropped source ids cannot be collected: {', '.join(sorted(dropped))}")
+        unknown = requested - {source.id for source in active_sources}
         if unknown:
             raise ValueError(f"Unknown source ids: {', '.join(sorted(unknown))}")
-        return [source for source in config.sources if source.id in requested]
+        return [source for source in active_sources if source.id in requested]
     if all_sources:
-        return list(config.sources)
-    return [source for source in config.sources if source.enabled]
+        return active_sources
+    return [source for source in active_sources if source.enabled]
 
 
 def _write_diagnostics(public_dir: Path, generated_at: str, results: list[SourceResult]) -> None:
     failures = Counter(result.failure_kind or "none" for result in results if result.status != "ok")
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": generated_at,
         "source_count": len(results),
+        "dropped_sources": sorted(DROPPED_SOURCE_IDS),
         "failure_summary": dict(sorted(failures.items())),
         "sources": [result.to_dict() for result in results],
     }
@@ -187,6 +329,8 @@ def _write_diagnostics(public_dir: Path, generated_at: str, results: list[Source
         "# Диагностика источников",
         "",
         f"Обновлено: `{generated_at}`",
+        "",
+        f"Исключено вручную: **{len(DROPPED_SOURCE_IDS)}**",
         "",
         "## Сводка",
         "",
@@ -202,10 +346,13 @@ def _write_diagnostics(public_dir: Path, generated_at: str, results: list[Source
                 f"### {result.source_name} (`{result.source_id}`)",
                 "",
                 f"- Статус: `{result.status}`",
-                f"- Категория ошибки: `{result.failure_kind or 'unknown'}`",
+                f"- Категория: `{result.failure_kind or 'unknown'}`",
                 f"- Метод: `{result.method}`",
+                f"- Получено кандидатов: `{result.fetched_count}`",
+                f"- Принято: `{result.accepted_count}`",
+                f"- Причины отбраковки: `{json.dumps(result.rejection_summary, ensure_ascii=False)}`",
                 f"- Время: `{result.elapsed_ms} ms`",
-                f"- Ошибка: `{result.error or 'нет свежих датированных материалов'}`",
+                f"- Ошибка: `{result.error or 'нет'}`",
                 f"- Попыток: `{len(result.attempts)}`",
                 "",
             ]
@@ -218,6 +365,54 @@ def _write_diagnostics(public_dir: Path, generated_at: str, results: list[Source
             )
         lines.append("")
     (public_dir / "diagnostics.md").write_text("\n".join(lines), encoding="utf-8")
+
+    checks = [result for result in results if result.manual_check]
+    manual_payload = {
+        "schema_version": 1,
+        "generated_at": generated_at,
+        "count": len(checks),
+        "checks": [
+            {
+                "source_id": result.source_id,
+                "source_name": result.source_name,
+                "failure_kind": result.failure_kind,
+                **(result.manual_check or {}),
+            }
+            for result in checks
+        ],
+    }
+    write_json_atomic(public_dir / "manual-checks.json", manual_payload)
+
+    manual_lines = [
+        "# Что желательно проверить вручную",
+        "",
+        f"Обновлено: `{generated_at}`",
+        "",
+        "Источники с обычным статусом `no_recent_articles` сюда не включаются: они технически исправны, но не публиковались в текущем окне.",
+        "",
+    ]
+    priority_order = {"high": 0, "medium": 1, "low": 2}
+    for result in sorted(
+        checks,
+        key=lambda item: (
+            priority_order.get(str((item.manual_check or {}).get("priority")), 9),
+            item.source_name.casefold(),
+        ),
+    ):
+        check = result.manual_check or {}
+        manual_lines.extend(
+            [
+                f"## {result.source_name} (`{result.source_id}`)",
+                "",
+                f"- Приоритет: **{check.get('priority', 'low')}**",
+                f"- Причина: `{check.get('reason', 'unknown')}`",
+                f"- Проверить: {check.get('url', result.source_id)}",
+                f"- Действие: {check.get('instruction', 'Проверить структуру источника.')}",
+                f"- Отбраковка: `{json.dumps(result.rejection_summary, ensure_ascii=False)}`",
+                "",
+            ]
+        )
+    (public_dir / "manual-checks.md").write_text("\n".join(manual_lines), encoding="utf-8")
 
 
 def collect(
@@ -289,15 +484,17 @@ def collect(
     write_json_atomic(public_dir / "archive" / f"{archive_date}.json", latest_payload)
 
     status_payload = {
-        "schema_version": 2,
+        "schema_version": 3,
         "generated_at": generated_at,
         "source_count": len(results),
+        "dropped_sources": sorted(DROPPED_SOURCE_IDS),
         "ok": sum(1 for result in results if result.status == "ok"),
         "warning": sum(1 for result in results if result.status == "warning"),
         "error": sum(1 for result in results if result.status == "error"),
         "failure_summary": dict(
             Counter(result.failure_kind or "none" for result in results if result.status != "ok")
         ),
+        "manual_check_count": sum(1 for result in results if result.manual_check),
         "sources": [result.to_dict() for result in results],
     }
     write_json_atomic(public_dir / "status.json", status_payload)
@@ -306,6 +503,8 @@ def collect(
     state = read_json(state_path, {"schema_version": 1, "last_run_at": None, "sources": {}})
     state["last_run_at"] = generated_at
     source_state = state.setdefault("sources", {})
+    for dropped_id in DROPPED_SOURCE_IDS:
+        source_state.pop(dropped_id, None)
     for result in results:
         previous = source_state.get(result.source_id, {})
         consecutive_errors = int(previous.get("consecutive_errors", 0))
@@ -323,6 +522,8 @@ def collect(
             "failure_kind": result.failure_kind,
             "discovered_feeds": result.discovered_feeds,
             "discovered_sitemaps": result.discovered_sitemaps,
+            "rejection_summary": result.rejection_summary,
+            "manual_check": result.manual_check,
         }
     write_json_atomic(state_path, state)
     build_site(public_dir)
@@ -330,10 +531,12 @@ def collect(
     run_log = {
         "generated_at": generated_at,
         "selected_sources": len(selected_sources),
+        "dropped_sources": sorted(DROPPED_SOURCE_IDS),
         "successful_sources": success_count,
         "candidate_count": len(all_candidates),
         "added_count": added_count,
         "latest_count": len(clustered),
+        "manual_check_count": status_payload["manual_check_count"],
         "failure_summary": status_payload["failure_summary"],
     }
     (public_dir / "collection-run.log").write_text(
