@@ -10,6 +10,7 @@ on:
       - "src/game_news/discovery.py"
       - "src/game_news/models.py"
       - "src/game_news/cli.py"
+      - "src/game_news/http.py"
   workflow_dispatch:
     inputs:
       window_hours:
