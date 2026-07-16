@@ -1,0 +1,682 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-16T07:42:42Z",
+  "count": 75,
+  "checks": [
+    {
+      "source_id": "80-lv",
+      "source_name": "80 Level",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://80.lv/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "appdevelopermagazine-com",
+      "source_name": "App Developer Magazine",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://appdevelopermagazine.com/RSS/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "app2top-ru",
+      "source_name": "App2Top",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://app2top.ru/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "appfigures-com",
+      "source_name": "Appfigures",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://appfigures.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "appmagic-rocks",
+      "source_name": "AppMagic Blog",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://appmagic.rocks/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "appodeal-com",
+      "source_name": "Appodeal",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://appodeal.com/sitemap_index.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "appquantum-com",
+      "source_name": "AppQuantum",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://appquantum.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "hybridcasual-appquantum-com",
+      "source_name": "AppQuantum Hybrid Casual",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://hybridcasual.appquantum.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "appsflyer-com",
+      "source_name": "AppsFlyer",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.appsflyer.com:443/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "apptica-com",
+      "source_name": "Apptica",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://apptica.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "blockchaingamer-biz",
+      "source_name": "BlockchainGamer.biz",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://blockchaingamer.biz/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "businessofapps-com",
+      "source_name": "Business of Apps",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://businessofapps.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "citybiz-co",
+      "source_name": "citybiz",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.citybiz.co/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "calcalistech-com",
+      "source_name": "CTech",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://calcalistech.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "data-ai",
+      "source_name": "data.ai",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://www.data.ai/cn/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "dev-by",
+      "source_name": "dev.by",
+      "failure_kind": null,
+      "priority": "high",
+      "reason": "redirected_to_other_domain",
+      "url": "https://dev.by/",
+      "instruction": "Открыть источник и подтвердить, что редирект на devby.io ожидаем. Если бренд поглощён или закрыт — удалить либо объединить источник."
+    },
+    {
+      "source_id": "devby-io",
+      "source_name": "dev.by / devby.io",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://devby.io/rss",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "dtf-ru",
+      "source_name": "DTF",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://dtf.ru/rss",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "playducky-com",
+      "source_name": "Ducky",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://playducky.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "elitegamedevelopers-substack-com",
+      "source_name": "Elite Game Developers",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://elitegamedevelopers.substack.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "gamedeveloper-com",
+      "source_name": "Game Developer",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.gamedeveloper.com/rss.xml",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "gameanalytics-com",
+      "source_name": "GameAnalytics",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://www.gameanalytics.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "newsletter-gamediscover-co",
+      "source_name": "GameDiscoverCo",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://newsletter.gamediscover.co/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "gamerefinery-com",
+      "source_name": "GameRefinery",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.gamerefinery.com/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "gamesindustry-biz",
+      "source_name": "GamesIndustry.biz",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.gamesindustry.biz/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "gamespress-com",
+      "source_name": "GamesPress",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.gamespress.com/en-US/News/RSS",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "gamingonphone-com",
+      "source_name": "GamingonPhone",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://gamingonphone.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "hackernoon-com",
+      "source_name": "HackerNoon",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://hackernoon.com/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "homagames-com",
+      "source_name": "Homa",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://homagames.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "howtomarketagame-com",
+      "source_name": "How To Market A Game",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://howtomarketagame.com/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "is-com",
+      "source_name": "ironSource",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://is.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "kwalee-com",
+      "source_name": "Kwalee Blog",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://www.kwalee.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "liftoff-io",
+      "source_name": "Liftoff",
+      "failure_kind": null,
+      "priority": "high",
+      "reason": "redirected_to_other_domain",
+      "url": "https://liftoff.io/",
+      "instruction": "Открыть источник и подтвердить, что редирект на liftoff.ai ожидаем. Если бренд поглощён или закрыт — удалить либо объединить источник."
+    },
+    {
+      "source_id": "content-liftoff-io",
+      "source_name": "Liftoff Content",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://content.liftoff.io/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "lancaric-me",
+      "source_name": "Matej Lancaric",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://lancaric.me/sitemap_index.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "lancaric-substack-com",
+      "source_name": "Matej Lancaric Substack",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://lancaric.substack.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "corporate-mattel-com",
+      "source_name": "Mattel Corporate",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://corporate.mattel.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "maxpowergaming-co",
+      "source_name": "Max Power Gaming",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.maxpowergaming.co/blog-feed.xml",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "metacoregames-com",
+      "source_name": "Metacore",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://metacoregames.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "mintegral-com",
+      "source_name": "Mintegral",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://mintegral.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "mobidictum-com",
+      "source_name": "Mobidictum",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://mobidictum.com/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "mobilegamer-biz",
+      "source_name": "MobileGamer.biz",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://mobilegamer.biz/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "naavik-co",
+      "source_name": "Naavik",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://naavik.co/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "nintendo-com",
+      "source_name": "Nintendo",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://www.nintendo.com/au/sitemap/0.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "tech-onliner-by",
+      "source_name": "Onlíner Tech",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://tech.onliner.by/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "pcgamer-com",
+      "source_name": "PC Gamer",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.pcgamer.com/feeds.xml",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "blog-photonengine-com",
+      "source_name": "Photon Blog",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://blog.photonengine.com/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "wiki-playgama-com",
+      "source_name": "Playgama",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://wiki.playgama.com/playgama/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "pocketgamer-com",
+      "source_name": "Pocket Gamer",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.pocketgamer.com/index.rss",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "pocketgamer-biz",
+      "source_name": "PocketGamer.biz",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.pocketgamer.biz/index.rss",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "revenuecat-com",
+      "source_name": "RevenueCat",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.revenuecat.com/blog/rss.xml",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "rotrends-com",
+      "source_name": "RO Trends",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://rotrends.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "rockpapershotgun-com",
+      "source_name": "Rock Paper Shotgun",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.rockpapershotgun.com/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "say-games",
+      "source_name": "SayGames",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://say.games/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "sensortower-com",
+      "source_name": "Sensor Tower",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://sensortower.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "go-sensortower-com",
+      "source_name": "Sensor Tower Resources",
+      "failure_kind": "no_articles_found",
+      "priority": "high",
+      "reason": "redirected_to_other_domain",
+      "url": "https://go.sensortower.com/",
+      "instruction": "Открыть источник и подтвердить, что редирект на sensortower.com ожидаем. Если бренд поглощён или закрыт — удалить либо объединить источник."
+    },
+    {
+      "source_id": "singular-net",
+      "source_name": "Singular",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.singular.net/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "smartranking-ru",
+      "source_name": "Smart Ranking",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://smartranking.ru/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "socialpeta-com",
+      "source_name": "SocialPeta",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://socialpeta.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "tap-nation-io",
+      "source_name": "TapNation Blog",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://www.tap-nation.io/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "tech-eu",
+      "source_name": "Tech.eu",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://tech.eu/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "techbriefly-com",
+      "source_name": "TechBriefly",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://techbriefly.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "resources-tenjin-com",
+      "source_name": "Tenjin Resources",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://resources.tenjin.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "blog-udonis-co",
+      "source_name": "Udonis Blog",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://www.blog.udonis.co/rss.xml",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "unity-com",
+      "source_name": "Unity",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://unity.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "blog-unity-com",
+      "source_name": "Unity Blog",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://blog.unity.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "venturebeat-com",
+      "source_name": "VentureBeat",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://venturebeat.com/feed",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "vkplay-ru",
+      "source_name": "VK Play Медиа",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://vkplay.ru/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "voodoo-io",
+      "source_name": "Voodoo",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://voodoo.io/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "blog-voodoo-io",
+      "source_name": "Voodoo Blog",
+      "failure_kind": "no_articles_found",
+      "priority": "high",
+      "reason": "redirected_to_other_domain",
+      "url": "https://blog.voodoo.io/",
+      "instruction": "Открыть источник и подтвердить, что редирект на voodoo.io ожидаем. Если бренд поглощён или закрыт — удалить либо объединить источник."
+    },
+    {
+      "source_id": "xsolla-com",
+      "source_name": "Xsolla",
+      "failure_kind": "no_articles_found",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://xsolla.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "xsolla-ru",
+      "source_name": "Xsolla RU",
+      "failure_kind": "no_articles_found",
+      "priority": "high",
+      "reason": "redirected_to_other_domain",
+      "url": "https://xsolla.ru/",
+      "instruction": "Открыть источник и подтвердить, что редирект на ru.xsolla.com ожидаем. Если бренд поглощён или закрыт — удалить либо объединить источник."
+    },
+    {
+      "source_id": "secrets-tbank-ru",
+      "source_name": "Бизнес-секреты",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://secrets.tbank.ru/feeds/rss-feed.rss",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "kinzhal-media",
+      "source_name": "Кинжал",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://kinzhal.media/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    },
+    {
+      "source_id": "t-j-ru",
+      "source_name": "Т—Ж",
+      "failure_kind": null,
+      "priority": "medium",
+      "reason": "feed_reachable_but_no_accepted_items",
+      "url": "https://t-j.ru/feed/",
+      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
+    }
+  ]
+}
