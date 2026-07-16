@@ -80,6 +80,9 @@ class SourceResult:
     discovered_feeds: list[str] = field(default_factory=list)
     discovered_sitemaps: list[str] = field(default_factory=list)
     attempts: list[dict[str, Any]] = field(default_factory=list)
+    rejection_summary: dict[str, int] = field(default_factory=dict)
+    rejection_examples: dict[str, list[str]] = field(default_factory=dict)
+    manual_check: dict[str, Any] | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
