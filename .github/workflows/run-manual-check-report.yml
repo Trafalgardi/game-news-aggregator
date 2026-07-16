@@ -1,0 +1,35 @@
+name: Run manual-check report now
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    if: github.event.pull_request.head.ref == 'agent/run-manual-check-report'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: agent/run-manual-check-report
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -e ".[dev]"
+      - run: python -m game_news validate-config
+      - run: python -m ruff check .
+      - run: python -m pytest
+      - name: Collect active sources and generate manual checks
+        run: python -m game_news collect --all-sources --hours 36 --strict-min-success 0
+      - name: Commit generated report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.jsonl data/state.json public
+          git commit -m "data: generate manual verification report" || true
+          git push origin HEAD:agent/run-manual-check-report
