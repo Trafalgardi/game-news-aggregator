@@ -1,0 +1,53 @@
+name: All-source audit now
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout audit branch
+        uses: actions/checkout@v7
+        with:
+          ref: agent/run-all-source-audit
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: python -m pip install -e ".[dev]"
+
+      - name: Validate and test
+        run: |
+          python -m game_news validate-config
+          python -m ruff check src tests
+          python -m pytest
+
+      - name: Audit all configured sources
+        shell: bash
+        run: |
+          set -o pipefail
+          python -m game_news collect \
+            --all-sources \
+            --hours 36 \
+            --strict-min-success 0 \
+            2>&1 | tee public/collection-console.log
+
+      - name: Commit audit output to audit branch
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.jsonl data/state.json public
+          git commit -m "chore: capture all-source audit" || true
+          git push origin HEAD:agent/run-all-source-audit
