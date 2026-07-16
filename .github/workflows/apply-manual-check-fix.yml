@@ -1,5 +1,6 @@
 name: Apply manual-check classification fix
 
+# Second commit intentionally triggers this one-time patch workflow.
 on:
   push:
     branches: [agent/fix-manual-check-classification]
