@@ -1,0 +1,1877 @@
+{
+  "generated_at": "2026-07-16T06:58:24Z",
+  "source_count": 92,
+  "ok_count": 45,
+  "problem_count": 47,
+  "failure_summary": {
+    "blocked": 7,
+    "no_recent_articles": 26,
+    "unknown": 14
+  },
+  "working_methods": {
+    "feed": 20,
+    "feed-common": 14,
+    "sitemap": 11
+  },
+  "working_sources": [
+    {
+      "source_id": "80-lv",
+      "source_name": "80 Level",
+      "method": "feed-common",
+      "accepted_count": 10,
+      "elapsed_ms": 1252
+    },
+    {
+      "source_id": "appdevelopermagazine-com",
+      "source_name": "App Developer Magazine",
+      "method": "feed",
+      "accepted_count": 3,
+      "elapsed_ms": 2226
+    },
+    {
+      "source_id": "app2top-ru",
+      "source_name": "App2Top",
+      "method": "feed",
+      "accepted_count": 42,
+      "elapsed_ms": 2786
+    },
+    {
+      "source_id": "appfigures-com",
+      "source_name": "Appfigures",
+      "method": "sitemap",
+      "accepted_count": 12,
+      "elapsed_ms": 8124
+    },
+    {
+      "source_id": "appmagic-rocks",
+      "source_name": "AppMagic Blog",
+      "method": "sitemap",
+      "accepted_count": 12,
+      "elapsed_ms": 3533
+    },
+    {
+      "source_id": "appsflyer-com",
+      "source_name": "AppsFlyer",
+      "method": "feed-common",
+      "accepted_count": 1,
+      "elapsed_ms": 1086
+    },
+    {
+      "source_id": "citybiz-co",
+      "source_name": "citybiz",
+      "method": "feed",
+      "accepted_count": 10,
+      "elapsed_ms": 476
+    },
+    {
+      "source_id": "dev-by",
+      "source_name": "dev.by",
+      "method": "feed-common",
+      "accepted_count": 30,
+      "elapsed_ms": 3370
+    },
+    {
+      "source_id": "devby-io",
+      "source_name": "dev.by / devby.io",
+      "method": "feed-common",
+      "accepted_count": 30,
+      "elapsed_ms": 2514
+    },
+    {
+      "source_id": "dtf-ru",
+      "source_name": "DTF",
+      "method": "feed-common",
+      "accepted_count": 12,
+      "elapsed_ms": 1993
+    },
+    {
+      "source_id": "gamedeveloper-com",
+      "source_name": "Game Developer",
+      "method": "feed-common",
+      "accepted_count": 23,
+      "elapsed_ms": 1449
+    },
+    {
+      "source_id": "newsletter-gamediscover-co",
+      "source_name": "GameDiscoverCo",
+      "method": "feed",
+      "accepted_count": 1,
+      "elapsed_ms": 601
+    },
+    {
+      "source_id": "gamerefinery-com",
+      "source_name": "GameRefinery",
+      "method": "feed",
+      "accepted_count": 1,
+      "elapsed_ms": 1991
+    },
+    {
+      "source_id": "gamesindustry-biz",
+      "source_name": "GamesIndustry.biz",
+      "method": "feed",
+      "accepted_count": 27,
+      "elapsed_ms": 631
+    },
+    {
+      "source_id": "gamespress-com",
+      "source_name": "GamesPress",
+      "method": "feed",
+      "accepted_count": 20,
+      "elapsed_ms": 2307
+    },
+    {
+      "source_id": "hackernoon-com",
+      "source_name": "HackerNoon",
+      "method": "feed-common",
+      "accepted_count": 20,
+      "elapsed_ms": 790
+    },
+    {
+      "source_id": "howtomarketagame-com",
+      "source_name": "How To Market A Game",
+      "method": "feed",
+      "accepted_count": 3,
+      "elapsed_ms": 815
+    },
+    {
+      "source_id": "is-com",
+      "source_name": "ironSource",
+      "method": "sitemap",
+      "accepted_count": 12,
+      "elapsed_ms": 249177
+    },
+    {
+      "source_id": "liftoff-io",
+      "source_name": "Liftoff",
+      "method": "feed-common",
+      "accepted_count": 3,
+      "elapsed_ms": 766
+    },
+    {
+      "source_id": "lancaric-me",
+      "source_name": "Matej Lancaric",
+      "method": "sitemap",
+      "accepted_count": 4,
+      "elapsed_ms": 12223
+    },
+    {
+      "source_id": "maxpowergaming-co",
+      "source_name": "Max Power Gaming",
+      "method": "feed",
+      "accepted_count": 1,
+      "elapsed_ms": 677
+    },
+    {
+      "source_id": "mintegral-com",
+      "source_name": "Mintegral",
+      "method": "sitemap",
+      "accepted_count": 9,
+      "elapsed_ms": 5109
+    },
+    {
+      "source_id": "mobidictum-com",
+      "source_name": "Mobidictum",
+      "method": "feed",
+      "accepted_count": 6,
+      "elapsed_ms": 3856
+    },
+    {
+      "source_id": "mobilegamer-biz",
+      "source_name": "MobileGamer.biz",
+      "method": "feed",
+      "accepted_count": 10,
+      "elapsed_ms": 188
+    },
+    {
+      "source_id": "naavik-co",
+      "source_name": "Naavik",
+      "method": "feed",
+      "accepted_count": 2,
+      "elapsed_ms": 4319
+    },
+    {
+      "source_id": "nintendo-com",
+      "source_name": "Nintendo",
+      "method": "sitemap",
+      "accepted_count": 10,
+      "elapsed_ms": 26682
+    },
+    {
+      "source_id": "tech-onliner-by",
+      "source_name": "Onlíner Tech",
+      "method": "feed",
+      "accepted_count": 18,
+      "elapsed_ms": 1537
+    },
+    {
+      "source_id": "pcgamer-com",
+      "source_name": "PC Gamer",
+      "method": "feed",
+      "accepted_count": 50,
+      "elapsed_ms": 2016
+    },
+    {
+      "source_id": "blog-photonengine-com",
+      "source_name": "Photon Blog",
+      "method": "feed",
+      "accepted_count": 1,
+      "elapsed_ms": 768
+    },
+    {
+      "source_id": "wiki-playgama-com",
+      "source_name": "Playgama",
+      "method": "sitemap",
+      "accepted_count": 12,
+      "elapsed_ms": 4640
+    },
+    {
+      "source_id": "pocketgamer-com",
+      "source_name": "Pocket Gamer",
+      "method": "feed-common",
+      "accepted_count": 25,
+      "elapsed_ms": 2372
+    },
+    {
+      "source_id": "pocketgamer-biz",
+      "source_name": "PocketGamer.biz",
+      "method": "feed-common",
+      "accepted_count": 50,
+      "elapsed_ms": 666
+    },
+    {
+      "source_id": "revenuecat-com",
+      "source_name": "RevenueCat",
+      "method": "feed-common",
+      "accepted_count": 3,
+      "elapsed_ms": 1375
+    },
+    {
+      "source_id": "rotrends-com",
+      "source_name": "RO Trends",
+      "method": "sitemap",
+      "accepted_count": 12,
+      "elapsed_ms": 8804
+    },
+    {
+      "source_id": "rockpapershotgun-com",
+      "source_name": "Rock Paper Shotgun",
+      "method": "feed",
+      "accepted_count": 50,
+      "elapsed_ms": 825
+    },
+    {
+      "source_id": "singular-net",
+      "source_name": "Singular",
+      "method": "feed-common",
+      "accepted_count": 3,
+      "elapsed_ms": 1716
+    },
+    {
+      "source_id": "smartranking-ru",
+      "source_name": "Smart Ranking",
+      "method": "sitemap",
+      "accepted_count": 1,
+      "elapsed_ms": 7214
+    },
+    {
+      "source_id": "socialpeta-com",
+      "source_name": "SocialPeta",
+      "method": "sitemap",
+      "accepted_count": 7,
+      "elapsed_ms": 5736
+    },
+    {
+      "source_id": "tech-eu",
+      "source_name": "Tech.eu",
+      "method": "feed-common",
+      "accepted_count": 20,
+      "elapsed_ms": 960
+    },
+    {
+      "source_id": "blog-udonis-co",
+      "source_name": "Udonis Blog",
+      "method": "feed",
+      "accepted_count": 1,
+      "elapsed_ms": 499
+    },
+    {
+      "source_id": "unity-com",
+      "source_name": "Unity",
+      "method": "sitemap",
+      "accepted_count": 12,
+      "elapsed_ms": 237644
+    },
+    {
+      "source_id": "venturebeat-com",
+      "source_name": "VentureBeat",
+      "method": "feed-common",
+      "accepted_count": 7,
+      "elapsed_ms": 309
+    },
+    {
+      "source_id": "secrets-tbank-ru",
+      "source_name": "Бизнес-секреты",
+      "method": "feed",
+      "accepted_count": 40,
+      "elapsed_ms": 1391
+    },
+    {
+      "source_id": "kinzhal-media",
+      "source_name": "Кинжал",
+      "method": "feed",
+      "accepted_count": 9,
+      "elapsed_ms": 3455
+    },
+    {
+      "source_id": "t-j-ru",
+      "source_name": "Т—Ж",
+      "method": "feed",
+      "accepted_count": 50,
+      "elapsed_ms": 3686
+    }
+  ],
+  "problem_groups": {
+    "blocked": [
+      {
+        "source_id": "hybridcasual-appquantum-com",
+        "source_name": "AppQuantum Hybrid Casual",
+        "failure_kind": "blocked",
+        "method": "none",
+        "elapsed_ms": 1505,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://hybridcasual.appquantum.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "blockchaingamer-biz",
+        "source_name": "BlockchainGamer.biz",
+        "failure_kind": "blocked",
+        "method": "none",
+        "elapsed_ms": 952,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://blockchaingamer.biz/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "businessofapps-com",
+        "source_name": "Business of Apps",
+        "failure_kind": "blocked",
+        "method": "none",
+        "elapsed_ms": 352,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://businessofapps.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "elitegamedevelopers-substack-com",
+        "source_name": "Elite Game Developers",
+        "failure_kind": "blocked",
+        "method": "none",
+        "elapsed_ms": 557,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://elitegamedevelopers.substack.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "gamingonphone-com",
+        "source_name": "GamingonPhone",
+        "failure_kind": "blocked",
+        "method": "none",
+        "elapsed_ms": 148,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://gamingonphone.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "lancaric-substack-com",
+        "source_name": "Matej Lancaric Substack",
+        "failure_kind": "blocked",
+        "method": "none",
+        "elapsed_ms": 574,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://lancaric.substack.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "techbriefly-com",
+        "source_name": "TechBriefly",
+        "failure_kind": "blocked",
+        "method": "none",
+        "elapsed_ms": 492,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://techbriefly.com/sitemap.xml"
+        ]
+      }
+    ],
+    "no_recent_articles": [
+      {
+        "source_id": "appmetrica-yandex-ru",
+        "source_name": "AppMetrica",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 4747,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://appmetrica.yandex.ru/docs/sitemap.xml",
+          "https://appmetrica.yandex.ru/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "appmetrica-yandex-com",
+        "source_name": "AppMetrica",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 13977,
+        "discovered_feeds": [
+          "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fid.yandex.com%2F&noreturn=1&cause=auth&process_uuid=f504ef08-9f34-4f76-a1b1-3b2342eb8046",
+          "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fid.yandex.com%2F&noreturn=1&cause=auth&process_uuid=26553b08-2435-4d34-b3c8-444675058caa",
+          "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fid.yandex.com%2F&noreturn=1&cause=auth&process_uuid=f1ee6f9b-dd0a-4dee-a082-6a04dc7e45fe",
+          "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fid.yandex.com%2F&noreturn=1&cause=auth&process_uuid=77916eae-28ad-45eb-88d7-f04b274403d7",
+          "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fid.yandex.com%2F&noreturn=1&cause=auth&process_uuid=96d50262-5975-4782-8d71-36b27817c659"
+        ],
+        "discovered_sitemaps": [
+          "https://passport.yandex.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "appodeal-com",
+        "source_name": "Appodeal",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6410,
+        "discovered_feeds": [
+          "https://appodeal.com/"
+        ],
+        "discovered_sitemaps": [
+          "https://appodeal.com/sitemap_index.xml"
+        ]
+      },
+      {
+        "source_id": "appquantum-com",
+        "source_name": "AppQuantum",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1592,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://appquantum.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "apptica-com",
+        "source_name": "Apptica",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 5442,
+        "discovered_feeds": [
+          "https://apptica.com/en/feed",
+          "https://apptica.com/en/rss",
+          "https://apptica.com/en/rss.xml",
+          "https://apptica.com/en/feed.xml",
+          "https://apptica.com/en/atom.xml"
+        ],
+        "discovered_sitemaps": [
+          "https://apptica.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "calcalistech-com",
+        "source_name": "CTech",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 5324,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.calcalistech.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "data-ai",
+        "source_name": "data.ai",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 18752,
+        "discovered_feeds": [
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Ffeed",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Frss",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Frss.xml",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Ffeed.xml",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Fatom.xml"
+        ],
+        "discovered_sitemaps": [
+          "https://www.data.ai/mkt/sitemap/index.xml",
+          "https://www.data.ai/cn/sitemap.xml",
+          "https://www.data.ai/app_sitemap_index.xml",
+          "https://www.data.ai/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "deconstructoroffun-com",
+        "source_name": "Deconstructor of Fun",
+        "failure_kind": "no_recent_articles",
+        "method": "sitemap",
+        "elapsed_ms": 1828,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.deconstructoroffun.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "playducky-com",
+        "source_name": "Ducky",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1054,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://playducky.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "gameanalytics-com",
+        "source_name": "GameAnalytics",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 968,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.gameanalytics.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "homagames-com",
+        "source_name": "Homa",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 840,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.homagames.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "kwalee-com",
+        "source_name": "Kwalee Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1477,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.kwalee.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "content-liftoff-io",
+        "source_name": "Liftoff Content",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 921,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://content.liftoff.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "corporate-mattel-com",
+        "source_name": "Mattel Corporate",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6746,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://corporate.mattel.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "metacoregames-com",
+        "source_name": "Metacore",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6862,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://metacoregames.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "playliner-com",
+        "source_name": "Playliner",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6111,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com:443/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "say-games",
+        "source_name": "SayGames",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6317,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://say.games/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "sensortower-com",
+        "source_name": "Sensor Tower",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1305,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "go-sensortower-com",
+        "source_name": "Sensor Tower Resources",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1936,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "tap-nation-io",
+        "source_name": "TapNation Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1809,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.tap-nation.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "resources-tenjin-com",
+        "source_name": "Tenjin Resources",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 938,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://resources.tenjin.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "vkplay-ru",
+        "source_name": "VK Play Медиа",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 7003,
+        "discovered_feeds": [
+          "https://vkplay.ru/feed",
+          "https://vkplay.ru/rss",
+          "https://vkplay.ru/rss.xml",
+          "https://vkplay.ru/feed.xml",
+          "https://vkplay.ru/atom.xml"
+        ],
+        "discovered_sitemaps": [
+          "https://vkplay.ru/sitemap.xml",
+          "https://vkplay.ru/sitemap/sitemap.static.xml",
+          "https://vkplay.ru/sitemap/sitemap.media.xml"
+        ]
+      },
+      {
+        "source_id": "voodoo-io",
+        "source_name": "Voodoo",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 632,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://voodoo.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "blog-voodoo-io",
+        "source_name": "Voodoo Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 874,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://voodoo.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "xsolla-com",
+        "source_name": "Xsolla",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 4177,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://xsolla.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "xsolla-ru",
+        "source_name": "Xsolla RU",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1480,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://ru.xsolla.com/sitemap.xml"
+        ]
+      }
+    ],
+    "unknown": [
+      {
+        "source_id": "azurgames-com",
+        "source_name": "Azur Games Blog",
+        "failure_kind": "unknown",
+        "method": "feed-common",
+        "elapsed_ms": 1926,
+        "discovered_feeds": [
+          "https://azurgames.com/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "crazylabs-com",
+        "source_name": "CrazyLabs",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 388,
+        "discovered_feeds": [
+          "https://www.crazylabs.com/feed/",
+          "https://www.crazylabs.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "press-kwalee-com",
+        "source_name": "Kwalee Press",
+        "failure_kind": "unknown",
+        "method": "none",
+        "elapsed_ms": 1684,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://press.kwalee.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "blog-liquidandgrit-com",
+        "source_name": "Liquid & Grit",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 3275,
+        "discovered_feeds": [
+          "https://blog.liquidandgrit.com/feed"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "maf-ad",
+        "source_name": "MobileAction / MAF",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 2297,
+        "discovered_feeds": [
+          "https://maf.ad/en/feed/",
+          "https://maf.ad/en/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "premortem-games",
+        "source_name": "PreMortem Games",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1484,
+        "discovered_feeds": [
+          "https://premortem.games/feed/",
+          "https://premortem.games/comments/feed/",
+          "https://premortem.games/home/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "progamedev-net",
+        "source_name": "ProGameDev",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 2309,
+        "discovered_feeds": [
+          "https://progamedev.net/feed/",
+          "https://progamedev.net/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "qubicgames-com",
+        "source_name": "QubicGames",
+        "failure_kind": "unknown",
+        "method": "feed-common",
+        "elapsed_ms": 5179,
+        "discovered_feeds": [
+          "https://qubicgames.com/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "supersonic-com",
+        "source_name": "Supersonic / Unity LevelPlay",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1472,
+        "discovered_feeds": [
+          "https://supersonic.com/feed/",
+          "https://supersonic.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "tenjin-com",
+        "source_name": "Tenjin",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1154,
+        "discovered_feeds": [
+          "https://tenjin.com/feed/",
+          "https://tenjin.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "blog-tenjin-com",
+        "source_name": "Tenjin Blog",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1628,
+        "discovered_feeds": [
+          "https://tenjin.com/feed/",
+          "https://tenjin.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "torick-ru",
+        "source_name": "Torick",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1216,
+        "discovered_feeds": [
+          "https://torick.ru/feed/",
+          "https://torick.ru/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "blog-unity-com",
+        "source_name": "Unity Blog",
+        "failure_kind": "unknown",
+        "method": "feed-common",
+        "elapsed_ms": 35954,
+        "discovered_feeds": [
+          "https://unity.com/blog/rss"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "rbc-ru",
+        "source_name": "РБК",
+        "failure_kind": "unknown",
+        "method": "none",
+        "elapsed_ms": 7908,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.rbc.ru/sitemap_index.xml"
+        ]
+      }
+    ],
+    "feed_reachable_but_no_accepted_articles": [
+      {
+        "source_id": "azurgames-com",
+        "source_name": "Azur Games Blog",
+        "failure_kind": "unknown",
+        "method": "feed-common",
+        "elapsed_ms": 1926,
+        "discovered_feeds": [
+          "https://azurgames.com/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "crazylabs-com",
+        "source_name": "CrazyLabs",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 388,
+        "discovered_feeds": [
+          "https://www.crazylabs.com/feed/",
+          "https://www.crazylabs.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "blog-liquidandgrit-com",
+        "source_name": "Liquid & Grit",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 3275,
+        "discovered_feeds": [
+          "https://blog.liquidandgrit.com/feed"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "maf-ad",
+        "source_name": "MobileAction / MAF",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 2297,
+        "discovered_feeds": [
+          "https://maf.ad/en/feed/",
+          "https://maf.ad/en/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "premortem-games",
+        "source_name": "PreMortem Games",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1484,
+        "discovered_feeds": [
+          "https://premortem.games/feed/",
+          "https://premortem.games/comments/feed/",
+          "https://premortem.games/home/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "progamedev-net",
+        "source_name": "ProGameDev",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 2309,
+        "discovered_feeds": [
+          "https://progamedev.net/feed/",
+          "https://progamedev.net/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "qubicgames-com",
+        "source_name": "QubicGames",
+        "failure_kind": "unknown",
+        "method": "feed-common",
+        "elapsed_ms": 5179,
+        "discovered_feeds": [
+          "https://qubicgames.com/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "supersonic-com",
+        "source_name": "Supersonic / Unity LevelPlay",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1472,
+        "discovered_feeds": [
+          "https://supersonic.com/feed/",
+          "https://supersonic.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "tenjin-com",
+        "source_name": "Tenjin",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1154,
+        "discovered_feeds": [
+          "https://tenjin.com/feed/",
+          "https://tenjin.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "blog-tenjin-com",
+        "source_name": "Tenjin Blog",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1628,
+        "discovered_feeds": [
+          "https://tenjin.com/feed/",
+          "https://tenjin.com/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "torick-ru",
+        "source_name": "Torick",
+        "failure_kind": "unknown",
+        "method": "feed",
+        "elapsed_ms": 1216,
+        "discovered_feeds": [
+          "https://torick.ru/feed/",
+          "https://torick.ru/comments/feed/"
+        ],
+        "discovered_sitemaps": []
+      },
+      {
+        "source_id": "blog-unity-com",
+        "source_name": "Unity Blog",
+        "failure_kind": "unknown",
+        "method": "feed-common",
+        "elapsed_ms": 35954,
+        "discovered_feeds": [
+          "https://unity.com/blog/rss"
+        ],
+        "discovered_sitemaps": []
+      }
+    ],
+    "sitemap_reachable_but_no_accepted_articles": [
+      {
+        "source_id": "appmetrica-yandex-ru",
+        "source_name": "AppMetrica",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 4747,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://appmetrica.yandex.ru/docs/sitemap.xml",
+          "https://appmetrica.yandex.ru/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "appodeal-com",
+        "source_name": "Appodeal",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6410,
+        "discovered_feeds": [
+          "https://appodeal.com/"
+        ],
+        "discovered_sitemaps": [
+          "https://appodeal.com/sitemap_index.xml"
+        ]
+      },
+      {
+        "source_id": "apptica-com",
+        "source_name": "Apptica",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 5442,
+        "discovered_feeds": [
+          "https://apptica.com/en/feed",
+          "https://apptica.com/en/rss",
+          "https://apptica.com/en/rss.xml",
+          "https://apptica.com/en/feed.xml",
+          "https://apptica.com/en/atom.xml"
+        ],
+        "discovered_sitemaps": [
+          "https://apptica.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "data-ai",
+        "source_name": "data.ai",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 18752,
+        "discovered_feeds": [
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Ffeed",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Frss",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Frss.xml",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Ffeed.xml",
+          "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Fatom.xml"
+        ],
+        "discovered_sitemaps": [
+          "https://www.data.ai/mkt/sitemap/index.xml",
+          "https://www.data.ai/cn/sitemap.xml",
+          "https://www.data.ai/app_sitemap_index.xml",
+          "https://www.data.ai/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "deconstructoroffun-com",
+        "source_name": "Deconstructor of Fun",
+        "failure_kind": "no_recent_articles",
+        "method": "sitemap",
+        "elapsed_ms": 1828,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.deconstructoroffun.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "playducky-com",
+        "source_name": "Ducky",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1054,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://playducky.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "gameanalytics-com",
+        "source_name": "GameAnalytics",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 968,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.gameanalytics.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "kwalee-com",
+        "source_name": "Kwalee Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1477,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.kwalee.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "corporate-mattel-com",
+        "source_name": "Mattel Corporate",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6746,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://corporate.mattel.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "metacoregames-com",
+        "source_name": "Metacore",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6862,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://metacoregames.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "playliner-com",
+        "source_name": "Playliner",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6111,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com:443/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "sensortower-com",
+        "source_name": "Sensor Tower",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1305,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "go-sensortower-com",
+        "source_name": "Sensor Tower Resources",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1936,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "tap-nation-io",
+        "source_name": "TapNation Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1809,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.tap-nation.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "vkplay-ru",
+        "source_name": "VK Play Медиа",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 7003,
+        "discovered_feeds": [
+          "https://vkplay.ru/feed",
+          "https://vkplay.ru/rss",
+          "https://vkplay.ru/rss.xml",
+          "https://vkplay.ru/feed.xml",
+          "https://vkplay.ru/atom.xml"
+        ],
+        "discovered_sitemaps": [
+          "https://vkplay.ru/sitemap.xml",
+          "https://vkplay.ru/sitemap/sitemap.static.xml",
+          "https://vkplay.ru/sitemap/sitemap.media.xml"
+        ]
+      },
+      {
+        "source_id": "voodoo-io",
+        "source_name": "Voodoo",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 632,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://voodoo.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "blog-voodoo-io",
+        "source_name": "Voodoo Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 874,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://voodoo.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "xsolla-com",
+        "source_name": "Xsolla",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 4177,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://xsolla.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "xsolla-ru",
+        "source_name": "Xsolla RU",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1480,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://ru.xsolla.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "rbc-ru",
+        "source_name": "РБК",
+        "failure_kind": "unknown",
+        "method": "none",
+        "elapsed_ms": 7908,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.rbc.ru/sitemap_index.xml"
+        ]
+      }
+    ],
+    "homepage_404_or_removed": [
+      {
+        "source_id": "appmetrica-yandex-ru",
+        "source_name": "AppMetrica",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 4747,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://appmetrica.yandex.ru/docs/sitemap.xml",
+          "https://appmetrica.yandex.ru/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "appodeal-com",
+        "source_name": "Appodeal",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6410,
+        "discovered_feeds": [
+          "https://appodeal.com/"
+        ],
+        "discovered_sitemaps": [
+          "https://appodeal.com/sitemap_index.xml"
+        ]
+      },
+      {
+        "source_id": "appquantum-com",
+        "source_name": "AppQuantum",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1592,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://appquantum.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "calcalistech-com",
+        "source_name": "CTech",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 5324,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.calcalistech.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "deconstructoroffun-com",
+        "source_name": "Deconstructor of Fun",
+        "failure_kind": "no_recent_articles",
+        "method": "sitemap",
+        "elapsed_ms": 1828,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.deconstructoroffun.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "playducky-com",
+        "source_name": "Ducky",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1054,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://playducky.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "gameanalytics-com",
+        "source_name": "GameAnalytics",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 968,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.gameanalytics.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "homagames-com",
+        "source_name": "Homa",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 840,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.homagames.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "kwalee-com",
+        "source_name": "Kwalee Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1477,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.kwalee.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "press-kwalee-com",
+        "source_name": "Kwalee Press",
+        "failure_kind": "unknown",
+        "method": "none",
+        "elapsed_ms": 1684,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://press.kwalee.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "content-liftoff-io",
+        "source_name": "Liftoff Content",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 921,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://content.liftoff.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "corporate-mattel-com",
+        "source_name": "Mattel Corporate",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6746,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://corporate.mattel.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "metacoregames-com",
+        "source_name": "Metacore",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6862,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://metacoregames.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "playliner-com",
+        "source_name": "Playliner",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6111,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com:443/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "say-games",
+        "source_name": "SayGames",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 6317,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://say.games/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "sensortower-com",
+        "source_name": "Sensor Tower",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1305,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "go-sensortower-com",
+        "source_name": "Sensor Tower Resources",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1936,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://sensortower.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "tap-nation-io",
+        "source_name": "TapNation Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1809,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.tap-nation.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "resources-tenjin-com",
+        "source_name": "Tenjin Resources",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 938,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://resources.tenjin.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "voodoo-io",
+        "source_name": "Voodoo",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 632,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://voodoo.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "blog-voodoo-io",
+        "source_name": "Voodoo Blog",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 874,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://voodoo.io/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "xsolla-com",
+        "source_name": "Xsolla",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 4177,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://xsolla.com/sitemap.xml"
+        ]
+      },
+      {
+        "source_id": "xsolla-ru",
+        "source_name": "Xsolla RU",
+        "failure_kind": "no_recent_articles",
+        "method": "none",
+        "elapsed_ms": 1480,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://ru.xsolla.com/sitemap.xml"
+        ]
+      }
+    ],
+    "unauthorized_401": [
+      {
+        "source_id": "rbc-ru",
+        "source_name": "РБК",
+        "failure_kind": "unknown",
+        "method": "none",
+        "elapsed_ms": 7908,
+        "discovered_feeds": [],
+        "discovered_sitemaps": [
+          "https://www.rbc.ru/sitemap_index.xml"
+        ]
+      }
+    ]
+  },
+  "feed_urls_to_pin": [
+    {
+      "source_id": "80-lv",
+      "source_name": "80 Level",
+      "method": "feed-common",
+      "feed_url": "https://80.lv/feed"
+    },
+    {
+      "source_id": "appdevelopermagazine-com",
+      "source_name": "App Developer Magazine",
+      "method": "feed",
+      "feed_url": "https://appdevelopermagazine.com/RSS"
+    },
+    {
+      "source_id": "app2top-ru",
+      "source_name": "App2Top",
+      "method": "feed",
+      "feed_url": "https://app2top.ru//feed/"
+    },
+    {
+      "source_id": "appmagic-rocks",
+      "source_name": "AppMagic Blog",
+      "method": "sitemap",
+      "feed_url": "https://appmagic.rocks/feed"
+    },
+    {
+      "source_id": "appsflyer-com",
+      "source_name": "AppsFlyer",
+      "method": "feed-common",
+      "feed_url": "https://www.appsflyer.com:443/feed"
+    },
+    {
+      "source_id": "citybiz-co",
+      "source_name": "citybiz",
+      "method": "feed",
+      "feed_url": "https://www.citybiz.co/feed/"
+    },
+    {
+      "source_id": "dev-by",
+      "source_name": "dev.by",
+      "method": "feed-common",
+      "feed_url": "https://devby.io/news"
+    },
+    {
+      "source_id": "devby-io",
+      "source_name": "dev.by / devby.io",
+      "method": "feed-common",
+      "feed_url": "https://devby.io/news"
+    },
+    {
+      "source_id": "dtf-ru",
+      "source_name": "DTF",
+      "method": "feed-common",
+      "feed_url": "https://dtf.ru/rss"
+    },
+    {
+      "source_id": "gamedeveloper-com",
+      "source_name": "Game Developer",
+      "method": "feed-common",
+      "feed_url": "https://www.gamedeveloper.com/"
+    },
+    {
+      "source_id": "newsletter-gamediscover-co",
+      "source_name": "GameDiscoverCo",
+      "method": "feed",
+      "feed_url": "https://newsletter.gamediscover.co/feed"
+    },
+    {
+      "source_id": "gamerefinery-com",
+      "source_name": "GameRefinery",
+      "method": "feed",
+      "feed_url": "https://www.gamerefinery.com/feed/"
+    },
+    {
+      "source_id": "gamesindustry-biz",
+      "source_name": "GamesIndustry.biz",
+      "method": "feed",
+      "feed_url": "https://www.gamesindustry.biz/feed"
+    },
+    {
+      "source_id": "gamespress-com",
+      "source_name": "GamesPress",
+      "method": "feed",
+      "feed_url": "https://www.gamespress.com/en-US/News/RSS"
+    },
+    {
+      "source_id": "hackernoon-com",
+      "source_name": "HackerNoon",
+      "method": "feed-common",
+      "feed_url": "https://hackernoon.com/feed"
+    },
+    {
+      "source_id": "howtomarketagame-com",
+      "source_name": "How To Market A Game",
+      "method": "feed",
+      "feed_url": "https://howtomarketagame.com/feed/"
+    },
+    {
+      "source_id": "liftoff-io",
+      "source_name": "Liftoff",
+      "method": "feed-common",
+      "feed_url": "https://liftoff.ai/feed/"
+    },
+    {
+      "source_id": "lancaric-me",
+      "source_name": "Matej Lancaric",
+      "method": "sitemap",
+      "feed_url": "https://lancaric.me"
+    },
+    {
+      "source_id": "maxpowergaming-co",
+      "source_name": "Max Power Gaming",
+      "method": "feed",
+      "feed_url": "https://www.maxpowergaming.co/blog-feed.xml"
+    },
+    {
+      "source_id": "mobidictum-com",
+      "source_name": "Mobidictum",
+      "method": "feed",
+      "feed_url": "https://mobidictum.com/feed/"
+    },
+    {
+      "source_id": "mobilegamer-biz",
+      "source_name": "MobileGamer.biz",
+      "method": "feed",
+      "feed_url": "https://mobilegamer.biz/feed/"
+    },
+    {
+      "source_id": "naavik-co",
+      "source_name": "Naavik",
+      "method": "feed",
+      "feed_url": "https://naavik.co/feed/"
+    },
+    {
+      "source_id": "tech-onliner-by",
+      "source_name": "Onlíner Tech",
+      "method": "feed",
+      "feed_url": "https://tech.onliner.by/feed"
+    },
+    {
+      "source_id": "pcgamer-com",
+      "source_name": "PC Gamer",
+      "method": "feed",
+      "feed_url": "https://www.pcgamer.com/feeds.xml"
+    },
+    {
+      "source_id": "blog-photonengine-com",
+      "source_name": "Photon Blog",
+      "method": "feed",
+      "feed_url": "https://blog.photonengine.com/feed/"
+    },
+    {
+      "source_id": "wiki-playgama-com",
+      "source_name": "Playgama",
+      "method": "sitemap",
+      "feed_url": "https://wiki.playgama.com/playgama/rss.xml"
+    },
+    {
+      "source_id": "pocketgamer-com",
+      "source_name": "Pocket Gamer",
+      "method": "feed-common",
+      "feed_url": "https://www.pocketgamer.com/index.rss"
+    },
+    {
+      "source_id": "pocketgamer-biz",
+      "source_name": "PocketGamer.biz",
+      "method": "feed-common",
+      "feed_url": "https://www.pocketgamer.biz/index.rss"
+    },
+    {
+      "source_id": "revenuecat-com",
+      "source_name": "RevenueCat",
+      "method": "feed-common",
+      "feed_url": "https://www.revenuecat.com/blog/rss.xml"
+    },
+    {
+      "source_id": "rockpapershotgun-com",
+      "source_name": "Rock Paper Shotgun",
+      "method": "feed",
+      "feed_url": "https://www.rockpapershotgun.com/feed"
+    },
+    {
+      "source_id": "singular-net",
+      "source_name": "Singular",
+      "method": "feed-common",
+      "feed_url": "https://www.singular.net/feed/"
+    },
+    {
+      "source_id": "tech-eu",
+      "source_name": "Tech.eu",
+      "method": "feed-common",
+      "feed_url": "https://tech.eu/feed"
+    },
+    {
+      "source_id": "blog-udonis-co",
+      "source_name": "Udonis Blog",
+      "method": "feed",
+      "feed_url": "https://www.blog.udonis.co/rss.xml"
+    },
+    {
+      "source_id": "venturebeat-com",
+      "source_name": "VentureBeat",
+      "method": "feed-common",
+      "feed_url": "https://venturebeat.com/feed"
+    },
+    {
+      "source_id": "secrets-tbank-ru",
+      "source_name": "Бизнес-секреты",
+      "method": "feed",
+      "feed_url": "https://secrets.tbank.ru/feeds/rss-feed.rss"
+    },
+    {
+      "source_id": "kinzhal-media",
+      "source_name": "Кинжал",
+      "method": "feed",
+      "feed_url": "https://kinzhal.media/feed/"
+    },
+    {
+      "source_id": "t-j-ru",
+      "source_name": "Т—Ж",
+      "method": "feed",
+      "feed_url": "https://t-j.ru/feed/"
+    }
+  ],
+  "slowest_sources": [
+    {
+      "source_id": "is-com",
+      "source_name": "ironSource",
+      "status": "ok",
+      "elapsed_ms": 249177
+    },
+    {
+      "source_id": "unity-com",
+      "source_name": "Unity",
+      "status": "ok",
+      "elapsed_ms": 237644
+    },
+    {
+      "source_id": "blog-unity-com",
+      "source_name": "Unity Blog",
+      "status": "warning",
+      "elapsed_ms": 35954
+    },
+    {
+      "source_id": "nintendo-com",
+      "source_name": "Nintendo",
+      "status": "ok",
+      "elapsed_ms": 26682
+    },
+    {
+      "source_id": "data-ai",
+      "source_name": "data.ai",
+      "status": "warning",
+      "elapsed_ms": 18752
+    },
+    {
+      "source_id": "appmetrica-yandex-com",
+      "source_name": "AppMetrica",
+      "status": "warning",
+      "elapsed_ms": 13977
+    },
+    {
+      "source_id": "lancaric-me",
+      "source_name": "Matej Lancaric",
+      "status": "ok",
+      "elapsed_ms": 12223
+    },
+    {
+      "source_id": "rotrends-com",
+      "source_name": "RO Trends",
+      "status": "ok",
+      "elapsed_ms": 8804
+    },
+    {
+      "source_id": "appfigures-com",
+      "source_name": "Appfigures",
+      "status": "ok",
+      "elapsed_ms": 8124
+    },
+    {
+      "source_id": "rbc-ru",
+      "source_name": "РБК",
+      "status": "warning",
+      "elapsed_ms": 7908
+    },
+    {
+      "source_id": "smartranking-ru",
+      "source_name": "Smart Ranking",
+      "status": "ok",
+      "elapsed_ms": 7214
+    },
+    {
+      "source_id": "vkplay-ru",
+      "source_name": "VK Play Медиа",
+      "status": "warning",
+      "elapsed_ms": 7003
+    },
+    {
+      "source_id": "metacoregames-com",
+      "source_name": "Metacore",
+      "status": "warning",
+      "elapsed_ms": 6862
+    },
+    {
+      "source_id": "corporate-mattel-com",
+      "source_name": "Mattel Corporate",
+      "status": "warning",
+      "elapsed_ms": 6746
+    },
+    {
+      "source_id": "appodeal-com",
+      "source_name": "Appodeal",
+      "status": "warning",
+      "elapsed_ms": 6410
+    }
+  ]
+}
