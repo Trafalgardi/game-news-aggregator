@@ -1,6 +1,6 @@
 # Диагностика источников
 
-Обновлено: `2026-07-16T06:49:02Z`
+Обновлено: `2026-07-16T06:58:24Z`
 
 ## Сводка
 
@@ -15,7 +15,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `4727 ms`
+- Время: `4747 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `10`
 
@@ -35,7 +35,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `14798 ms`
+- Время: `13977 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -45,7 +45,7 @@
   - `feed-common` → `empty` — https://passport.yandex.com/rss.xml
   - `feed-common` → `empty` — https://passport.yandex.com/feed.xml
   - `feed-common` → `empty` — https://passport.yandex.com/atom.xml
-  - `html-listing` → `empty` — https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=bc80d0e8-2779-4866-a4af-ea7fec1f6768
+  - `html-listing` → `empty` — https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=6a36f8a0-2ae6-4d96-83d3-6d298c8fa24e
   - `robots` → `ok` — https://passport.yandex.com/robots.txt
   - `sitemap` → `error` — https://passport.yandex.com/sitemap.xml — ParseError: not well-formed (invalid token): line 13, column 14
 
@@ -54,7 +54,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `8613 ms`
+- Время: `6410 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `12`
 
@@ -76,7 +76,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `1942 ms`
+- Время: `1592 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -95,7 +95,7 @@
 - Статус: `warning`
 - Категория ошибки: `blocked`
 - Метод: `none`
-- Время: `1348 ms`
+- Время: `1505 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -113,7 +113,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `5389 ms`
+- Время: `5442 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `11`
 
@@ -134,7 +134,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed-common`
-- Время: `1749 ms`
+- Время: `1926 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -146,7 +146,7 @@
 - Статус: `warning`
 - Категория ошибки: `blocked`
 - Метод: `none`
-- Время: `944 ms`
+- Время: `952 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -164,7 +164,7 @@
 - Статус: `warning`
 - Категория ошибки: `blocked`
 - Метод: `none`
-- Время: `480 ms`
+- Время: `352 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -182,7 +182,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `790 ms`
+- Время: `388 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -194,7 +194,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `5037 ms`
+- Время: `5324 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -213,7 +213,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `26437 ms`
+- Время: `18752 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `20`
 
@@ -243,7 +243,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `sitemap`
-- Время: `2272 ms`
+- Время: `1828 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `10`
 
@@ -263,7 +263,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `2834 ms`
+- Время: `1054 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -282,7 +282,7 @@
 - Статус: `warning`
 - Категория ошибки: `blocked`
 - Метод: `none`
-- Время: `680 ms`
+- Время: `557 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -300,7 +300,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `2259 ms`
+- Время: `968 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -319,7 +319,7 @@
 - Статус: `warning`
 - Категория ошибки: `blocked`
 - Метод: `none`
-- Время: `219 ms`
+- Время: `148 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -337,7 +337,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `1022 ms`
+- Время: `840 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -356,7 +356,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `6164 ms`
+- Время: `1477 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -375,7 +375,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `none`
-- Время: `1639 ms`
+- Время: `1684 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -393,7 +393,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `2548 ms`
+- Время: `921 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -411,7 +411,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `1914 ms`
+- Время: `3275 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -423,7 +423,7 @@
 - Статус: `warning`
 - Категория ошибки: `blocked`
 - Метод: `none`
-- Время: `490 ms`
+- Время: `574 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -441,7 +441,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `2924 ms`
+- Время: `6746 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -460,7 +460,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `6238 ms`
+- Время: `6862 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -479,7 +479,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `1922 ms`
+- Время: `2297 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -491,7 +491,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `7622 ms`
+- Время: `6111 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `15`
 
@@ -516,7 +516,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `1556 ms`
+- Время: `1484 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -528,7 +528,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `2145 ms`
+- Время: `2309 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -540,7 +540,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed-common`
-- Время: `5802 ms`
+- Время: `5179 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -552,7 +552,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `6615 ms`
+- Время: `6317 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -571,7 +571,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `1795 ms`
+- Время: `1305 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `15`
 
@@ -596,7 +596,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `5596 ms`
+- Время: `1936 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `15`
 
@@ -621,7 +621,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `2932 ms`
+- Время: `1472 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -633,7 +633,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `1946 ms`
+- Время: `1809 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -652,7 +652,7 @@
 - Статус: `warning`
 - Категория ошибки: `blocked`
 - Метод: `none`
-- Время: `536 ms`
+- Время: `492 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -670,7 +670,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `1233 ms`
+- Время: `1154 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -682,7 +682,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `1588 ms`
+- Время: `1628 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -694,7 +694,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `2539 ms`
+- Время: `938 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `8`
 
@@ -712,7 +712,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed`
-- Время: `1991 ms`
+- Время: `1216 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -724,7 +724,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `feed-common`
-- Время: `39058 ms`
+- Время: `35954 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `2`
 
@@ -736,7 +736,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `8616 ms`
+- Время: `7003 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `21`
 
@@ -767,7 +767,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `533 ms`
+- Время: `632 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -786,7 +786,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `1161 ms`
+- Время: `874 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -805,7 +805,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `4409 ms`
+- Время: `4177 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `15`
 
@@ -830,7 +830,7 @@
 - Статус: `warning`
 - Категория ошибки: `no_recent_articles`
 - Метод: `none`
-- Время: `1760 ms`
+- Время: `1480 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `9`
 
@@ -849,7 +849,7 @@
 - Статус: `warning`
 - Категория ошибки: `unknown`
 - Метод: `none`
-- Время: `8209 ms`
+- Время: `7908 ms`
 - Ошибка: `No recent dated articles found`
 - Попыток: `26`
 
@@ -861,21 +861,21 @@
   - `feed-common` → `error` — https://rbc.ru/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://www.rbc.ru/atom.xml
   - `robots` → `ok` — https://rbc.ru/robots.txt
   - `sitemap` → `ok` — https://www.rbc.ru/sitemap_index.xml
-  - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_692.xml
-  - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_979.xml
   - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_854.xml
+  - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_945.xml
+  - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_979.xml
   - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_889.xml
-  - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_963.xml
+  - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_692.xml
   - `sitemap-child` → `ok` — https://www.rbc.ru/sitemap_590.xml
-  - `article-enrich` → `error` — https://www.rbc.ru/story/61ee7c0f9a7947051824f535 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/story/61ee7c0f9a7947051824f535
-  - `article-enrich` → `error` — https://www.rbc.ru/politics/16/07/2026/6a587cce9a794742b5b46605 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/politics/16/07/2026/6a587cce9a794742b5b46605
   - `article-enrich` → `error` — https://www.rbc.ru/story/6734a0de9a7947d05d2e8128 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/story/6734a0de9a7947d05d2e8128
-  - `article-enrich` → `error` — https://www.rbc.ru/politics/16/07/2026/6a5874409a794776a1227c00 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/politics/16/07/2026/6a5874409a794776a1227c00
-  - `article-enrich` → `error` — https://www.rbc.ru/politics/16/07/2026/6a58769c9a79474a7981cefa — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/politics/16/07/2026/6a58769c9a79474a7981cefa
-  - `article-enrich` → `error` — https://www.rbc.ru/rbcfreenews/6a5877f69a79470f1e40df65 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/rbcfreenews/6a5877f69a79470f1e40df65
-  - `article-enrich` → `error` — https://www.rbc.ru/sport/16/07/2026/6a586ec79a7947701e92171c — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/sport/16/07/2026/6a586ec79a7947701e92171c
-  - `article-enrich` → `error` — https://www.rbc.ru/politics/16/07/2026/6a5865819a7947b940cf6f40 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/politics/16/07/2026/6a5865819a7947b940cf6f40
+  - `article-enrich` → `error` — https://www.rbc.ru/story/69a29bdb9a7947d25744d371 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/story/69a29bdb9a7947d25744d371
+  - `article-enrich` → `error` — https://www.rbc.ru/sport/16/07/2026/6a57d14e9a79470d72a134f8 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/sport/16/07/2026/6a57d14e9a79470d72a134f8
   - `article-enrich` → `error` — https://www.rbc.ru/story/worldcup2026 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/story/worldcup2026
-  - `article-enrich` → `error` — https://www.rbc.ru/rbcfreenews/6a58015a9a7947b4854bf92a — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/rbcfreenews/6a58015a9a7947b4854bf92a
   - `article-enrich` → `error` — https://www.rbc.ru/rbcfreenews/6a58048f9a7947ee016e8631 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/rbcfreenews/6a58048f9a7947ee016e8631
-  - `article-enrich` → `error` — https://www.rbc.ru/quote — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/quote
+  - `article-enrich` → `error` — https://www.rbc.ru/story/61ee7c0f9a7947051824f535 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/story/61ee7c0f9a7947051824f535
+  - `article-enrich` → `error` — https://www.rbc.ru/politics/16/07/2026/6a587db09a7947b5470223e0 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/politics/16/07/2026/6a587db09a7947b5470223e0
+  - `article-enrich` → `error` — https://www.rbc.ru/politics/16/07/2026/6a587cce9a794742b5b46605 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/politics/16/07/2026/6a587cce9a794742b5b46605
+  - `article-enrich` → `error` — https://www.rbc.ru/politics/16/07/2026/6a5874df9a794782edfd5494 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/politics/16/07/2026/6a5874df9a794782edfd5494
+  - `article-enrich` → `error` — https://www.rbc.ru/rbcfreenews/6a5872649a79476695a52f56 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/rbcfreenews/6a5872649a79476695a52f56
+  - `article-enrich` → `error` — https://www.rbc.ru/story/5422bb83cbb20f63f25fb481 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/story/5422bb83cbb20f63f25fb481
+  - `article-enrich` → `error` — https://www.rbc.ru/rbcfreenews/6a5877f69a79470f1e40df65 — HTTPError: 401 Client Error: Unauthorized for url: https://www.rbc.ru/rbcfreenews/6a5877f69a79470f1e40df65
