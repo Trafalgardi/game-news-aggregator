@@ -1,6 +1,14 @@
 name: Collect and publish news
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/collect-news.yml"
+      - "src/game_news/collector.py"
+      - "src/game_news/discovery.py"
+      - "src/game_news/models.py"
+      - "src/game_news/cli.py"
   workflow_dispatch:
     inputs:
       window_hours:
