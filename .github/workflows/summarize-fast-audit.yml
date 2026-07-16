@@ -1,0 +1,185 @@
+name: Summarize fast audit
+
+on:
+  push:
+    branches: [agent/run-fast-all-source-audit]
+    paths:
+      - ".github/workflows/summarize-fast-audit.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  summarize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: agent/run-fast-all-source-audit
+          fetch-depth: 0
+
+      - name: Build compact audit summary
+        shell: bash
+        run: |
+          python - <<'PY'
+          from __future__ import annotations
+
+          import json
+          from collections import Counter
+          from pathlib import Path
+
+          diagnostics = json.loads(Path('public/diagnostics.json').read_text(encoding='utf-8'))
+          sources = diagnostics['sources']
+
+          def has_ok_attempt(source, prefix):
+              return any(
+                  str(attempt.get('stage', '')).startswith(prefix)
+                  and attempt.get('outcome') == 'ok'
+                  for attempt in source.get('attempts', [])
+              )
+
+          def errors(source):
+              return [
+                  str(attempt.get('error') or '')
+                  for attempt in source.get('attempts', [])
+                  if attempt.get('error')
+              ]
+
+          ok = [source for source in sources if source['status'] == 'ok']
+          problem = [source for source in sources if source['status'] != 'ok']
+
+          groups = {
+              'blocked': [source for source in problem if source.get('failure_kind') == 'blocked'],
+              'no_recent_articles': [source for source in problem if source.get('failure_kind') == 'no_recent_articles'],
+              'unknown': [source for source in problem if source.get('failure_kind') == 'unknown'],
+              'feed_reachable_but_no_accepted_articles': [
+                  source for source in problem if has_ok_attempt(source, 'feed')
+              ],
+              'sitemap_reachable_but_no_accepted_articles': [
+                  source for source in problem
+                  if has_ok_attempt(source, 'sitemap') and not has_ok_attempt(source, 'feed')
+              ],
+              'homepage_404_or_removed': [
+                  source for source in problem
+                  if any('404 Client Error' in error for error in errors(source)[:1])
+              ],
+              'unauthorized_401': [
+                  source for source in problem
+                  if any('401 Client Error' in error for error in errors(source))
+              ],
+          }
+
+          method_counts = Counter(source.get('method') or 'none' for source in ok)
+          pinned_feed_candidates = []
+          for source in ok:
+              feeds = source.get('discovered_feeds') or []
+              if feeds:
+                  pinned_feed_candidates.append({
+                      'source_id': source['source_id'],
+                      'source_name': source['source_name'],
+                      'method': source.get('method'),
+                      'feed_url': feeds[0],
+                  })
+
+          summary = {
+              'generated_at': diagnostics['generated_at'],
+              'source_count': len(sources),
+              'ok_count': len(ok),
+              'problem_count': len(problem),
+              'failure_summary': diagnostics.get('failure_summary', {}),
+              'working_methods': dict(sorted(method_counts.items())),
+              'working_sources': [
+                  {
+                      'source_id': source['source_id'],
+                      'source_name': source['source_name'],
+                      'method': source.get('method'),
+                      'accepted_count': source.get('accepted_count', 0),
+                      'elapsed_ms': source.get('elapsed_ms', 0),
+                  }
+                  for source in sorted(ok, key=lambda item: item['source_name'].casefold())
+              ],
+              'problem_groups': {
+                  key: [
+                      {
+                          'source_id': source['source_id'],
+                          'source_name': source['source_name'],
+                          'failure_kind': source.get('failure_kind'),
+                          'method': source.get('method'),
+                          'elapsed_ms': source.get('elapsed_ms', 0),
+                          'discovered_feeds': source.get('discovered_feeds', []),
+                          'discovered_sitemaps': source.get('discovered_sitemaps', []),
+                      }
+                      for source in sorted(value, key=lambda item: item['source_name'].casefold())
+                  ]
+                  for key, value in groups.items()
+              },
+              'feed_urls_to_pin': pinned_feed_candidates,
+              'slowest_sources': [
+                  {
+                      'source_id': source['source_id'],
+                      'source_name': source['source_name'],
+                      'status': source['status'],
+                      'elapsed_ms': source.get('elapsed_ms', 0),
+                  }
+                  for source in sorted(sources, key=lambda item: item.get('elapsed_ms', 0), reverse=True)[:15]
+              ],
+          }
+
+          Path('public/audit-summary.json').write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+
+          lines = [
+              '# Краткий отчёт полного аудита',
+              '',
+              f"- Обновлено: `{summary['generated_at']}`",
+              f"- Проверено: **{summary['source_count']}**",
+              f"- Работает: **{summary['ok_count']}**",
+              f"- Требует внимания: **{summary['problem_count']}**",
+              '',
+              '## Причины',
+              '',
+          ]
+          for key, value in summary['failure_summary'].items():
+              lines.append(f'- `{key}`: **{value}**')
+
+          lines.extend(['', '## Рабочие источники', ''])
+          for source in summary['working_sources']:
+              lines.append(
+                  f"- **{source['source_name']}** (`{source['source_id']}`): "
+                  f"{source['method']}, принято {source['accepted_count']}, {source['elapsed_ms']} ms"
+              )
+
+          for group_name, group_sources in summary['problem_groups'].items():
+              lines.extend(['', f'## {group_name}', ''])
+              for source in group_sources:
+                  feeds = ', '.join(source['discovered_feeds'][:2]) or '—'
+                  sitemaps = ', '.join(source['discovered_sitemaps'][:2]) or '—'
+                  lines.append(
+                      f"- **{source['source_name']}** (`{source['source_id']}`): "
+                      f"kind={source['failure_kind']}, method={source['method']}, "
+                      f"feeds={feeds}, sitemaps={sitemaps}"
+                  )
+
+          lines.extend(['', '## Кандидаты на фиксацию RSS', ''])
+          for source in summary['feed_urls_to_pin']:
+              lines.append(
+                  f"- `{source['source_id']}` → {source['feed_url']} ({source['method']})"
+              )
+
+          lines.extend(['', '## Самые медленные', ''])
+          for source in summary['slowest_sources']:
+              lines.append(
+                  f"- **{source['source_name']}**: {source['elapsed_ms']} ms, {source['status']}"
+              )
+
+          Path('public/audit-summary.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+          PY
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/audit-summary.json public/audit-summary.md
+          git commit -m "chore: summarize all-source audit"
+          git push origin HEAD:agent/run-fast-all-source-audit
