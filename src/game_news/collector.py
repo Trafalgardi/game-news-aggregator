@@ -65,6 +65,13 @@ def _failure_kind(error: str | None, attempts: list[dict], rejection_summary: di
         return "missing_dates"
     if rejection_summary.get("invalid_url", 0) > 0:
         return "invalid_articles"
+    if any(
+        str(item.get("stage", "")).startswith(("feed", "sitemap"))
+        and item.get("outcome") == "ok"
+        and int(item.get("item_count") or 0) > 0
+        for item in attempts
+    ):
+        return "no_recent_articles"
     if any(item.get("outcome") == "empty" for item in attempts):
         return "no_articles_found"
     return "unknown"
@@ -254,9 +261,11 @@ def _collect_source(
         error = None if articles else "No accepted recent dated articles"
         summary_dict = dict(sorted(rejection_summary.items()))
         failure_kind = None if articles else _failure_kind(error, attempts, summary_dict)
-        manual_check = _manual_check_for(
-            source, method, feeds, sitemaps, attempts, failure_kind, summary_dict
-        )
+        manual_check = None
+        if not articles:
+            manual_check = _manual_check_for(
+                source, method, feeds, sitemaps, attempts, failure_kind, summary_dict
+            )
         return articles, SourceResult(
             source_id=source.id,
             source_name=source.name,
