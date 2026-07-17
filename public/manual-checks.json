@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-16T07:49:40Z",
-  "count": 16,
+  "generated_at": "2026-07-17T06:06:26Z",
+  "count": 18,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -119,6 +119,24 @@
       "reason": "blocked_on_github_runner",
       "url": "https://techbriefly.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "tenjin-com",
+      "source_name": "Tenjin",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://tenjin.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "blog-tenjin-com",
+      "source_name": "Tenjin Blog",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://blog.tenjin.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "resources-tenjin-com",
