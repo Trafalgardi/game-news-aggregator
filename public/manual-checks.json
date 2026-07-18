@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-17T06:06:26Z",
-  "count": 18,
+  "generated_at": "2026-07-18T05:59:01Z",
+  "count": 21,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -38,6 +38,15 @@
       "reason": "blocked_on_github_runner",
       "url": "https://businessofapps.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "citybiz-co",
+      "source_name": "citybiz",
+      "failure_kind": "unknown",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://citybiz.co/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "calcalistech-com",
@@ -103,6 +112,42 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
+      "source_id": "metacoregames-com",
+      "source_name": "Metacore",
+      "failure_kind": "timeout",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://metacoregames.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
+      "source_id": "mobidictum-com",
+      "source_name": "Mobidictum",
+      "failure_kind": "unknown",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://mobidictum.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "maf-ad",
+      "source_name": "MobileAction / MAF",
+      "failure_kind": "unknown",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://maf.ad/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "naavik-co",
+      "source_name": "Naavik",
+      "failure_kind": "unknown",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://naavik.co/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
       "source_id": "say-games",
       "source_name": "SayGames",
       "failure_kind": "no_articles_found",
@@ -119,24 +164,6 @@
       "reason": "blocked_on_github_runner",
       "url": "https://techbriefly.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
-      "source_id": "tenjin-com",
-      "source_name": "Tenjin",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://tenjin.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "blog-tenjin-com",
-      "source_name": "Tenjin Blog",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://blog.tenjin.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "resources-tenjin-com",
