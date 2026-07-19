@@ -1,15 +1,15 @@
 # Диагностика источников
 
-Обновлено: `2026-07-18T05:59:01Z`
+Обновлено: `2026-07-19T06:14:26Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **22**
+- `no_recent_articles`: **23**
 - `blocked`: **7**
 - `no_articles_found`: **6**
-- `timeout`: **4**
+- `timeout`: **5**
 - `unknown`: **4**
 
 ## Проблемные источники
@@ -22,7 +22,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5905 ms`
+- Время: `7761 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -47,7 +47,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1845 ms`
+- Время: `1456 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -69,7 +69,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1290 ms`
+- Время: `1044 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -90,7 +90,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5868 ms`
+- Время: `5517 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -106,6 +106,27 @@
   - `sitemap-child` → `ok` — https://apptica.com/sitemap-0.xml
   - `sitemap-child` → `ok` — https://apptica.com/blog/sitemap.xml
 
+### Azur Games Blog (`azurgames-com`)
+
+- Статус: `warning`
+- Категория: `timeout`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `64394 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `8`
+
+  - `homepage` → `error` — https://azurgames.com/ — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbfb8d14c80>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://azurgames.com/feed — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbfb8f5fa10>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://azurgames.com/rss — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: /rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbfc0316a50>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://azurgames.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbfb81aa870>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://azurgames.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbfb89ea2d0>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://azurgames.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbf9bf30a40>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+  - `robots` → `error` — https://azurgames.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbfb81a81d0>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+  - `sitemap` → `error` — https://azurgames.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='azurgames.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='azurgames.com', port=443) at 0x7fbfc0bef170>, 'Connection to azurgames.com timed out. (connect timeout=8)'))
+
 ### BlockchainGamer.biz (`blockchaingamer-biz`)
 
 - Статус: `warning`
@@ -114,7 +135,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `992 ms`
+- Время: `734 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -135,7 +156,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `332 ms`
+- Время: `237 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -156,7 +177,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `634 ms`
+- Время: `339 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -177,7 +198,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1270 ms`
+- Время: `306 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -192,7 +213,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4908 ms`
+- Время: `9055 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -214,7 +235,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `26173 ms`
+- Время: `33593 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `20`
 
@@ -247,7 +268,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2173 ms`
+- Время: `1472 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -269,7 +290,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `567 ms`
+- Время: `345 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -290,7 +311,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1463 ms`
+- Время: `1265 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -312,7 +333,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1963 ms`
+- Время: `1597 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -327,7 +348,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `309 ms`
+- Время: `166 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -348,7 +369,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1454 ms`
+- Время: `1044 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -370,7 +391,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `68413 ms`
+- Время: `68600 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -391,7 +412,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8394 ms`
+- Время: `7173 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -413,7 +434,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2250 ms`
+- Время: `1194 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -434,7 +455,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `4157 ms`
+- Время: `2294 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -449,7 +470,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `697 ms`
+- Время: `862 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -470,7 +491,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2385 ms`
+- Время: `2469 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -487,23 +508,46 @@
 ### Metacore (`metacoregames-com`)
 
 - Статус: `warning`
-- Категория: `timeout`
+- Категория: `no_recent_articles`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `14008 ms`
+- Время: `8981 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
+- Попыток: `9`
 
-  - `homepage` → `error` — https://metacoregames.com/ — ConnectionError: HTTPSConnectionPool(host='metacoregames.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError("HTTPSConnectionPool(host='metacoregames.com', port=443): Read timed out. (read timeout=8)"))
+  - `homepage` → `ok` — https://metacoregames.com/
   - `feed-common` → `error` — https://metacoregames.com/feed — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/feed
   - `feed-common` → `error` — https://metacoregames.com/rss — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/rss
   - `feed-common` → `error` — https://metacoregames.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/rss.xml
   - `feed-common` → `error` — https://metacoregames.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/feed.xml
   - `feed-common` → `error` — https://metacoregames.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/atom.xml
+  - `html-listing` → `empty` — https://metacoregames.com/
   - `robots` → `ok` — https://metacoregames.com/robots.txt
   - `sitemap` → `ok` — https://metacoregames.com/sitemap.xml
+
+### Mintegral (`mintegral-com`)
+
+- Статус: `warning`
+- Категория: `timeout`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `13218 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `9`
+
+  - `homepage` → `ok` — https://mintegral.com/
+  - `feed-common` → `error` — https://www.mintegral.com/en/feed — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/feed
+  - `feed-common` → `error` — https://www.mintegral.com/en/rss — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/rss
+  - `feed-common` → `error` — https://www.mintegral.com/en/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/rss.xml
+  - `feed-common` → `error` — https://www.mintegral.com/en/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/feed.xml
+  - `feed-common` → `error` — https://www.mintegral.com/en/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/atom.xml
+  - `html-listing` → `empty` — https://www.mintegral.com/en
+  - `robots` → `ok` — https://www.mintegral.com/robots.txt
+  - `sitemap` → `error` — https://www.mintegral.com/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='www.mintegral.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.mintegral.com', port=443): Read timed out. (read timeout=8)"))
 
 ### Mobidictum (`mobidictum-com`)
 
@@ -513,7 +557,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2086 ms`
+- Время: `1237 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -534,7 +578,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1342 ms`
+- Время: `1206 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -555,7 +599,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1728 ms`
+- Время: `846 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -565,8 +609,8 @@
   - `feed-common` → `error` — https://naavik.co/rss.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/rss.xml
   - `feed-common` → `error` — https://naavik.co/feed.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/feed.xml
   - `feed-common` → `error` — https://naavik.co/atom.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/atom.xml
-  - `robots` → `error` — https://naavik.co/robots.txt — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/robots.txt
-  - `sitemap` → `error` — https://naavik.co/sitemap.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/sitemap.xml
+  - `robots` → `ok` — https://naavik.co/robots.txt
+  - `sitemap` → `error` — https://naavik.co/sitemap_index.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/sitemap_index.xml
 
 ### ProGameDev (`progamedev-net`)
 
@@ -576,7 +620,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2235 ms`
+- Время: `2064 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -591,7 +635,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `8115 ms`
+- Время: `6956 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -606,7 +650,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6879 ms`
+- Время: `7227 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -628,7 +672,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1766 ms`
+- Время: `1132 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -656,7 +700,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3214 ms`
+- Время: `3799 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -684,7 +728,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1492 ms`
+- Время: `1847 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -699,7 +743,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2727 ms`
+- Время: `2078 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -721,7 +765,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `669 ms`
+- Время: `468 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -742,7 +786,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2866 ms`
+- Время: `1133 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -763,7 +807,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `2036 ms`
+- Время: `816 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -778,7 +822,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65091 ms`
+- Время: `64863 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -799,7 +843,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65068 ms`
+- Время: `64666 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -820,7 +864,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `9012 ms`
+- Время: `7056 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -854,7 +898,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1063 ms`
+- Время: `210 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -876,7 +920,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1663 ms`
+- Время: `737 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -898,7 +942,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4465 ms`
+- Время: `3782 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -926,7 +970,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2242 ms`
+- Время: `1290 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 

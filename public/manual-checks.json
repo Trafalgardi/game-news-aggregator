@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-18T05:59:01Z",
-  "count": 21,
+  "generated_at": "2026-07-19T06:14:26Z",
+  "count": 22,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -20,6 +20,15 @@
       "reason": "blocked_on_github_runner",
       "url": "https://hybridcasual.appquantum.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "azurgames-com",
+      "source_name": "Azur Games Blog",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://azurgames.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "blockchaingamer-biz",
@@ -112,13 +121,13 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
-      "source_id": "metacoregames-com",
-      "source_name": "Metacore",
+      "source_id": "mintegral-com",
+      "source_name": "Mintegral",
       "failure_kind": "timeout",
-      "priority": "medium",
-      "reason": "sitemap_needs_path_filter",
-      "url": "https://metacoregames.com/sitemap.xml",
-      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://mintegral.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "mobidictum-com",
