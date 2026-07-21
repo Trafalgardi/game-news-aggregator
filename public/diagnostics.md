@@ -1,16 +1,17 @@
 # Диагностика источников
 
-Обновлено: `2026-07-20T06:26:11Z`
+Обновлено: `2026-07-21T06:13:25Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **24**
+- `no_recent_articles`: **23**
 - `blocked`: **7**
-- `no_articles_found`: **6**
-- `timeout`: **6**
+- `no_articles_found`: **7**
+- `timeout`: **5**
 - `unknown`: **4**
+- `rate_limited`: **1**
 
 ## Проблемные источники
 
@@ -22,7 +23,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7639 ms`
+- Время: `8437 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -47,7 +48,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2047 ms`
+- Время: `2088 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -69,7 +70,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1556 ms`
+- Время: `1640 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -90,7 +91,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5564 ms`
+- Время: `5928 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -114,7 +115,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `978 ms`
+- Время: `994 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -135,7 +136,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `364 ms`
+- Время: `639 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -145,8 +146,8 @@
   - `feed-common` → `error` — https://businessofapps.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/rss.xml
   - `feed-common` → `error` — https://businessofapps.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/feed.xml
   - `feed-common` → `error` — https://businessofapps.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/atom.xml
-  - `robots` → `error` — https://businessofapps.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/robots.txt
-  - `sitemap` → `error` — https://businessofapps.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/sitemap.xml
+  - `robots` → `ok` — https://businessofapps.com/robots.txt
+  - `sitemap` → `error` — https://www.businessofapps.com/sitemap_index.xml — HTTPError: 403 Client Error: Forbidden for url: https://www.businessofapps.com/sitemap_index.xml
 
 ### citybiz (`citybiz-co`)
 
@@ -156,7 +157,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1333 ms`
+- Время: `1362 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -177,7 +178,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `457 ms`
+- Время: `611 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -192,7 +193,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5919 ms`
+- Время: `5021 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -214,7 +215,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `31765 ms`
+- Время: `31274 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `20`
 
@@ -247,7 +248,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2600 ms`
+- Время: `2473 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -269,7 +270,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2167 ms`
+- Время: `2676 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -291,7 +292,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `779 ms`
+- Время: `764 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -312,7 +313,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1686 ms`
+- Время: `3030 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -334,7 +335,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2188 ms`
+- Время: `2273 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -349,7 +350,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `237 ms`
+- Время: `234 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -370,7 +371,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `698 ms`
+- Время: `845 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -392,7 +393,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `68872 ms`
+- Время: `69160 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -413,7 +414,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5300 ms`
+- Время: `5160 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -435,7 +436,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3377 ms`
+- Время: `2452 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -456,7 +457,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2817 ms`
+- Время: `3315 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -471,7 +472,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `557 ms`
+- Время: `713 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -492,7 +493,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3818 ms`
+- Время: `6161 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -514,7 +515,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `9271 ms`
+- Время: `12000 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -531,12 +532,12 @@
 ### Mintegral (`mintegral-com`)
 
 - Статус: `warning`
-- Категория: `timeout`
+- Категория: `no_articles_found`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `13737 ms`
+- Время: `6040 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -548,7 +549,7 @@
   - `feed-common` → `error` — https://www.mintegral.com/en/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/atom.xml
   - `html-listing` → `empty` — https://www.mintegral.com/en
   - `robots` → `ok` — https://www.mintegral.com/robots.txt
-  - `sitemap` → `error` — https://www.mintegral.com/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='www.mintegral.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.mintegral.com', port=443): Read timed out. (read timeout=8)"))
+  - `sitemap` → `error` — https://www.mintegral.com/sitemap.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/sitemap.xml
 
 ### Mobidictum (`mobidictum-com`)
 
@@ -558,7 +559,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2161 ms`
+- Время: `2107 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -579,7 +580,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1639 ms`
+- Время: `1280 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -600,7 +601,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1673 ms`
+- Время: `1330 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -616,17 +617,23 @@
 ### ProGameDev (`progamedev-net`)
 
 - Статус: `warning`
-- Категория: `no_recent_articles`
-- Метод: `feed`
-- Получено кандидатов: `10`
+- Категория: `rate_limited`
+- Метод: `none`
+- Получено кандидатов: `0`
 - Принято: `0`
-- Причины отбраковки: `{"too_old": 10}`
-- Время: `2522 ms`
+- Причины отбраковки: `{}`
+- Время: `2537 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `2`
+- Попыток: `8`
 
-  - `homepage` → `ok` — https://progamedev.net/
-  - `feed-discovered` → `ok` — https://progamedev.net/feed/
+  - `homepage` → `error` — https://progamedev.net/ — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/
+  - `feed-common` → `error` — https://progamedev.net/feed — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/feed
+  - `feed-common` → `error` — https://progamedev.net/rss — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/rss
+  - `feed-common` → `error` — https://progamedev.net/rss.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/rss.xml
+  - `feed-common` → `error` — https://progamedev.net/feed.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/feed.xml
+  - `feed-common` → `error` — https://progamedev.net/atom.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/atom.xml
+  - `robots` → `error` — https://progamedev.net/robots.txt — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/robots.txt
+  - `sitemap` → `error` — https://progamedev.net/sitemap.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/sitemap.xml
 
 ### QubicGames (`qubicgames-com`)
 
@@ -636,7 +643,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `5127 ms`
+- Время: `6426 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -651,7 +658,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7288 ms`
+- Время: `6876 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -673,7 +680,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1960 ms`
+- Время: `1625 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -701,7 +708,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5241 ms`
+- Время: `4212 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -729,7 +736,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1971 ms`
+- Время: `1754 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -744,7 +751,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2609 ms`
+- Время: `2127 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -766,7 +773,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `675 ms`
+- Время: `611 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -787,18 +794,18 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64591 ms`
+- Время: `64564 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
-  - `homepage` → `error` — https://tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe25ced52b0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe2468fc2f0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe24dc33ef0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe245b4ade0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe264654a10>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe24da7ce30>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `robots` → `error` — https://tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe2468c0350>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `sitemap` → `error` — https://tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe2465dbcb0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `homepage` → `error` — https://tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64e750d0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c6e4ffb00>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c52bfbbf0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c48efd400>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64e731a0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c52bd3200>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `robots` → `error` — https://tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bcb590>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `sitemap` → `error` — https://tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c52bd1ee0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
 
 ### Tenjin Blog (`blog-tenjin-com`)
 
@@ -808,18 +815,18 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `67792 ms`
+- Время: `67812 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
-  - `homepage` → `error` — https://blog.tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe25cfa30b0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe245527b00>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe2465db9b0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe26473a4b0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe2641fa300>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe2468781a0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `robots` → `error` — https://blog.tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe25c3fe000>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `sitemap` → `error` — https://blog.tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7fe245a8aba0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `homepage` → `error` — https://blog.tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64d94470>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bca660>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bcae40>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bc9dc0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bb8740>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bc96d0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `robots` → `error` — https://blog.tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64b9ef60>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `sitemap` → `error` — https://blog.tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bcb680>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
 
 ### Tenjin Resources (`resources-tenjin-com`)
 
@@ -829,7 +836,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2264 ms`
+- Время: `2503 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -850,7 +857,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `1722 ms`
+- Время: `2264 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -865,7 +872,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65101 ms`
+- Время: `65264 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -886,7 +893,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65219 ms`
+- Время: `65429 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -907,7 +914,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `9547 ms`
+- Время: `8851 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -941,7 +948,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `612 ms`
+- Время: `583 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -963,7 +970,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `964 ms`
+- Время: `1565 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -985,7 +992,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3127 ms`
+- Время: `4276 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -1013,7 +1020,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2204 ms`
+- Время: `2258 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 

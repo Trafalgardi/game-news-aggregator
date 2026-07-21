@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-20T06:26:11Z",
-  "count": 23,
+  "generated_at": "2026-07-21T06:13:25Z",
+  "count": 24,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -114,7 +114,7 @@
     {
       "source_id": "mintegral-com",
       "source_name": "Mintegral",
-      "failure_kind": "timeout",
+      "failure_kind": "no_articles_found",
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://mintegral.com/",
@@ -145,6 +145,15 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://naavik.co/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "progamedev-net",
+      "source_name": "ProGameDev",
+      "failure_kind": "rate_limited",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://progamedev.net/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
