@@ -1,17 +1,16 @@
 # Диагностика источников
 
-Обновлено: `2026-07-21T06:13:25Z`
+Обновлено: `2026-07-22T06:12:40Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **23**
+- `no_recent_articles`: **29**
 - `blocked`: **7**
-- `no_articles_found`: **7**
-- `timeout`: **5**
-- `unknown`: **4**
-- `rate_limited`: **1**
+- `no_articles_found`: **6**
+- `timeout`: **3**
+- `unknown`: **1**
 
 ## Проблемные источники
 
@@ -23,7 +22,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8437 ms`
+- Время: `7774 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -48,7 +47,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2088 ms`
+- Время: `1414 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -70,7 +69,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1640 ms`
+- Время: `1169 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -91,7 +90,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5928 ms`
+- Время: `5224 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -115,7 +114,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `994 ms`
+- Время: `788 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -136,7 +135,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `639 ms`
+- Время: `271 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -146,29 +145,8 @@
   - `feed-common` → `error` — https://businessofapps.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/rss.xml
   - `feed-common` → `error` — https://businessofapps.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/feed.xml
   - `feed-common` → `error` — https://businessofapps.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/atom.xml
-  - `robots` → `ok` — https://businessofapps.com/robots.txt
-  - `sitemap` → `error` — https://www.businessofapps.com/sitemap_index.xml — HTTPError: 403 Client Error: Forbidden for url: https://www.businessofapps.com/sitemap_index.xml
-
-### citybiz (`citybiz-co`)
-
-- Статус: `warning`
-- Категория: `unknown`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `1362 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://citybiz.co/ — HTTPError: 415 Client Error: Unsupported Media Type for url: https://citybiz.co/
-  - `feed-common` → `error` — https://citybiz.co/feed — HTTPError: 415 Client Error: Unsupported Media Type for url: https://citybiz.co/feed
-  - `feed-common` → `error` — https://citybiz.co/rss — HTTPError: 415 Client Error: Unsupported Media Type for url: https://citybiz.co/rss
-  - `feed-common` → `error` — https://citybiz.co/rss.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://citybiz.co/rss.xml
-  - `feed-common` → `error` — https://citybiz.co/feed.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://citybiz.co/feed.xml
-  - `feed-common` → `error` — https://citybiz.co/atom.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://citybiz.co/atom.xml
-  - `robots` → `ok` — https://citybiz.co/robots.txt
-  - `sitemap` → `error` — https://citybiz.co/sitemap.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://citybiz.co/sitemap.xml
+  - `robots` → `error` — https://businessofapps.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/robots.txt
+  - `sitemap` → `error` — https://businessofapps.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://businessofapps.com/sitemap.xml
 
 ### CrazyLabs (`crazylabs-com`)
 
@@ -178,7 +156,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `611 ms`
+- Время: `454 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -193,7 +171,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5021 ms`
+- Время: `3957 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -215,7 +193,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `31274 ms`
+- Время: `33363 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `20`
 
@@ -248,7 +226,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2473 ms`
+- Время: `1649 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -270,7 +248,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2676 ms`
+- Время: `1859 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -292,7 +270,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `764 ms`
+- Время: `406 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -313,7 +291,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3030 ms`
+- Время: `2490 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -335,7 +313,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2273 ms`
+- Время: `1710 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -350,7 +328,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `234 ms`
+- Время: `156 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -371,7 +349,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `845 ms`
+- Время: `494 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -385,6 +363,21 @@
   - `robots` → `error` — https://www.homagames.com/robots.txt — HTTPError: 404 Client Error: Not Found for url: https://www.homagames.com/robots.txt
   - `sitemap` → `error` — https://www.homagames.com/sitemap.xml — HTTPError: 404 Client Error: Not Found for url: https://www.homagames.com/sitemap.xml
 
+### How To Market A Game (`howtomarketagame-com`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `606 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `2`
+
+  - `homepage` → `ok` — https://howtomarketagame.com/
+  - `feed-discovered` → `ok` — https://howtomarketagame.com/feed/
+
 ### ironSource (`is-com`)
 
 - Статус: `warning`
@@ -393,7 +386,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `69160 ms`
+- Время: `68097 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -414,7 +407,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5160 ms`
+- Время: `9270 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -436,7 +429,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2452 ms`
+- Время: `1492 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -457,12 +450,40 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `3315 ms`
+- Время: `2815 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
   - `homepage` → `ok` — https://blog.liquidandgrit.com/
   - `feed-discovered` → `ok` — https://blog.liquidandgrit.com/feed
+
+### Matej Lancaric (`lancaric-me`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `11441 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `15`
+
+  - `homepage` → `ok` — https://lancaric.me/
+  - `feed-common` → `empty` — https://lancaric.me/feed
+  - `feed-common` → `empty` — https://lancaric.me/rss
+  - `feed-common` → `error` — https://lancaric.me/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://lancaric.me/rss.xml
+  - `feed-common` → `error` — https://lancaric.me/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://lancaric.me/feed.xml
+  - `feed-common` → `error` — https://lancaric.me/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://lancaric.me/atom.xml
+  - `html-listing` → `empty` — https://lancaric.me/
+  - `robots` → `ok` — https://lancaric.me/robots.txt
+  - `sitemap` → `ok` — https://lancaric.me/sitemap_index.xml
+  - `sitemap-child` → `ok` — https://lancaric.me/post-sitemap.xml
+  - `sitemap-child` → `ok` — https://lancaric.me/category-sitemap.xml
+  - `sitemap-child` → `ok` — https://lancaric.me/quill_forms-sitemap.xml
+  - `sitemap-child` → `ok` — https://lancaric.me/page-sitemap.xml
+  - `sitemap-child` → `ok` — https://lancaric.me/xpro-themer-sitemap.xml
+  - `sitemap-child` → `ok` — https://lancaric.me/author-sitemap.xml
 
 ### Matej Lancaric Substack (`lancaric-substack-com`)
 
@@ -472,7 +493,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `713 ms`
+- Время: `464 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -493,7 +514,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6161 ms`
+- Время: `6383 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -515,7 +536,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `12000 ms`
+- Время: `13722 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -529,111 +550,75 @@
   - `robots` → `ok` — https://metacoregames.com/robots.txt
   - `sitemap` → `ok` — https://metacoregames.com/sitemap.xml
 
-### Mintegral (`mintegral-com`)
-
-- Статус: `warning`
-- Категория: `no_articles_found`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `6040 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `9`
-
-  - `homepage` → `ok` — https://mintegral.com/
-  - `feed-common` → `error` — https://www.mintegral.com/en/feed — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/feed
-  - `feed-common` → `error` — https://www.mintegral.com/en/rss — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/rss
-  - `feed-common` → `error` — https://www.mintegral.com/en/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/rss.xml
-  - `feed-common` → `error` — https://www.mintegral.com/en/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/feed.xml
-  - `feed-common` → `error` — https://www.mintegral.com/en/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/en/atom.xml
-  - `html-listing` → `empty` — https://www.mintegral.com/en
-  - `robots` → `ok` — https://www.mintegral.com/robots.txt
-  - `sitemap` → `error` — https://www.mintegral.com/sitemap.xml — HTTPError: 404 Client Error: Not Found for url: https://www.mintegral.com/sitemap.xml
-
-### Mobidictum (`mobidictum-com`)
-
-- Статус: `warning`
-- Категория: `unknown`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `2107 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://mobidictum.com/ — HTTPError: 415 Client Error: Unsupported Media Type for url: https://mobidictum.com/
-  - `feed-common` → `error` — https://mobidictum.com/feed — HTTPError: 415 Client Error: Unsupported Media Type for url: https://mobidictum.com/feed
-  - `feed-common` → `error` — https://mobidictum.com/rss — HTTPError: 415 Client Error: Unsupported Media Type for url: https://mobidictum.com/rss
-  - `feed-common` → `error` — https://mobidictum.com/rss.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://mobidictum.com/rss.xml
-  - `feed-common` → `error` — https://mobidictum.com/feed.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://mobidictum.com/feed.xml
-  - `feed-common` → `error` — https://mobidictum.com/atom.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://mobidictum.com/atom.xml
-  - `robots` → `ok` — https://mobidictum.com/robots.txt
-  - `sitemap` → `error` — https://mobidictum.com/sitemap_index.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://mobidictum.com/sitemap_index.xml
-
 ### MobileAction / MAF (`maf-ad`)
 
 - Статус: `warning`
-- Категория: `unknown`
-- Метод: `none`
-- Получено кандидатов: `0`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
 - Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `1280 ms`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `1639 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
+- Попыток: `2`
 
-  - `homepage` → `error` — https://maf.ad/ — HTTPError: 415 Client Error: Unsupported Media Type for url: https://maf.ad/
-  - `feed-common` → `error` — https://maf.ad/feed — HTTPError: 415 Client Error: Unsupported Media Type for url: https://maf.ad/feed
-  - `feed-common` → `error` — https://maf.ad/rss — HTTPError: 415 Client Error: Unsupported Media Type for url: https://maf.ad/rss
-  - `feed-common` → `error` — https://maf.ad/rss.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://maf.ad/rss.xml
-  - `feed-common` → `error` — https://maf.ad/feed.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://maf.ad/feed.xml
-  - `feed-common` → `error` — https://maf.ad/atom.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://maf.ad/atom.xml
-  - `robots` → `ok` — https://maf.ad/robots.txt
-  - `sitemap` → `error` — https://maf.ad/sitemap_index.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://maf.ad/sitemap_index.xml
+  - `homepage` → `ok` — https://maf.ad/
+  - `feed-discovered` → `ok` — https://maf.ad/en/feed/
 
-### Naavik (`naavik-co`)
+### Photon Blog (`blog-photonengine-com`)
 
 - Статус: `warning`
-- Категория: `unknown`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `2230 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `2`
+
+  - `homepage` → `ok` — https://blog.photonengine.com/
+  - `feed-discovered` → `ok` — https://blog.photonengine.com/feed/
+
+### Playgama (`wiki-playgama-com`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1330 ms`
+- Время: `2989 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
+- Попыток: `12`
 
-  - `homepage` → `error` — https://naavik.co/ — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/
-  - `feed-common` → `error` — https://naavik.co/feed — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/feed
-  - `feed-common` → `error` — https://naavik.co/rss — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/rss
-  - `feed-common` → `error` — https://naavik.co/rss.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/rss.xml
-  - `feed-common` → `error` — https://naavik.co/feed.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/feed.xml
-  - `feed-common` → `error` — https://naavik.co/atom.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/atom.xml
-  - `robots` → `ok` — https://naavik.co/robots.txt
-  - `sitemap` → `error` — https://naavik.co/sitemap_index.xml — HTTPError: 415 Client Error: Unsupported Media Type for url: https://naavik.co/sitemap_index.xml
+  - `homepage` → `ok` — https://wiki.playgama.com/
+  - `feed-discovered` → `error` — https://wiki.playgama.com/playgama/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://wiki.playgama.com/playgama/rss.xml
+  - `feed-common` → `error` — https://wiki.playgama.com/playgama/feed — HTTPError: 404 Client Error: Not Found for url: https://wiki.playgama.com/playgama/feed
+  - `feed-common` → `error` — https://wiki.playgama.com/playgama/rss — HTTPError: 404 Client Error: Not Found for url: https://wiki.playgama.com/playgama/rss
+  - `feed-common` → `error` — https://wiki.playgama.com/playgama/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://wiki.playgama.com/playgama/feed.xml
+  - `feed-common` → `error` — https://wiki.playgama.com/playgama/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://wiki.playgama.com/playgama/atom.xml
+  - `html-listing` → `empty` — https://wiki.playgama.com/playgama
+  - `robots` → `ok` — https://wiki.playgama.com/robots.txt
+  - `sitemap` → `ok` — https://wiki.playgama.com/playgama/sitemap.xml
+  - `sitemap-child` → `ok` — https://wiki.playgama.com/playgama/sitemap-pages.xml
+  - `sitemap-child` → `ok` — https://wiki.playgama.com/playgama/how-to-fix-issues/sitemap-pages.xml
+  - `sitemap-child` → `ok` — https://wiki.playgama.com/playgama/bridge-sdk-v1/sitemap-pages.xml
 
 ### ProGameDev (`progamedev-net`)
 
 - Статус: `warning`
-- Категория: `rate_limited`
-- Метод: `none`
-- Получено кандидатов: `0`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
 - Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `2537 ms`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `2232 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
+- Попыток: `2`
 
-  - `homepage` → `error` — https://progamedev.net/ — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/
-  - `feed-common` → `error` — https://progamedev.net/feed — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/feed
-  - `feed-common` → `error` — https://progamedev.net/rss — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/rss
-  - `feed-common` → `error` — https://progamedev.net/rss.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/rss.xml
-  - `feed-common` → `error` — https://progamedev.net/feed.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/feed.xml
-  - `feed-common` → `error` — https://progamedev.net/atom.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/atom.xml
-  - `robots` → `error` — https://progamedev.net/robots.txt — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/robots.txt
-  - `sitemap` → `error` — https://progamedev.net/sitemap.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/sitemap.xml
+  - `homepage` → `ok` — https://progamedev.net/
+  - `feed-discovered` → `ok` — https://progamedev.net/feed/
 
 ### QubicGames (`qubicgames-com`)
 
@@ -643,7 +628,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `6426 ms`
+- Время: `6370 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -658,7 +643,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6876 ms`
+- Время: `7117 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -680,7 +665,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1625 ms`
+- Время: `2979 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -708,7 +693,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4212 ms`
+- Время: `9431 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -728,6 +713,27 @@
   - `sitemap-child` → `ok` — https://sensortower.com/en-US-s3-blog-sitemap-5.xml
   - `sitemap-child` → `ok` — https://sensortower.com/en-US-s3-blog-sitemap-6.xml
 
+### Smart Ranking (`smartranking-ru`)
+
+- Статус: `warning`
+- Категория: `unknown`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `64830 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `8`
+
+  - `homepage` → `error` — https://smartranking.ru/ — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+  - `feed-common` → `error` — https://smartranking.ru/feed — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /feed (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+  - `feed-common` → `error` — https://smartranking.ru/rss — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /rss (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+  - `feed-common` → `error` — https://smartranking.ru/rss.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /rss.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+  - `feed-common` → `error` — https://smartranking.ru/feed.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+  - `feed-common` → `error` — https://smartranking.ru/atom.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /atom.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+  - `robots` → `error` — https://smartranking.ru/robots.txt — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+  - `sitemap` → `error` — https://smartranking.ru/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+
 ### Supersonic / Unity LevelPlay (`supersonic-com`)
 
 - Статус: `warning`
@@ -736,7 +742,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1754 ms`
+- Время: `1702 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -751,7 +757,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2127 ms`
+- Время: `2156 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -773,7 +779,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `611 ms`
+- Время: `323 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -786,48 +792,6 @@
   - `robots` → `error` — https://techbriefly.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/robots.txt
   - `sitemap` → `error` — https://techbriefly.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/sitemap.xml
 
-### Tenjin (`tenjin-com`)
-
-- Статус: `warning`
-- Категория: `timeout`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `64564 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64e750d0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c6e4ffb00>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c52bfbbf0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c48efd400>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64e731a0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c52bd3200>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `robots` → `error` — https://tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bcb590>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `sitemap` → `error` — https://tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c52bd1ee0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-
-### Tenjin Blog (`blog-tenjin-com`)
-
-- Статус: `warning`
-- Категория: `timeout`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `67812 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://blog.tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64d94470>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bca660>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bcae40>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bc9dc0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bb8740>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `feed-common` → `error` — https://blog.tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bc96d0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `robots` → `error` — https://blog.tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64b9ef60>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-  - `sitemap` → `error` — https://blog.tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4c64bcb680>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
-
 ### Tenjin Resources (`resources-tenjin-com`)
 
 - Статус: `warning`
@@ -836,7 +800,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2503 ms`
+- Время: `1951 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -857,7 +821,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `2264 ms`
+- Время: `2544 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -872,7 +836,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65264 ms`
+- Время: `64639 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -893,7 +857,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65429 ms`
+- Время: `64608 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -914,7 +878,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8851 ms`
+- Время: `6444 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -948,7 +912,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `583 ms`
+- Время: `207 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -970,7 +934,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1565 ms`
+- Время: `781 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -992,7 +956,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4276 ms`
+- Время: `4084 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -1020,7 +984,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2258 ms`
+- Время: `1125 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
