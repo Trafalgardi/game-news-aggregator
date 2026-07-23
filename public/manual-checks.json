@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-22T06:12:40Z",
-  "count": 17,
+  "generated_at": "2026-07-23T06:15:40Z",
+  "count": 16,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -109,15 +109,6 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://say.games/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "smartranking-ru",
-      "source_name": "Smart Ranking",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://smartranking.ru/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
