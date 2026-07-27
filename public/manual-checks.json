@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-26T06:18:47Z",
-  "count": 16,
+  "generated_at": "2026-07-27T06:28:10Z",
+  "count": 17,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -101,6 +101,15 @@
       "reason": "blocked_on_github_runner",
       "url": "https://lancaric.substack.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "metacoregames-com",
+      "source_name": "Metacore",
+      "failure_kind": "timeout",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://metacoregames.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
     },
     {
       "source_id": "say-games",
