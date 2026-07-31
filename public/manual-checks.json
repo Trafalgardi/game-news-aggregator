@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-30T06:12:13Z",
-  "count": 17,
+  "generated_at": "2026-07-31T06:23:03Z",
+  "count": 16,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -110,15 +110,6 @@
       "reason": "source_structure_unknown",
       "url": "https://say.games/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "singular-net",
-      "source_name": "Singular",
-      "failure_kind": "timeout",
-      "priority": "medium",
-      "reason": "sitemap_needs_path_filter",
-      "url": "https://www.singular.net/sitemap_index.xml",
-      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
     },
     {
       "source_id": "techbriefly-com",
