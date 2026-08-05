@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-04T06:12:21Z",
-  "count": 25,
+  "generated_at": "2026-08-05T06:11:10Z",
+  "count": 19,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -40,15 +40,6 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
-      "source_id": "citybiz-co",
-      "source_name": "citybiz",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://citybiz.co/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
       "source_id": "calcalistech-com",
       "source_name": "CTech",
       "failure_kind": "no_articles_found",
@@ -56,15 +47,6 @@
       "reason": "source_structure_unknown",
       "url": "https://calcalistech.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "data-ai",
-      "source_name": "data.ai",
-      "failure_kind": "blocked",
-      "priority": "medium",
-      "reason": "blocked_on_github_runner",
-      "url": "https://data.ai/",
-      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
       "source_id": "elitegamedevelopers-substack-com",
@@ -103,15 +85,6 @@
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
-      "source_id": "kwalee-com",
-      "source_name": "Kwalee Blog",
-      "failure_kind": "blocked",
-      "priority": "medium",
-      "reason": "blocked_on_github_runner",
-      "url": "https://kwalee.com/",
-      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
       "source_id": "content-liftoff-io",
       "source_name": "Liftoff Content",
       "failure_kind": "no_articles_found",
@@ -130,30 +103,12 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
-      "source_id": "mobidictum-com",
-      "source_name": "Mobidictum",
-      "failure_kind": "unknown",
+      "source_id": "tech-onliner-by",
+      "source_name": "Onlíner Tech",
+      "failure_kind": "dns",
       "priority": "low",
       "reason": "source_structure_unknown",
-      "url": "https://mobidictum.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "maf-ad",
-      "source_name": "MobileAction / MAF",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://maf.ad/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "naavik-co",
-      "source_name": "Naavik",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://naavik.co/",
+      "url": "https://tech.onliner.by/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
@@ -218,15 +173,6 @@
       "reason": "source_structure_unknown",
       "url": "https://blog.unity.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "xsolla-ru",
-      "source_name": "Xsolla RU",
-      "failure_kind": "blocked",
-      "priority": "medium",
-      "reason": "blocked_on_github_runner",
-      "url": "https://xsolla.ru/",
-      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     }
   ]
 }
