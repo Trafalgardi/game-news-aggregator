@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-05T06:11:10Z",
-  "count": 19,
+  "generated_at": "2026-08-06T06:12:42Z",
+  "count": 17,
   "checks": [
+    {
+      "source_id": "app2top-ru",
+      "source_name": "App2Top",
+      "failure_kind": "unknown",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://app2top.ru/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
     {
       "source_id": "appquantum-com",
       "source_name": "AppQuantum",
@@ -103,15 +112,6 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
-      "source_id": "tech-onliner-by",
-      "source_name": "Onlíner Tech",
-      "failure_kind": "dns",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://tech.onliner.by/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
       "source_id": "say-games",
       "source_name": "SayGames",
       "failure_kind": "no_articles_found",
@@ -128,24 +128,6 @@
       "reason": "blocked_on_github_runner",
       "url": "https://techbriefly.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
-      "source_id": "tenjin-com",
-      "source_name": "Tenjin",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://tenjin.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "blog-tenjin-com",
-      "source_name": "Tenjin Blog",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://blog.tenjin.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "resources-tenjin-com",
