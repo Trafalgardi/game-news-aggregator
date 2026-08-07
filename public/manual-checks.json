@@ -1,17 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-06T06:12:42Z",
+  "generated_at": "2026-08-07T05:51:21Z",
   "count": 17,
   "checks": [
-    {
-      "source_id": "app2top-ru",
-      "source_name": "App2Top",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://app2top.ru/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
     {
       "source_id": "appquantum-com",
       "source_name": "AppQuantum",
@@ -101,6 +92,15 @@
       "reason": "source_structure_unknown",
       "url": "https://content.liftoff.io/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "blog-liquidandgrit-com",
+      "source_name": "Liquid & Grit",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://blog.liquidandgrit.com/feed",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
       "source_id": "lancaric-substack-com",
