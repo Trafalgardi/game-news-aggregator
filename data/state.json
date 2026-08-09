@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "last_run_at": "2026-08-08T05:32:36Z",
+  "last_run_at": "2026-08-09T05:36:10Z",
   "sources": {
     "80-lv": {
-      "last_checked_at": "2026-08-08T05:30:27Z",
+      "last_checked_at": "2026-08-09T05:34:06Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 10,
+      "new_count": 2,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -18,10 +18,10 @@
       "manual_check": null
     },
     "app2top-ru": {
-      "last_checked_at": "2026-08-08T05:30:24Z",
+      "last_checked_at": "2026-08-09T05:34:02Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 8,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -39,7 +39,7 @@
       "manual_check": null
     },
     "appmagic-rocks": {
-      "last_checked_at": "2026-08-08T05:30:35Z",
+      "last_checked_at": "2026-08-09T05:34:14Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -60,7 +60,7 @@
       "manual_check": null
     },
     "appquantum-com": {
-      "last_checked_at": "2026-08-08T05:30:40Z",
+      "last_checked_at": "2026-08-09T05:34:19Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -80,7 +80,7 @@
       }
     },
     "azurgames-com": {
-      "last_checked_at": "2026-08-08T05:30:36Z",
+      "last_checked_at": "2026-08-09T05:34:16Z",
       "status": "ok",
       "method": "feed-common",
       "new_count": 0,
@@ -97,7 +97,7 @@
       "manual_check": null
     },
     "businessofapps-com": {
-      "last_checked_at": "2026-08-08T05:30:26Z",
+      "last_checked_at": "2026-08-09T05:34:04Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -117,7 +117,7 @@
       }
     },
     "crazylabs-com": {
-      "last_checked_at": "2026-08-08T05:30:39Z",
+      "last_checked_at": "2026-08-09T05:34:19Z",
       "status": "warning",
       "method": "feed",
       "new_count": 0,
@@ -135,7 +135,7 @@
       "manual_check": null
     },
     "deconstructoroffun-com": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:58Z",
       "status": "ok",
       "method": "html-listing",
       "new_count": 0,
@@ -148,10 +148,10 @@
       "manual_check": null
     },
     "dev-by": {
-      "last_checked_at": "2026-08-08T05:30:27Z",
+      "last_checked_at": "2026-08-09T05:34:06Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 9,
+      "new_count": 4,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -164,10 +164,10 @@
       "manual_check": null
     },
     "devby-io": {
-      "last_checked_at": "2026-08-08T05:30:33Z",
+      "last_checked_at": "2026-08-09T05:34:13Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 9,
+      "new_count": 4,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -180,10 +180,10 @@
       "manual_check": null
     },
     "dtf-ru": {
-      "last_checked_at": "2026-08-08T05:30:26Z",
+      "last_checked_at": "2026-08-09T05:34:05Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 12,
+      "new_count": 3,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -195,10 +195,10 @@
       "manual_check": null
     },
     "gamedeveloper-com": {
-      "last_checked_at": "2026-08-08T05:30:29Z",
+      "last_checked_at": "2026-08-09T05:34:09Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 4,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -213,7 +213,7 @@
       "manual_check": null
     },
     "gameanalytics-com": {
-      "last_checked_at": "2026-08-08T05:30:40Z",
+      "last_checked_at": "2026-08-09T05:34:19Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -228,10 +228,10 @@
       "manual_check": null
     },
     "newsletter-gamediscover-co": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:58Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 1,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -245,7 +245,7 @@
       "manual_check": null
     },
     "gamerefinery-com": {
-      "last_checked_at": "2026-08-08T05:30:39Z",
+      "last_checked_at": "2026-08-09T05:34:17Z",
       "status": "warning",
       "method": "feed",
       "new_count": 0,
@@ -263,10 +263,10 @@
       "manual_check": null
     },
     "gamesindustry-biz": {
-      "last_checked_at": "2026-08-08T05:30:25Z",
+      "last_checked_at": "2026-08-09T05:34:03Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 9,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -280,7 +280,7 @@
       "manual_check": null
     },
     "gamingonphone-com": {
-      "last_checked_at": "2026-08-08T05:30:31Z",
+      "last_checked_at": "2026-08-09T05:34:11Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -300,7 +300,7 @@
       }
     },
     "homagames-com": {
-      "last_checked_at": "2026-08-08T05:30:40Z",
+      "last_checked_at": "2026-08-09T05:34:20Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -320,7 +320,7 @@
       }
     },
     "howtomarketagame-com": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:58Z",
       "status": "warning",
       "method": "feed",
       "new_count": 0,
@@ -338,10 +338,10 @@
       "manual_check": null
     },
     "mobidictum-com": {
-      "last_checked_at": "2026-08-08T05:30:25Z",
+      "last_checked_at": "2026-08-09T05:34:03Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 1,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -353,7 +353,7 @@
       "manual_check": null
     },
     "maf-ad": {
-      "last_checked_at": "2026-08-08T05:30:38Z",
+      "last_checked_at": "2026-08-09T05:34:17Z",
       "status": "warning",
       "method": "feed",
       "new_count": 0,
@@ -371,10 +371,10 @@
       "manual_check": null
     },
     "mobilegamer-biz": {
-      "last_checked_at": "2026-08-08T05:30:24Z",
+      "last_checked_at": "2026-08-09T05:34:03Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 1,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -387,7 +387,7 @@
       "manual_check": null
     },
     "naavik-co": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:59Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -405,10 +405,10 @@
       "manual_check": null
     },
     "pocketgamer-biz": {
-      "last_checked_at": "2026-08-08T05:30:24Z",
+      "last_checked_at": "2026-08-09T05:34:02Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 8,
+      "new_count": 1,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -417,12 +417,12 @@
       ],
       "discovered_sitemaps": [],
       "rejection_summary": {
-        "too_old": 4
+        "too_old": 3
       },
       "manual_check": null
     },
     "supersonic-com": {
-      "last_checked_at": "2026-08-08T05:30:36Z",
+      "last_checked_at": "2026-08-09T05:34:15Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -440,7 +440,7 @@
       "manual_check": null
     },
     "tap-nation-io": {
-      "last_checked_at": "2026-08-08T05:30:38Z",
+      "last_checked_at": "2026-08-09T05:34:17Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -455,7 +455,7 @@
       "manual_check": null
     },
     "blog-udonis-co": {
-      "last_checked_at": "2026-08-08T05:30:39Z",
+      "last_checked_at": "2026-08-09T05:34:18Z",
       "status": "warning",
       "method": "feed",
       "new_count": 0,
@@ -472,7 +472,7 @@
       "manual_check": null
     },
     "blog-unity-com": {
-      "last_checked_at": "2026-08-08T05:31:22Z",
+      "last_checked_at": "2026-08-09T05:34:59Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -492,10 +492,10 @@
       }
     },
     "venturebeat-com": {
-      "last_checked_at": "2026-08-08T05:30:26Z",
+      "last_checked_at": "2026-08-09T05:34:05Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 3,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -507,7 +507,7 @@
       "manual_check": null
     },
     "appdevelopermagazine-com": {
-      "last_checked_at": "2026-08-08T05:30:28Z",
+      "last_checked_at": "2026-08-09T05:34:06Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -525,10 +525,10 @@
       "manual_check": null
     },
     "appfigures-com": {
-      "last_checked_at": "2026-08-08T05:30:48Z",
+      "last_checked_at": "2026-08-09T05:34:27Z",
       "status": "ok",
       "method": "sitemap",
-      "new_count": 2,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -536,11 +536,13 @@
       "discovered_sitemaps": [
         "https://appfigures.com/sitemap.xml"
       ],
-      "rejection_summary": {},
+      "rejection_summary": {
+        "duplicate_in_source": 1
+      },
       "manual_check": null
     },
     "appodeal-com": {
-      "last_checked_at": "2026-08-08T05:30:48Z",
+      "last_checked_at": "2026-08-09T05:34:27Z",
       "status": "warning",
       "method": "sitemap",
       "new_count": 0,
@@ -559,7 +561,7 @@
       "manual_check": null
     },
     "hybridcasual-appquantum-com": {
-      "last_checked_at": "2026-08-08T05:30:48Z",
+      "last_checked_at": "2026-08-09T05:34:27Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -579,7 +581,7 @@
       }
     },
     "appsflyer-com": {
-      "last_checked_at": "2026-08-08T05:30:49Z",
+      "last_checked_at": "2026-08-09T05:34:29Z",
       "status": "warning",
       "method": "feed-common",
       "new_count": 0,
@@ -596,7 +598,7 @@
       "manual_check": null
     },
     "apptica-com": {
-      "last_checked_at": "2026-08-08T05:30:42Z",
+      "last_checked_at": "2026-08-09T05:34:21Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -617,7 +619,7 @@
       "manual_check": null
     },
     "blockchaingamer-biz": {
-      "last_checked_at": "2026-08-08T05:30:29Z",
+      "last_checked_at": "2026-08-09T05:34:07Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -637,10 +639,10 @@
       }
     },
     "citybiz-co": {
-      "last_checked_at": "2026-08-08T05:30:33Z",
+      "last_checked_at": "2026-08-09T05:34:13Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 10,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -653,7 +655,7 @@
       "manual_check": null
     },
     "calcalistech-com": {
-      "last_checked_at": "2026-08-08T05:30:29Z",
+      "last_checked_at": "2026-08-09T05:34:07Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -673,7 +675,7 @@
       }
     },
     "data-ai": {
-      "last_checked_at": "2026-08-08T05:30:47Z",
+      "last_checked_at": "2026-08-09T05:34:27Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -697,7 +699,7 @@
       "manual_check": null
     },
     "playducky-com": {
-      "last_checked_at": "2026-08-08T05:30:51Z",
+      "last_checked_at": "2026-08-09T05:34:31Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -712,7 +714,7 @@
       "manual_check": null
     },
     "elitegamedevelopers-substack-com": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:58Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -732,10 +734,10 @@
       }
     },
     "gamespress-com": {
-      "last_checked_at": "2026-08-08T05:30:31Z",
+      "last_checked_at": "2026-08-09T05:34:09Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 20,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -749,10 +751,10 @@
       "manual_check": null
     },
     "hackernoon-com": {
-      "last_checked_at": "2026-08-08T05:30:31Z",
+      "last_checked_at": "2026-08-09T05:34:11Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 20,
+      "new_count": 10,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -764,7 +766,7 @@
       "manual_check": null
     },
     "is-com": {
-      "last_checked_at": "2026-08-08T05:31:28Z",
+      "last_checked_at": "2026-08-09T05:35:01Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -784,7 +786,7 @@
       }
     },
     "kwalee-com": {
-      "last_checked_at": "2026-08-08T05:30:41Z",
+      "last_checked_at": "2026-08-09T05:34:21Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -799,7 +801,7 @@
       "manual_check": null
     },
     "liftoff-io": {
-      "last_checked_at": "2026-08-08T05:30:42Z",
+      "last_checked_at": "2026-08-09T05:34:21Z",
       "status": "warning",
       "method": "feed-common",
       "new_count": 0,
@@ -816,7 +818,7 @@
       "manual_check": null
     },
     "content-liftoff-io": {
-      "last_checked_at": "2026-08-08T05:30:42Z",
+      "last_checked_at": "2026-08-09T05:34:22Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -836,7 +838,7 @@
       }
     },
     "blog-liquidandgrit-com": {
-      "last_checked_at": "2026-08-08T05:30:53Z",
+      "last_checked_at": "2026-08-09T05:34:33Z",
       "status": "warning",
       "method": "feed-common",
       "new_count": 0,
@@ -858,7 +860,7 @@
       }
     },
     "lancaric-me": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:58Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -875,7 +877,7 @@
       "manual_check": null
     },
     "lancaric-substack-com": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:59Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -895,7 +897,7 @@
       }
     },
     "corporate-mattel-com": {
-      "last_checked_at": "2026-08-08T05:30:55Z",
+      "last_checked_at": "2026-08-09T05:34:35Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -910,7 +912,7 @@
       "manual_check": null
     },
     "maxpowergaming-co": {
-      "last_checked_at": "2026-08-08T05:30:38Z",
+      "last_checked_at": "2026-08-09T05:34:17Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -927,7 +929,7 @@
       "manual_check": null
     },
     "metacoregames-com": {
-      "last_checked_at": "2026-08-08T05:30:59Z",
+      "last_checked_at": "2026-08-09T05:34:39Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -942,7 +944,7 @@
       "manual_check": null
     },
     "mintegral-com": {
-      "last_checked_at": "2026-08-08T05:30:59Z",
+      "last_checked_at": "2026-08-09T05:34:41Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -959,7 +961,7 @@
       "manual_check": null
     },
     "nintendo-com": {
-      "last_checked_at": "2026-08-08T05:30:40Z",
+      "last_checked_at": "2026-08-09T05:34:19Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -1023,10 +1025,10 @@
       "manual_check": null
     },
     "tech-onliner-by": {
-      "last_checked_at": "2026-08-08T05:30:31Z",
+      "last_checked_at": "2026-08-09T05:34:11Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 10,
+      "new_count": 1,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -1038,10 +1040,10 @@
       "manual_check": null
     },
     "pcgamer-com": {
-      "last_checked_at": "2026-08-08T05:30:31Z",
+      "last_checked_at": "2026-08-09T05:34:11Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 19,
+      "new_count": 11,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -1053,7 +1055,7 @@
       "manual_check": null
     },
     "blog-photonengine-com": {
-      "last_checked_at": "2026-08-08T05:31:01Z",
+      "last_checked_at": "2026-08-09T05:34:43Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -1071,7 +1073,7 @@
       "manual_check": null
     },
     "wiki-playgama-com": {
-      "last_checked_at": "2026-08-08T05:30:43Z",
+      "last_checked_at": "2026-08-09T05:34:22Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -1088,10 +1090,10 @@
       "manual_check": null
     },
     "pocketgamer-com": {
-      "last_checked_at": "2026-08-08T05:30:26Z",
+      "last_checked_at": "2026-08-09T05:34:04Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 9,
+      "new_count": 7,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -1103,7 +1105,7 @@
       "manual_check": null
     },
     "premortem-games": {
-      "last_checked_at": "2026-08-08T05:30:22Z",
+      "last_checked_at": "2026-08-09T05:34:00Z",
       "status": "warning",
       "method": "feed",
       "new_count": 0,
@@ -1122,7 +1124,7 @@
       "manual_check": null
     },
     "progamedev-net": {
-      "last_checked_at": "2026-08-08T05:30:21Z",
+      "last_checked_at": "2026-08-09T05:33:58Z",
       "status": "warning",
       "method": "feed",
       "new_count": 0,
@@ -1140,7 +1142,7 @@
       "manual_check": null
     },
     "qubicgames-com": {
-      "last_checked_at": "2026-08-08T05:31:04Z",
+      "last_checked_at": "2026-08-09T05:34:48Z",
       "status": "warning",
       "method": "feed-common",
       "new_count": 0,
@@ -1157,7 +1159,7 @@
       "manual_check": null
     },
     "revenuecat-com": {
-      "last_checked_at": "2026-08-08T05:30:44Z",
+      "last_checked_at": "2026-08-09T05:34:24Z",
       "status": "ok",
       "method": "feed-common",
       "new_count": 0,
@@ -1174,7 +1176,7 @@
       "manual_check": null
     },
     "rotrends-com": {
-      "last_checked_at": "2026-08-08T05:31:07Z",
+      "last_checked_at": "2026-08-09T05:34:51Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -1189,10 +1191,10 @@
       "manual_check": null
     },
     "rockpapershotgun-com": {
-      "last_checked_at": "2026-08-08T05:30:25Z",
+      "last_checked_at": "2026-08-09T05:34:04Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 7,
+      "new_count": 6,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -1204,7 +1206,7 @@
       "manual_check": null
     },
     "say-games": {
-      "last_checked_at": "2026-08-08T05:31:09Z",
+      "last_checked_at": "2026-08-09T05:34:53Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1224,7 +1226,7 @@
       }
     },
     "sensortower-com": {
-      "last_checked_at": "2026-08-08T05:30:45Z",
+      "last_checked_at": "2026-08-09T05:34:25Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1239,7 +1241,7 @@
       "manual_check": null
     },
     "go-sensortower-com": {
-      "last_checked_at": "2026-08-08T05:30:42Z",
+      "last_checked_at": "2026-08-09T05:34:21Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1254,7 +1256,7 @@
       "manual_check": null
     },
     "singular-net": {
-      "last_checked_at": "2026-08-08T05:31:10Z",
+      "last_checked_at": "2026-08-09T05:34:54Z",
       "status": "warning",
       "method": "feed-common",
       "new_count": 0,
@@ -1271,7 +1273,7 @@
       "manual_check": null
     },
     "smartranking-ru": {
-      "last_checked_at": "2026-08-08T05:30:22Z",
+      "last_checked_at": "2026-08-09T05:34:00Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -1286,7 +1288,7 @@
       "manual_check": null
     },
     "socialpeta-com": {
-      "last_checked_at": "2026-08-08T05:31:14Z",
+      "last_checked_at": "2026-08-09T05:34:55Z",
       "status": "ok",
       "method": "sitemap",
       "new_count": 0,
@@ -1303,10 +1305,10 @@
       "manual_check": null
     },
     "tech-eu": {
-      "last_checked_at": "2026-08-08T05:30:32Z",
+      "last_checked_at": "2026-08-09T05:34:12Z",
       "status": "ok",
       "method": "feed-common",
-      "new_count": 4,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -1318,7 +1320,7 @@
       "manual_check": null
     },
     "techbriefly-com": {
-      "last_checked_at": "2026-08-08T05:30:33Z",
+      "last_checked_at": "2026-08-09T05:34:12Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1338,7 +1340,7 @@
       }
     },
     "tenjin-com": {
-      "last_checked_at": "2026-08-08T05:30:45Z",
+      "last_checked_at": "2026-08-09T05:34:26Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -1356,7 +1358,7 @@
       "manual_check": null
     },
     "blog-tenjin-com": {
-      "last_checked_at": "2026-08-08T05:31:18Z",
+      "last_checked_at": "2026-08-09T05:34:55Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -1374,7 +1376,7 @@
       "manual_check": null
     },
     "resources-tenjin-com": {
-      "last_checked_at": "2026-08-08T05:31:20Z",
+      "last_checked_at": "2026-08-09T05:34:57Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1394,7 +1396,7 @@
       }
     },
     "torick-ru": {
-      "last_checked_at": "2026-08-08T05:30:23Z",
+      "last_checked_at": "2026-08-09T05:34:01Z",
       "status": "ok",
       "method": "feed",
       "new_count": 0,
@@ -1412,7 +1414,7 @@
       "manual_check": null
     },
     "unity-com": {
-      "last_checked_at": "2026-08-08T05:30:47Z",
+      "last_checked_at": "2026-08-09T05:34:26Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1432,7 +1434,7 @@
       }
     },
     "vkplay-ru": {
-      "last_checked_at": "2026-08-08T05:30:33Z",
+      "last_checked_at": "2026-08-09T05:34:13Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1455,7 +1457,7 @@
       "manual_check": null
     },
     "voodoo-io": {
-      "last_checked_at": "2026-08-08T05:30:42Z",
+      "last_checked_at": "2026-08-09T05:34:21Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1470,7 +1472,7 @@
       "manual_check": null
     },
     "blog-voodoo-io": {
-      "last_checked_at": "2026-08-08T05:30:40Z",
+      "last_checked_at": "2026-08-09T05:34:20Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1485,7 +1487,7 @@
       "manual_check": null
     },
     "xsolla-com": {
-      "last_checked_at": "2026-08-08T05:31:23Z",
+      "last_checked_at": "2026-08-09T05:35:00Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1500,7 +1502,7 @@
       "manual_check": null
     },
     "xsolla-ru": {
-      "last_checked_at": "2026-08-08T05:31:25Z",
+      "last_checked_at": "2026-08-09T05:35:01Z",
       "status": "warning",
       "method": "none",
       "new_count": 0,
@@ -1515,10 +1517,10 @@
       "manual_check": null
     },
     "secrets-tbank-ru": {
-      "last_checked_at": "2026-08-08T05:30:23Z",
+      "last_checked_at": "2026-08-09T05:34:01Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 40,
+      "new_count": 0,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
@@ -1530,7 +1532,7 @@
       "manual_check": null
     },
     "kinzhal-media": {
-      "last_checked_at": "2026-08-08T05:30:34Z",
+      "last_checked_at": "2026-08-09T05:34:13Z",
       "status": "ok",
       "method": "feed",
       "new_count": 1,
@@ -1542,15 +1544,15 @@
       ],
       "discovered_sitemaps": [],
       "rejection_summary": {
-        "too_old": 17
+        "too_old": 18
       },
       "manual_check": null
     },
     "t-j-ru": {
-      "last_checked_at": "2026-08-08T05:30:35Z",
+      "last_checked_at": "2026-08-09T05:34:14Z",
       "status": "ok",
       "method": "feed",
-      "new_count": 30,
+      "new_count": 2,
       "consecutive_errors": 0,
       "last_error": null,
       "failure_kind": null,
