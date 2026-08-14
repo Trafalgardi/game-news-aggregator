@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-13T05:50:23Z",
-  "count": 17,
+  "generated_at": "2026-08-14T05:49:00Z",
+  "count": 18,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -110,6 +110,15 @@
       "reason": "blocked_on_github_runner",
       "url": "https://lancaric.substack.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "progamedev-net",
+      "source_name": "ProGameDev",
+      "failure_kind": "rate_limited",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://progamedev.net/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "say-games",
