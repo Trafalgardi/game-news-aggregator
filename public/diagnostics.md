@@ -1,16 +1,15 @@
 # Диагностика источников
 
-Обновлено: `2026-08-14T05:49:00Z`
+Обновлено: `2026-08-15T05:27:25Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **28**
-- `blocked`: **8**
+- `no_recent_articles`: **30**
+- `blocked`: **7**
 - `no_articles_found`: **6**
 - `timeout`: **3**
-- `rate_limited`: **1**
 
 ## Проблемные источники
 
@@ -18,13 +17,13 @@
 
 - Статус: `warning`
 - Категория: `no_recent_articles`
-- Метод: `sitemap`
-- Получено кандидатов: `2`
+- Метод: `none`
+- Получено кандидатов: `0`
 - Принято: `0`
-- Причины отбраковки: `{"too_old": 2}`
-- Время: `8258 ms`
+- Причины отбраковки: `{}`
+- Время: `9762 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `14`
+- Попыток: `12`
 
   - `homepage` → `ok` — https://appodeal.com/
   - `feed-common` → `empty` — https://appodeal.com/feed
@@ -38,8 +37,6 @@
   - `sitemap-child` → `ok` — https://appodeal.com/page-sitemap.xml
   - `sitemap-child` → `ok` — https://appodeal.com/post-sitemap.xml
   - `sitemap-child` → `ok` — https://appodeal.com/case_studies-sitemap.xml
-  - `article-enrich` → `ok` — https://appodeal.com/ambassador-program/
-  - `article-enrich` → `ok` — https://appodeal.com/appodeal-accelerator-referral-program-terms/
 
 ### AppQuantum (`appquantum-com`)
 
@@ -49,7 +46,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1659 ms`
+- Время: `2140 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -71,7 +68,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1156 ms`
+- Время: `1915 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -92,7 +89,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5327 ms`
+- Время: `5597 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -116,7 +113,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `1626 ms`
+- Время: `2149 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -131,7 +128,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `783 ms`
+- Время: `965 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -152,7 +149,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `320 ms`
+- Время: `446 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -173,7 +170,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `385 ms`
+- Время: `454 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -188,7 +185,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5430 ms`
+- Время: `5708 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -210,7 +207,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `25706 ms`
+- Время: `39574 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `20`
 
@@ -243,7 +240,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1676 ms`
+- Время: `2238 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -265,7 +262,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `697 ms`
+- Время: `387 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -286,7 +283,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1952 ms`
+- Время: `2940 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -308,7 +305,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1806 ms`
+- Время: `2527 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -323,7 +320,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `686 ms`
+- Время: `693 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -344,7 +341,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `793 ms`
+- Время: `726 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -366,7 +363,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `68177 ms`
+- Время: `68514 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -387,7 +384,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5552 ms`
+- Время: `1411 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -409,7 +406,7 @@
 - Получено кандидатов: `11`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 11}`
-- Время: `898 ms`
+- Время: `700 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -424,7 +421,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1434 ms`
+- Время: `2017 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -440,17 +437,17 @@
 ### Liquid & Grit (`blog-liquidandgrit-com`)
 
 - Статус: `warning`
-- Категория: `blocked`
-- Метод: `feed-common`
+- Категория: `no_recent_articles`
+- Метод: `feed`
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1883 ms`
+- Время: `2478 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
-  - `homepage` → `error` — https://blog.liquidandgrit.com/ — HTTPError: 403 Client Error: Forbidden for url: https://blog.liquidandgrit.com/
-  - `feed-common` → `ok` — https://blog.liquidandgrit.com/feed
+  - `homepage` → `ok` — https://blog.liquidandgrit.com/
+  - `feed-discovered` → `ok` — https://blog.liquidandgrit.com/feed
 
 ### Matej Lancaric (`lancaric-me`)
 
@@ -460,7 +457,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `13715 ms`
+- Время: `12282 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -488,7 +485,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `649 ms`
+- Время: `676 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -509,7 +506,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5049 ms`
+- Время: `3579 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -531,7 +528,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `9652 ms`
+- Время: `11884 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -553,7 +550,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1656 ms`
+- Время: `2262 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -568,7 +565,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `705 ms`
+- Время: `4503 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -583,7 +580,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1466 ms`
+- Время: `2124 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -593,23 +590,17 @@
 ### ProGameDev (`progamedev-net`)
 
 - Статус: `warning`
-- Категория: `rate_limited`
-- Метод: `none`
-- Получено кандидатов: `0`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
 - Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `1681 ms`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `2908 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
+- Попыток: `2`
 
-  - `homepage` → `error` — https://progamedev.net/ — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/
-  - `feed-common` → `error` — https://progamedev.net/feed — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/feed
-  - `feed-common` → `error` — https://progamedev.net/rss — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/rss
-  - `feed-common` → `error` — https://progamedev.net/rss.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/rss.xml
-  - `feed-common` → `error` — https://progamedev.net/feed.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/feed.xml
-  - `feed-common` → `error` — https://progamedev.net/atom.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/atom.xml
-  - `robots` → `error` — https://progamedev.net/robots.txt — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/robots.txt
-  - `sitemap` → `error` — https://progamedev.net/sitemap.xml — HTTPError: 429 Client Error: Too Many Requests for url: https://progamedev.net/sitemap.xml
+  - `homepage` → `ok` — https://progamedev.net/
+  - `feed-discovered` → `ok` — https://progamedev.net/feed/
 
 ### QubicGames (`qubicgames-com`)
 
@@ -619,7 +610,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `5720 ms`
+- Время: `9011 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -634,7 +625,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6164 ms`
+- Время: `6740 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -656,16 +647,16 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1136 ms`
+- Время: `8492 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
   - `homepage` → `ok` — https://sensortower.com/
-  - `feed-common` → `error` — https://sensortower.com/feed — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/feed
-  - `feed-common` → `error` — https://sensortower.com/rss — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/rss
+  - `feed-common` → `error` — https://sensortower.com/feed — HTTPError: 500 Server Error: Internal Server Error for url: https://sensortower.com/feed
+  - `feed-common` → `error` — https://sensortower.com/rss — HTTPError: 500 Server Error: Internal Server Error for url: https://sensortower.com/rss
   - `feed-common` → `error` — https://sensortower.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/rss.xml
   - `feed-common` → `error` — https://sensortower.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/feed.xml
-  - `feed-common` → `error` — https://sensortower.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/atom.xml
+  - `feed-common` → `error` — https://sensortower.com/atom.xml — HTTPError: 500 Server Error: Internal Server Error for url: https://sensortower.com/atom.xml
   - `html-listing` → `empty` — https://sensortower.com/
   - `robots` → `ok` — https://sensortower.com/robots.txt
   - `sitemap` → `ok` — https://sensortower.com/sitemap.xml
@@ -684,16 +675,16 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2230 ms`
+- Время: `10375 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
   - `homepage` → `ok` — https://go.sensortower.com/
-  - `feed-common` → `error` — https://sensortower.com/feed — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/feed
-  - `feed-common` → `error` — https://sensortower.com/rss — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/rss
-  - `feed-common` → `error` — https://sensortower.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/rss.xml
+  - `feed-common` → `error` — https://sensortower.com/feed — HTTPError: 500 Server Error: Internal Server Error for url: https://sensortower.com/feed
+  - `feed-common` → `error` — https://sensortower.com/rss — HTTPError: 500 Server Error: Internal Server Error for url: https://sensortower.com/rss
+  - `feed-common` → `error` — https://sensortower.com/rss.xml — HTTPError: 500 Server Error: Internal Server Error for url: https://sensortower.com/rss.xml
   - `feed-common` → `error` — https://sensortower.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/feed.xml
-  - `feed-common` → `error` — https://sensortower.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://sensortower.com/atom.xml
+  - `feed-common` → `error` — https://sensortower.com/atom.xml — HTTPError: 500 Server Error: Internal Server Error for url: https://sensortower.com/atom.xml
   - `html-listing` → `empty` — https://sensortower.com
   - `robots` → `ok` — https://sensortower.com/robots.txt
   - `sitemap` → `ok` — https://sensortower.com/sitemap.xml
@@ -712,7 +703,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `631 ms`
+- Время: `2199 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -727,7 +718,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1380 ms`
+- Время: `1580 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -742,7 +733,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1569 ms`
+- Время: `2301 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -764,7 +755,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `659 ms`
+- Время: `674 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -785,7 +776,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2376 ms`
+- Время: `1905 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -806,7 +797,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `5935 ms`
+- Время: `1400 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -821,7 +812,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65087 ms`
+- Время: `64988 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -842,7 +833,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64957 ms`
+- Время: `64956 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -863,7 +854,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7269 ms`
+- Время: `8988 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -897,7 +888,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `199 ms`
+- Время: `539 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -919,7 +910,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1031 ms`
+- Время: `977 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -941,7 +932,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3543 ms`
+- Время: `3801 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -969,7 +960,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1639 ms`
+- Время: `2391 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
