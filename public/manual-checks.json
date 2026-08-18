@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-17T05:28:56Z",
-  "count": 17,
+  "generated_at": "2026-08-18T05:27:55Z",
+  "count": 16,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -82,15 +82,6 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://is.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "kwalee-com",
-      "source_name": "Kwalee Blog",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://kwalee.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
