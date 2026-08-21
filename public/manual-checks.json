@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-20T05:28:05Z",
-  "count": 16,
+  "generated_at": "2026-08-21T05:28:13Z",
+  "count": 17,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -145,6 +145,15 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://blog.unity.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "kinzhal-media",
+      "source_name": "Кинжал",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://kinzhal.media/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     }
   ]
