@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-22T05:27:22Z",
-  "count": 17,
+  "generated_at": "2026-08-23T05:27:35Z",
+  "count": 19,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -85,12 +85,30 @@
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
+      "source_id": "kwalee-com",
+      "source_name": "Kwalee Blog",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://kwalee.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
       "source_id": "content-liftoff-io",
       "source_name": "Liftoff Content",
       "failure_kind": "no_articles_found",
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://content.liftoff.io/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "blog-liquidandgrit-com",
+      "source_name": "Liquid & Grit",
+      "failure_kind": "unknown",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://blog.liquidandgrit.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
