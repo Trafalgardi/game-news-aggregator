@@ -1,16 +1,15 @@
 # Диагностика источников
 
-Обновлено: `2026-08-27T07:56:07Z`
+Обновлено: `2026-08-28T07:58:01Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
 - `no_recent_articles`: **26**
-- `blocked`: **9**
+- `blocked`: **8**
 - `no_articles_found`: **6**
-- `timeout`: **3**
-- `unknown`: **1**
+- `timeout`: **5**
 
 ## Проблемные источники
 
@@ -22,7 +21,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4099 ms`
+- Время: `4178 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -47,7 +46,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1648 ms`
+- Время: `1406 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -69,7 +68,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1263 ms`
+- Время: `1033 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -90,7 +89,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5832 ms`
+- Время: `5333 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -114,7 +113,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `867 ms`
+- Время: `982 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -135,7 +134,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `351 ms`
+- Время: `242 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -156,7 +155,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `531 ms`
+- Время: `1389 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -171,7 +170,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4309 ms`
+- Время: `4354 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -193,7 +192,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1576 ms`
+- Время: `1084 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `14`
 
@@ -212,28 +211,6 @@
   - `sitemap-child` → `error` — https://www.data.ai/app_sitemap_index.xml — HTTPError: 403 Client Error: Forbidden for url: https://www.data.ai/app_sitemap_index.xml
   - `sitemap-child` → `error` — https://www.data.ai/mkt/sitemap/index.xml — ParseError: not well-formed (invalid token): line 9, column 381
 
-### Deconstructor of Fun (`deconstructoroffun-com`)
-
-- Статус: `warning`
-- Категория: `no_recent_articles`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `2835 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `9`
-
-  - `homepage` → `ok` — https://deconstructoroffun.com/
-  - `feed-common` → `error` — https://www.deconstructoroffun.com/feed — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/feed
-  - `feed-common` → `error` — https://www.deconstructoroffun.com/rss — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/rss
-  - `feed-common` → `error` — https://www.deconstructoroffun.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/rss.xml
-  - `feed-common` → `error` — https://www.deconstructoroffun.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/feed.xml
-  - `feed-common` → `error` — https://www.deconstructoroffun.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/atom.xml
-  - `html-listing` → `empty` — https://www.deconstructoroffun.com/
-  - `robots` → `ok` — https://www.deconstructoroffun.com/robots.txt
-  - `sitemap` → `ok` — https://www.deconstructoroffun.com/sitemap.xml
-
 ### Ducky (`playducky-com`)
 
 - Статус: `warning`
@@ -242,7 +219,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `885 ms`
+- Время: `826 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -264,7 +241,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `349 ms`
+- Время: `647 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -285,7 +262,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `373 ms`
+- Время: `360 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -306,7 +283,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `774 ms`
+- Время: `1340 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -328,7 +305,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `68603 ms`
+- Время: `68375 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -349,7 +326,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8152 ms`
+- Время: `9896 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -371,7 +348,7 @@
 - Получено кандидатов: `11`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 11}`
-- Время: `1136 ms`
+- Время: `1292 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -386,7 +363,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2423 ms`
+- Время: `1605 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -407,7 +384,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1090 ms`
+- Время: `931 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -422,7 +399,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `12673 ms`
+- Время: `14647 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -450,7 +427,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `941 ms`
+- Время: `543 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -471,7 +448,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5639 ms`
+- Время: `795 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -493,7 +470,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6816 ms`
+- Время: `6975 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -515,7 +492,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2374 ms`
+- Время: `1640 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -530,7 +507,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `682 ms`
+- Время: `612 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -545,7 +522,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1931 ms`
+- Время: `1883 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -560,7 +537,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `5533 ms`
+- Время: `6012 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -575,7 +552,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7126 ms`
+- Время: `7575 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -597,7 +574,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3084 ms`
+- Время: `1277 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -625,7 +602,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8246 ms`
+- Время: `2750 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -645,6 +622,21 @@
   - `sitemap-child` → `ok` — https://sensortower.com/en-US-s3-blog-sitemap-5.xml
   - `sitemap-child` → `ok` — https://sensortower.com/en-US-s3-blog-sitemap-6.xml
 
+### Singular (`singular-net`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `feed-common`
+- Получено кандидатов: `10`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `589 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `2`
+
+  - `homepage` → `ok` — https://singular.net/
+  - `feed-common` → `ok` — https://www.singular.net/feed
+
 ### Supersonic / Unity LevelPlay (`supersonic-com`)
 
 - Статус: `warning`
@@ -653,7 +645,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1824 ms`
+- Время: `1934 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -668,7 +660,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2112 ms`
+- Время: `1855 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -690,7 +682,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `473 ms`
+- Время: `481 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -706,44 +698,44 @@
 ### Tenjin (`tenjin-com`)
 
 - Статус: `warning`
-- Категория: `blocked`
+- Категория: `timeout`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `21750 ms`
+- Время: `64582 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
-  - `homepage` → `error` — https://tenjin.com/ — HTTPError: 403 Client Error: Forbidden for url: https://tenjin.com/
-  - `feed-common` → `error` — https://tenjin.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://tenjin.com/feed
-  - `feed-common` → `error` — https://tenjin.com/rss — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss (Caused by ReadTimeoutError("HTTPSConnectionPool(host='tenjin.com', port=443): Read timed out. (read timeout=8)"))
-  - `feed-common` → `error` — https://tenjin.com/rss.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
-  - `feed-common` → `error` — https://tenjin.com/feed.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `feed-common` → `error` — https://tenjin.com/atom.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `robots` → `error` — https://tenjin.com/robots.txt — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `sitemap` → `error` — https://tenjin.com/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+  - `homepage` → `error` — https://tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a64744dd0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a649cbfb0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a64a25460>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a6c0a3500>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a64defdd0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a6c7fd2e0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `robots` → `error` — https://tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a6c919340>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `sitemap` → `error` — https://tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a52c18470>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
 
 ### Tenjin Blog (`blog-tenjin-com`)
 
 - Статус: `warning`
-- Категория: `unknown`
+- Категория: `timeout`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1856 ms`
+- Время: `65898 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
-  - `homepage` → `error` — https://blog.tenjin.com/ — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/ (Caused by ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')))
-  - `feed-common` → `error` — https://blog.tenjin.com/feed — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `feed-common` → `error` — https://blog.tenjin.com/rss — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `feed-common` → `error` — https://blog.tenjin.com/rss.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss.xml (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `feed-common` → `error` — https://blog.tenjin.com/feed.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed.xml (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `feed-common` → `error` — https://blog.tenjin.com/atom.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/atom.xml (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `robots` → `error` — https://blog.tenjin.com/robots.txt — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/robots.txt (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
-  - `sitemap` → `error` — https://blog.tenjin.com/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/sitemap.xml (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))
+  - `homepage` → `error` — https://blog.tenjin.com/ — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a51f077d0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/feed — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a64def200>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/rss — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a51fec980>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/rss.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/rss.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a52c1a300>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/feed.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/feed.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a52c1a5d0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `feed-common` → `error` — https://blog.tenjin.com/atom.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/atom.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a6c0ac350>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `robots` → `error` — https://blog.tenjin.com/robots.txt — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a52c19640>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
+  - `sitemap` → `error` — https://blog.tenjin.com/sitemap.xml — ConnectTimeout: HTTPSConnectionPool(host='tenjin.com', port=443): Max retries exceeded with url: /blog/sitemap.xml (Caused by ConnectTimeoutError(<HTTPSConnection(host='tenjin.com', port=443) at 0x7f4a6c0582c0>, 'Connection to tenjin.com timed out. (connect timeout=8)'))
 
 ### Tenjin Resources (`resources-tenjin-com`)
 
@@ -753,7 +745,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1650 ms`
+- Время: `1104 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -774,7 +766,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `1161 ms`
+- Время: `1928 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -789,7 +781,7 @@
 - Получено кандидатов: `40`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 40}`
-- Время: `755 ms`
+- Время: `378 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -804,7 +796,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64756 ms`
+- Время: `64584 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -825,7 +817,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64800 ms`
+- Время: `64546 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -846,7 +838,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7080 ms`
+- Время: `6671 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -880,7 +872,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `861 ms`
+- Время: `366 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -902,7 +894,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1187 ms`
+- Время: `955 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -924,7 +916,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3902 ms`
+- Время: `4598 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -952,7 +944,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1837 ms`
+- Время: `1072 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 

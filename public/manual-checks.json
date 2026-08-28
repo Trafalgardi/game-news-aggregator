@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-27T07:56:07Z",
+  "generated_at": "2026-08-28T07:58:01Z",
   "count": 19,
   "checks": [
     {
@@ -132,16 +132,16 @@
     {
       "source_id": "tenjin-com",
       "source_name": "Tenjin",
-      "failure_kind": "blocked",
-      "priority": "medium",
-      "reason": "blocked_on_github_runner",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
       "url": "https://tenjin.com/",
-      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "blog-tenjin-com",
       "source_name": "Tenjin Blog",
-      "failure_kind": "unknown",
+      "failure_kind": "timeout",
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://blog.tenjin.com/",
