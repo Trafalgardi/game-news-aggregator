@@ -1,15 +1,15 @@
 # Диагностика источников
 
-Обновлено: `2026-08-29T05:25:15Z`
+Обновлено: `2026-08-30T05:25:29Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **27**
+- `no_recent_articles`: **25**
 - `blocked`: **8**
 - `no_articles_found`: **6**
-- `timeout`: **3**
+- `timeout`: **5**
 
 ## Проблемные источники
 
@@ -21,7 +21,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4325 ms`
+- Время: `5091 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -46,7 +46,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1454 ms`
+- Время: `1835 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -68,7 +68,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1073 ms`
+- Время: `1439 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -89,7 +89,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5833 ms`
+- Время: `5515 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -113,7 +113,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `598 ms`
+- Время: `1263 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -134,7 +134,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `235 ms`
+- Время: `890 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -155,7 +155,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `883 ms`
+- Время: `2115 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -170,7 +170,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4774 ms`
+- Время: `4998 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -192,7 +192,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1058 ms`
+- Время: `2475 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `14`
 
@@ -219,7 +219,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `730 ms`
+- Время: `1713 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -241,7 +241,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `580 ms`
+- Время: `4849 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -262,7 +262,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `363 ms`
+- Время: `2396 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -283,7 +283,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `576 ms`
+- Время: `878 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -305,7 +305,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `966 ms`
+- Время: `1415 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -320,7 +320,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `67814 ms`
+- Время: `69597 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -336,24 +336,23 @@
 ### Kwalee Blog (`kwalee-com`)
 
 - Статус: `warning`
-- Категория: `no_recent_articles`
+- Категория: `timeout`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `10897 ms`
+- Время: `50779 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `9`
+- Попыток: `8`
 
-  - `homepage` → `ok` — https://kwalee.com/
-  - `feed-common` → `error` — https://www.kwalee.com/feed — HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/feed
-  - `feed-common` → `error` — https://www.kwalee.com/rss — HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/rss
-  - `feed-common` → `error` — https://www.kwalee.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/rss.xml
-  - `feed-common` → `error` — https://www.kwalee.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/feed.xml
-  - `feed-common` → `error` — https://www.kwalee.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/atom.xml
-  - `html-listing` → `empty` — https://www.kwalee.com
-  - `robots` → `ok` — https://www.kwalee.com/robots.txt
-  - `sitemap` → `ok` — https://www.kwalee.com/sitemap.xml
+  - `homepage` → `error` — https://kwalee.com/ — ConnectionError: HTTPSConnectionPool(host='kwalee.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError("HTTPSConnectionPool(host='kwalee.com', port=443): Read timed out. (read timeout=8)"))
+  - `feed-common` → `error` — https://kwalee.com/feed — HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/feed
+  - `feed-common` → `error` — https://kwalee.com/rss — ConnectionError: HTTPSConnectionPool(host='www.kwalee.com', port=443): Max retries exceeded with url: /rss (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.kwalee.com', port=443): Read timed out. (read timeout=8)"))
+  - `feed-common` → `error` — https://kwalee.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/rss.xml
+  - `feed-common` → `error` — https://kwalee.com/feed.xml — ConnectionError: HTTPSConnectionPool(host='www.kwalee.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.kwalee.com', port=443): Read timed out. (read timeout=8)"))
+  - `feed-common` → `error` — https://kwalee.com/atom.xml — ConnectionError: HTTPSConnectionPool(host='www.kwalee.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.kwalee.com', port=443): Read timed out. (read timeout=8)"))
+  - `robots` → `ok` — https://kwalee.com/robots.txt
+  - `sitemap` → `error` — https://www.kwalee.com/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='www.kwalee.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='www.kwalee.com', port=443): Read timed out. (read timeout=8)"))
 
 ### Liftoff (`liftoff-io`)
 
@@ -363,7 +362,7 @@
 - Получено кандидатов: `11`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 11}`
-- Время: `1078 ms`
+- Время: `963 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -378,7 +377,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1797 ms`
+- Время: `2727 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -399,7 +398,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1510 ms`
+- Время: `1679 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -414,7 +413,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `11958 ms`
+- Время: `13136 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -442,7 +441,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `593 ms`
+- Время: `760 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -463,7 +462,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2953 ms`
+- Время: `4749 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -480,22 +479,21 @@
 ### Metacore (`metacoregames-com`)
 
 - Статус: `warning`
-- Категория: `no_recent_articles`
+- Категория: `timeout`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5931 ms`
+- Время: `15817 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `9`
+- Попыток: `8`
 
-  - `homepage` → `ok` — https://metacoregames.com/
+  - `homepage` → `error` — https://metacoregames.com/ — ConnectionError: HTTPSConnectionPool(host='metacoregames.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError("HTTPSConnectionPool(host='metacoregames.com', port=443): Read timed out. (read timeout=8)"))
   - `feed-common` → `error` — https://metacoregames.com/feed — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/feed
   - `feed-common` → `error` — https://metacoregames.com/rss — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/rss
   - `feed-common` → `error` — https://metacoregames.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/rss.xml
   - `feed-common` → `error` — https://metacoregames.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/feed.xml
   - `feed-common` → `error` — https://metacoregames.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://metacoregames.com/atom.xml
-  - `html-listing` → `empty` — https://metacoregames.com/
   - `robots` → `ok` — https://metacoregames.com/robots.txt
   - `sitemap` → `ok` — https://metacoregames.com/sitemap.xml
 
@@ -507,7 +505,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1649 ms`
+- Время: `1975 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -522,7 +520,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `589 ms`
+- Время: `855 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -537,7 +535,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1930 ms`
+- Время: `2386 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -552,7 +550,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `5696 ms`
+- Время: `5560 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -567,7 +565,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5955 ms`
+- Время: `6774 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -589,7 +587,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1417 ms`
+- Время: `1871 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -617,7 +615,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4589 ms`
+- Время: `5482 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -645,7 +643,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `540 ms`
+- Время: `1222 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -660,7 +658,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1291 ms`
+- Время: `1548 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -675,7 +673,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2028 ms`
+- Время: `3116 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -697,7 +695,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `547 ms`
+- Время: `1895 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -718,7 +716,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1147 ms`
+- Время: `2417 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -739,7 +737,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `1011 ms`
+- Время: `1273 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -754,7 +752,7 @@
 - Получено кандидатов: `40`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 40}`
-- Время: `636 ms`
+- Время: `3412 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -769,7 +767,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64649 ms`
+- Время: `64757 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -790,7 +788,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64800 ms`
+- Время: `65175 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -811,7 +809,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6432 ms`
+- Время: `8352 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -845,7 +843,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `199 ms`
+- Время: `844 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -867,7 +865,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `812 ms`
+- Время: `978 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -889,7 +887,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3272 ms`
+- Время: `6522 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -917,7 +915,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1351 ms`
+- Время: `2386 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
