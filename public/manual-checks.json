@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-02T05:31:22Z",
+  "generated_at": "2026-09-03T05:50:43Z",
   "count": 17,
   "checks": [
     {
@@ -49,15 +49,6 @@
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
-      "source_id": "data-ai",
-      "source_name": "data.ai",
-      "failure_kind": "blocked",
-      "priority": "medium",
-      "reason": "blocked_on_github_runner",
-      "url": "https://www.data.ai/account/login/?next=%2Faccount%2Flogin%2Ffeed",
-      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
       "source_id": "elitegamedevelopers-substack-com",
       "source_name": "Elite Game Developers",
       "failure_kind": "blocked",
@@ -91,6 +82,15 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://is.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "kwalee-com",
+      "source_name": "Kwalee Blog",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://kwalee.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
