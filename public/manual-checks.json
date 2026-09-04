@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-03T05:50:43Z",
+  "generated_at": "2026-09-04T05:27:23Z",
   "count": 17,
   "checks": [
     {
@@ -85,15 +85,6 @@
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
-      "source_id": "kwalee-com",
-      "source_name": "Kwalee Blog",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://kwalee.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
       "source_id": "content-liftoff-io",
       "source_name": "Liftoff Content",
       "failure_kind": "no_articles_found",
@@ -154,6 +145,15 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://blog.unity.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "venturebeat-com",
+      "source_name": "VentureBeat",
+      "failure_kind": "rate_limited",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://venturebeat.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     }
   ]
