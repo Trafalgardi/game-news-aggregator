@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-04T05:27:23Z",
-  "count": 17,
+  "generated_at": "2026-09-05T05:26:13Z",
+  "count": 18,
   "checks": [
+    {
+      "source_id": "appfigures-com",
+      "source_name": "Appfigures",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://appfigures.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
     {
       "source_id": "appquantum-com",
       "source_name": "AppQuantum",
