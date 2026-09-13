@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-12T05:26:26Z",
-  "count": 20,
+  "generated_at": "2026-09-13T05:25:55Z",
+  "count": 19,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -136,15 +136,6 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://resources.tenjin.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "torick-ru",
-      "source_name": "Torick",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://torick.ru/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
