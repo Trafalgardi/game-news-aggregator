@@ -1,17 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-14T05:28:47Z",
-  "count": 23,
+  "generated_at": "2026-09-15T05:28:23Z",
+  "count": 18,
   "checks": [
-    {
-      "source_id": "appfigures-com",
-      "source_name": "Appfigures",
-      "failure_kind": "no_articles_found",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://appfigures.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
     {
       "source_id": "appquantum-com",
       "source_name": "AppQuantum",
@@ -47,15 +38,6 @@
       "reason": "blocked_on_github_runner",
       "url": "https://businessofapps.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
-      "source_id": "citybiz-co",
-      "source_name": "citybiz",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://citybiz.co/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "calcalistech-com",
@@ -119,33 +101,6 @@
       "reason": "blocked_on_github_runner",
       "url": "https://lancaric.substack.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
-      "source_id": "maf-ad",
-      "source_name": "MobileAction / MAF",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://maf.ad/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "naavik-co",
-      "source_name": "Naavik",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://naavik.co/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "blog-photonengine-com",
-      "source_name": "Photon Blog",
-      "failure_kind": "timeout",
-      "priority": "medium",
-      "reason": "feed_reachable_but_no_accepted_items",
-      "url": "https://blog.photonengine.com/feed/",
-      "instruction": "Проверить первые 3 item: link, pubDate/updated и фактическую дату последней публикации."
     },
     {
       "source_id": "say-games",
