@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-19T05:26:29Z",
-  "count": 18,
+  "generated_at": "2026-09-20T05:26:28Z",
+  "count": 19,
   "checks": [
     {
       "source_id": "appquantum-com",
@@ -92,6 +92,15 @@
       "reason": "source_structure_unknown",
       "url": "https://content.liftoff.io/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "blog-liquidandgrit-com",
+      "source_name": "Liquid & Grit",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://blog.liquidandgrit.com/feed",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
       "source_id": "lancaric-substack-com",
