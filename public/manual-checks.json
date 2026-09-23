@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-22T05:28:57Z",
-  "count": 20,
+  "generated_at": "2026-09-23T05:28:39Z",
+  "count": 21,
   "checks": [
+    {
+      "source_id": "appfigures-com",
+      "source_name": "Appfigures",
+      "failure_kind": "no_articles_found",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://appfigures.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
     {
       "source_id": "appquantum-com",
       "source_name": "AppQuantum",
@@ -121,6 +130,15 @@
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
+      "source_id": "go-sensortower-com",
+      "source_name": "Sensor Tower Resources",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://go.sensortower.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
       "source_id": "techbriefly-com",
       "source_name": "TechBriefly",
       "failure_kind": "blocked",
@@ -136,15 +154,6 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://resources.tenjin.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "torick-ru",
-      "source_name": "Torick",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://torick.ru/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
