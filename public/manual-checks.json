@@ -1,8 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-23T05:28:39Z",
+  "generated_at": "2026-09-24T05:28:43Z",
   "count": 21,
   "checks": [
+    {
+      "source_id": "app2top-ru",
+      "source_name": "App2Top",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://app2top.ru/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
     {
       "source_id": "appfigures-com",
       "source_name": "Appfigures",
@@ -127,15 +136,6 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://say.games/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "go-sensortower-com",
-      "source_name": "Sensor Tower Resources",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://go.sensortower.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
