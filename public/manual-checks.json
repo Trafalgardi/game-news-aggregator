@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28T05:32:30Z",
-  "count": 22,
+  "generated_at": "2026-09-29T05:30:49Z",
+  "count": 20,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -121,15 +121,6 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
-      "source_id": "metacoregames-com",
-      "source_name": "Metacore",
-      "failure_kind": "timeout",
-      "priority": "medium",
-      "reason": "sitemap_needs_path_filter",
-      "url": "https://metacoregames.com/sitemap.xml",
-      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
-    },
-    {
       "source_id": "say-games",
       "source_name": "SayGames",
       "failure_kind": "no_articles_found",
@@ -154,15 +145,6 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://resources.tenjin.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "torick-ru",
-      "source_name": "Torick",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://torick.ru/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
