@@ -1,12 +1,12 @@
 # Диагностика источников
 
-Обновлено: `2026-10-11T05:29:59Z`
+Обновлено: `2026-10-12T05:38:30Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **28**
+- `no_recent_articles`: **29**
 - `blocked`: **9**
 - `no_articles_found`: **6**
 - `timeout`: **3**
@@ -23,7 +23,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `536 ms`
+- Время: `793 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -44,7 +44,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5085 ms`
+- Время: `5966 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -69,7 +69,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1620 ms`
+- Время: `1792 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -91,7 +91,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1392 ms`
+- Время: `1480 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -112,7 +112,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `735 ms`
+- Время: `846 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -127,7 +127,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5352 ms`
+- Время: `6508 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -151,7 +151,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1466 ms`
+- Время: `1625 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -172,7 +172,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `647 ms`
+- Время: `820 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -193,7 +193,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1526 ms`
+- Время: `1479 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -208,7 +208,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5338 ms`
+- Время: `4635 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -230,7 +230,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2014 ms`
+- Время: `2507 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `14`
 
@@ -249,6 +249,40 @@
   - `sitemap-child` → `error` — https://www.data.ai/app_sitemap_index.xml — HTTPError: 404 Client Error: Not Found for url: https://www.data.ai/app_sitemap_index.xml
   - `sitemap-child` → `error` — https://www.data.ai/mkt/sitemap/index.xml — ParseError: not well-formed (invalid token): line 9, column 381
 
+### Deconstructor of Fun (`deconstructoroffun-com`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `sitemap`
+- Получено кандидатов: `12`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 12}`
+- Время: `4436 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `21`
+
+  - `homepage` → `ok` — https://deconstructoroffun.com/
+  - `feed-common` → `error` — https://www.deconstructoroffun.com/feed — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/feed
+  - `feed-common` → `error` — https://www.deconstructoroffun.com/rss — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/rss
+  - `feed-common` → `error` — https://www.deconstructoroffun.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/rss.xml
+  - `feed-common` → `error` — https://www.deconstructoroffun.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/feed.xml
+  - `feed-common` → `error` — https://www.deconstructoroffun.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://www.deconstructoroffun.com/atom.xml
+  - `html-listing` → `empty` — https://www.deconstructoroffun.com/
+  - `robots` → `ok` — https://www.deconstructoroffun.com/robots.txt
+  - `sitemap` → `ok` — https://www.deconstructoroffun.com/sitemap.xml
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2020/4/7/long-term-retention-why-d180-is-the-new-d30
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2017/9/13/how-monetize-using-behavioural-economics
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2017/7/21/4x-games-the-secrets-of-machine-zones-success-zpm56
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/zynga-founder-mark-pincus-why-your-favourite-ideas-are-almost-always-wrong
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/how-toon-blast-became-the-best-business-in-puzzle
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/does-merge-2-monetize-better-than-match-3
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2026/2/16/10iu9tcohavr8nt02ya274ssgqj7zj
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2026/2/9/designing-games-in-the-age-of-ai
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2026/2/6/sort-puzzles-how-a-new-subgenre-is-born
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2026/2/2/state-of-mobile-2026
+  - `article-enrich` → `ok` — https://www.deconstructoroffun.com/blog/2026/1/27/building-forever-franchises-13-years-of-lessons-from-zyngas-evp-studios-yaron-leyvand
+
 ### Elite Game Developers (`elitegamedevelopers-substack-com`)
 
 - Статус: `warning`
@@ -257,7 +291,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `507 ms`
+- Время: `966 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -278,7 +312,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2096 ms`
+- Время: `2265 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -293,7 +327,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `616 ms`
+- Время: `796 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -314,7 +348,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `890 ms`
+- Время: `807 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -336,7 +370,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `827 ms`
+- Время: `4091 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -351,7 +385,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `70595 ms`
+- Время: `68801 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -372,7 +406,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6326 ms`
+- Время: `6266 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -394,7 +428,7 @@
 - Получено кандидатов: `11`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 11}`
-- Время: `1248 ms`
+- Время: `1162 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -409,7 +443,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2915 ms`
+- Время: `3149 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -430,7 +464,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `506 ms`
+- Время: `532 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -445,7 +479,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `13958 ms`
+- Время: `17972 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -473,7 +507,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `537 ms`
+- Время: `724 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -494,7 +528,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3501 ms`
+- Время: `1401 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -516,7 +550,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7041 ms`
+- Время: `7599 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -538,7 +572,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2077 ms`
+- Время: `2061 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -553,7 +587,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1429 ms`
+- Время: `1787 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -568,7 +602,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2274 ms`
+- Время: `2517 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -583,7 +617,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `5392 ms`
+- Время: `6149 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -598,7 +632,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6133 ms`
+- Время: `6628 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -620,7 +654,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1922 ms`
+- Время: `2987 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -648,7 +682,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3003 ms`
+- Время: `6141 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -676,7 +710,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `662 ms`
+- Время: `919 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -691,7 +725,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1315 ms`
+- Время: `1087 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -706,7 +740,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2166 ms`
+- Время: `2734 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -728,7 +762,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `858 ms`
+- Время: `925 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -749,7 +783,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2735 ms`
+- Время: `4520 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -770,7 +804,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `821 ms`
+- Время: `1402 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -785,7 +819,7 @@
 - Получено кандидатов: `40`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 40}`
-- Время: `707 ms`
+- Время: `822 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -800,7 +834,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64672 ms`
+- Время: `64889 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -821,7 +855,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `65329 ms`
+- Время: `65022 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -842,7 +876,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `366 ms`
+- Время: `539 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -864,7 +898,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7002 ms`
+- Время: `7823 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -898,7 +932,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `556 ms`
+- Время: `802 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -920,7 +954,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1201 ms`
+- Время: `885 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -942,7 +976,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4206 ms`
+- Время: `3300 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -970,7 +1004,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1636 ms`
+- Время: `2372 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -992,7 +1026,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2500 ms`
+- Время: `2743 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
