@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T05:26:29Z",
-  "count": 20,
+  "generated_at": "2026-10-19T05:30:05Z",
+  "count": 21,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -65,6 +65,15 @@
       "reason": "blocked_on_github_runner",
       "url": "https://elitegamedevelopers.substack.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "gamespress-com",
+      "source_name": "GamesPress",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://gamespress.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "gamingonphone-com",
