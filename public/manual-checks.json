@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T05:29:24Z",
+  "generated_at": "2026-10-23T05:28:39Z",
   "count": 21,
   "checks": [
     {
@@ -15,7 +15,7 @@
     {
       "source_id": "appquantum-com",
       "source_name": "AppQuantum",
-      "failure_kind": "timeout",
+      "failure_kind": "no_articles_found",
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://appquantum.com/",
@@ -130,13 +130,13 @@
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
-      "source_id": "smartranking-ru",
-      "source_name": "Smart Ranking",
-      "failure_kind": "unknown",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://smartranking.ru/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+      "source_id": "tech-eu",
+      "source_name": "Tech.eu",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://tech.eu/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
       "source_id": "techbriefly-com",

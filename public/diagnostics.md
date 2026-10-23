@@ -1,18 +1,17 @@
 # Диагностика источников
 
-Обновлено: `2026-10-22T05:29:24Z`
+Обновлено: `2026-10-23T05:28:39Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **22**
-- `blocked`: **9**
-- `no_articles_found`: **5**
-- `timeout`: **4**
+- `no_recent_articles`: **23**
+- `blocked`: **10**
+- `no_articles_found`: **6**
+- `timeout`: **3**
 - `rate_limited`: **1**
 - `tls`: **1**
-- `unknown`: **1**
 
 ## Проблемные источники
 
@@ -24,7 +23,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1056 ms`
+- Время: `614 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -46,7 +45,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5265 ms`
+- Время: `6183 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -66,23 +65,24 @@
 ### AppQuantum (`appquantum-com`)
 
 - Статус: `warning`
-- Категория: `timeout`
+- Категория: `no_articles_found`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `66699 ms`
+- Время: `1827 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
+- Попыток: `9`
 
-  - `homepage` → `error` — https://appquantum.com/ — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
-  - `feed-common` → `error` — https://appquantum.com/feed — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: /feed (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
-  - `feed-common` → `error` — https://appquantum.com/rss — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: /rss (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
-  - `feed-common` → `error` — https://appquantum.com/rss.xml — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
-  - `feed-common` → `error` — https://appquantum.com/feed.xml — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
-  - `feed-common` → `error` — https://appquantum.com/atom.xml — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
-  - `robots` → `error` — https://appquantum.com/robots.txt — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
-  - `sitemap` → `error` — https://appquantum.com/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='appquantum.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ReadTimeoutError("HTTPSConnectionPool(host='appquantum.com', port=443): Read timed out. (read timeout=8)"))
+  - `homepage` → `ok` — https://appquantum.com/
+  - `feed-common` → `error` — https://appquantum.com/feed — HTTPError: 404 Client Error: Not Found for url: https://appquantum.com/feed
+  - `feed-common` → `error` — https://appquantum.com/rss — HTTPError: 404 Client Error: Not Found for url: https://appquantum.com/rss
+  - `feed-common` → `error` — https://appquantum.com/rss.xml — HTTPError: 404 Client Error: Not Found for url: https://appquantum.com/rss.xml
+  - `feed-common` → `error` — https://appquantum.com/feed.xml — HTTPError: 404 Client Error: Not Found for url: https://appquantum.com/feed.xml
+  - `feed-common` → `error` — https://appquantum.com/atom.xml — HTTPError: 404 Client Error: Not Found for url: https://appquantum.com/atom.xml
+  - `html-listing` → `empty` — https://appquantum.com/
+  - `robots` → `error` — https://appquantum.com/robots.txt — HTTPError: 404 Client Error: Not Found for url: https://appquantum.com/robots.txt
+  - `sitemap` → `error` — https://appquantum.com/sitemap.xml — HTTPError: 404 Client Error: Not Found for url: https://appquantum.com/sitemap.xml
 
 ### AppQuantum Hybrid Casual (`hybridcasual-appquantum-com`)
 
@@ -92,7 +92,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1338 ms`
+- Время: `1448 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -113,7 +113,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5675 ms`
+- Время: `5585 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -137,7 +137,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1172 ms`
+- Время: `1492 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -158,7 +158,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `608 ms`
+- Время: `640 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -179,7 +179,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4707 ms`
+- Время: `4583 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -201,7 +201,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1835 ms`
+- Время: `2525 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `14`
 
@@ -228,7 +228,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1721 ms`
+- Время: `1514 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -250,7 +250,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `885 ms`
+- Время: `524 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -263,6 +263,21 @@
   - `robots` → `error` — https://elitegamedevelopers.substack.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/robots.txt
   - `sitemap` → `error` — https://elitegamedevelopers.substack.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/sitemap.xml
 
+### GameRefinery (`gamerefinery-com`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `1864 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `2`
+
+  - `homepage` → `ok` — https://gamerefinery.com/
+  - `feed-discovered` → `ok` — https://www.gamerefinery.com/feed/
+
 ### GamingonPhone (`gamingonphone-com`)
 
 - Статус: `warning`
@@ -271,7 +286,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `710 ms`
+- Время: `705 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -292,7 +307,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `939 ms`
+- Время: `560 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -314,7 +329,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `68964 ms`
+- Время: `69345 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -335,7 +350,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4121 ms`
+- Время: `3592 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -357,7 +372,7 @@
 - Получено кандидатов: `11`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 11}`
-- Время: `1649 ms`
+- Время: `913 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -372,7 +387,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2713 ms`
+- Время: `2992 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -393,7 +408,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `621 ms`
+- Время: `376 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -408,7 +423,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `12958 ms`
+- Время: `12922 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -436,7 +451,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `680 ms`
+- Время: `694 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -457,7 +472,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1110 ms`
+- Время: `2109 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -479,7 +494,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2368 ms`
+- Время: `2472 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -494,7 +509,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `5386 ms`
+- Время: `6887 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -509,7 +524,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6569 ms`
+- Время: `6496 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -531,7 +546,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2873 ms`
+- Время: `3470 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -559,7 +574,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `7423 ms`
+- Время: `8251 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -587,33 +602,12 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1234 ms`
+- Время: `654 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
   - `homepage` → `ok` — https://singular.net/
   - `feed-common` → `ok` — https://www.singular.net/feed
-
-### Smart Ranking (`smartranking-ru`)
-
-- Статус: `warning`
-- Категория: `unknown`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `64512 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://smartranking.ru/ — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-  - `feed-common` → `error` — https://smartranking.ru/feed — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /feed (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-  - `feed-common` → `error` — https://smartranking.ru/rss — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /rss (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-  - `feed-common` → `error` — https://smartranking.ru/rss.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /rss.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-  - `feed-common` → `error` — https://smartranking.ru/feed.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /feed.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-  - `feed-common` → `error` — https://smartranking.ru/atom.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /atom.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-  - `robots` → `error` — https://smartranking.ru/robots.txt — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /robots.txt (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
-  - `sitemap` → `error` — https://smartranking.ru/sitemap.xml — ConnectionError: HTTPSConnectionPool(host='smartranking.ru', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NewConnectionError("HTTPSConnection(host='smartranking.ru', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
 
 ### Supersonic / Unity LevelPlay (`supersonic-com`)
 
@@ -623,7 +617,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1061 ms`
+- Время: `7872 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -638,7 +632,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2794 ms`
+- Время: `2737 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -652,6 +646,27 @@
   - `robots` → `ok` — https://tap-nation.io/robots.txt
   - `sitemap` → `ok` — https://www.tap-nation.io/sitemap.xml
 
+### Tech.eu (`tech-eu`)
+
+- Статус: `warning`
+- Категория: `blocked`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `814 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `8`
+
+  - `homepage` → `error` — https://tech.eu/ — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/
+  - `feed-common` → `error` — https://tech.eu/feed — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/feed
+  - `feed-common` → `error` — https://tech.eu/rss — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/rss
+  - `feed-common` → `error` — https://tech.eu/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/rss.xml
+  - `feed-common` → `error` — https://tech.eu/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/feed.xml
+  - `feed-common` → `error` — https://tech.eu/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/atom.xml
+  - `robots` → `error` — https://tech.eu/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/robots.txt
+  - `sitemap` → `error` — https://tech.eu/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/sitemap.xml
+
 ### TechBriefly (`techbriefly-com`)
 
 - Статус: `warning`
@@ -660,7 +675,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1163 ms`
+- Время: `594 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -681,7 +696,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3074 ms`
+- Время: `2877 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -702,7 +717,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `1275 ms`
+- Время: `1627 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -717,7 +732,7 @@
 - Получено кандидатов: `40`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 40}`
-- Время: `894 ms`
+- Время: `800 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -732,7 +747,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64562 ms`
+- Время: `64962 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -753,7 +768,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64944 ms`
+- Время: `65317 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -774,7 +789,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `614 ms`
+- Время: `384 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -796,7 +811,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8214 ms`
+- Время: `7817 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -830,7 +845,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `666 ms`
+- Время: `665 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -852,7 +867,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1330 ms`
+- Время: `721 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -874,7 +889,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1996 ms`
+- Время: `1939 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -896,7 +911,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1966 ms`
+- Время: `2509 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -917,7 +932,7 @@
 - Получено кандидатов: `50`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 50}`
-- Время: `2545 ms`
+- Время: `3186 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
