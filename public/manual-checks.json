@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T06:35:59Z",
-  "count": 22,
+  "generated_at": "2026-11-03T06:29:18Z",
+  "count": 20,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -28,15 +28,6 @@
       "priority": "medium",
       "reason": "blocked_on_github_runner",
       "url": "https://hybridcasual.appquantum.com/",
-      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
-      "source_id": "blockchaingamer-biz",
-      "source_name": "BlockchainGamer.biz",
-      "failure_kind": "blocked",
-      "priority": "medium",
-      "reason": "blocked_on_github_runner",
-      "url": "https://blockchaingamer.biz/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
@@ -91,15 +82,6 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://is.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
-      "source_id": "kwalee-com",
-      "source_name": "Kwalee Blog",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://kwalee.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
