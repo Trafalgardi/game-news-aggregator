@@ -1,15 +1,15 @@
 # Диагностика источников
 
-Обновлено: `2026-11-05T06:28:56Z`
+Обновлено: `2026-11-06T06:29:31Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **26**
+- `no_recent_articles`: **24**
+- `blocked`: **9**
 - `no_articles_found`: **6**
-- `blocked`: **4**
-- `timeout`: **3**
+- `timeout`: **4**
 - `rate_limited`: **1**
 - `tls`: **1**
 
@@ -23,7 +23,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `348 ms`
+- Время: `563 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -45,7 +45,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3721 ms`
+- Время: `4621 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -70,7 +70,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1219 ms`
+- Время: `1650 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -92,7 +92,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1087 ms`
+- Время: `1368 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -113,7 +113,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5184 ms`
+- Время: `5290 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -137,7 +137,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `1747 ms`
+- Время: `1810 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -152,7 +152,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `266 ms`
+- Время: `362 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -173,7 +173,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `177 ms`
+- Время: `442 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -188,7 +188,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3726 ms`
+- Время: `4029 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -210,7 +210,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `847 ms`
+- Время: `2025 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `14`
 
@@ -237,7 +237,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `891 ms`
+- Время: `1625 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -254,17 +254,23 @@
 ### Elite Game Developers (`elitegamedevelopers-substack-com`)
 
 - Статус: `warning`
-- Категория: `no_recent_articles`
-- Метод: `feed`
-- Получено кандидатов: `20`
+- Категория: `blocked`
+- Метод: `none`
+- Получено кандидатов: `0`
 - Принято: `0`
-- Причины отбраковки: `{"too_old": 20}`
-- Время: `360 ms`
+- Причины отбраковки: `{}`
+- Время: `418 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `2`
+- Попыток: `8`
 
-  - `homepage` → `ok` — https://elitegamedevelopers.substack.com/
-  - `feed-discovered` → `ok` — https://elitegamedevelopers.substack.com/feed
+  - `homepage` → `error` — https://elitegamedevelopers.substack.com/ — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/
+  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/feed
+  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/rss
+  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/rss.xml
+  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/feed.xml
+  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/atom.xml
+  - `robots` → `error` — https://elitegamedevelopers.substack.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/robots.txt
+  - `sitemap` → `error` — https://elitegamedevelopers.substack.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/sitemap.xml
 
 ### GameRefinery (`gamerefinery-com`)
 
@@ -274,12 +280,33 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1267 ms`
+- Время: `1639 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
   - `homepage` → `ok` — https://gamerefinery.com/
   - `feed-discovered` → `ok` — https://www.gamerefinery.com/feed/
+
+### GamingonPhone (`gamingonphone-com`)
+
+- Статус: `warning`
+- Категория: `blocked`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `367 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `8`
+
+  - `homepage` → `error` — https://gamingonphone.com/ — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/
+  - `feed-common` → `error` — https://gamingonphone.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/feed
+  - `feed-common` → `error` — https://gamingonphone.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/rss
+  - `feed-common` → `error` — https://gamingonphone.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/rss.xml
+  - `feed-common` → `error` — https://gamingonphone.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/feed.xml
+  - `feed-common` → `error` — https://gamingonphone.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/atom.xml
+  - `robots` → `error` — https://gamingonphone.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/robots.txt
+  - `sitemap` → `error` — https://gamingonphone.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/sitemap.xml
 
 ### Homa (`homagames-com`)
 
@@ -289,7 +316,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `182 ms`
+- Время: `863 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -311,7 +338,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `845 ms`
+- Время: `722 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -326,7 +353,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `69500 ms`
+- Время: `69960 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -347,7 +374,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2051 ms`
+- Время: `2169 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -369,7 +396,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `835 ms`
+- Время: `1584 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -390,12 +417,33 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1924 ms`
+- Время: `649 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
   - `homepage` → `error` — https://blog.liquidandgrit.com/ — HTTPError: 403 Client Error: Forbidden for url: https://blog.liquidandgrit.com/
   - `feed-common` → `ok` — https://blog.liquidandgrit.com/feed
+
+### Matej Lancaric Substack (`lancaric-substack-com`)
+
+- Статус: `warning`
+- Категория: `blocked`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `414 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `8`
+
+  - `homepage` → `error` — https://lancaric.substack.com/ — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/
+  - `feed-common` → `error` — https://lancaric.substack.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/feed
+  - `feed-common` → `error` — https://lancaric.substack.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/rss
+  - `feed-common` → `error` — https://lancaric.substack.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/rss.xml
+  - `feed-common` → `error` — https://lancaric.substack.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/feed.xml
+  - `feed-common` → `error` — https://lancaric.substack.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/atom.xml
+  - `robots` → `error` — https://lancaric.substack.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/robots.txt
+  - `sitemap` → `error` — https://lancaric.substack.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/sitemap.xml
 
 ### Mattel Corporate (`corporate-mattel-com`)
 
@@ -405,7 +453,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2087 ms`
+- Время: `4630 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -422,22 +470,21 @@
 ### Metacore (`metacoregames-com`)
 
 - Статус: `warning`
-- Категория: `no_recent_articles`
+- Категория: `timeout`
 - Метод: `none`
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `17714 ms`
+- Время: `16830 ms`
 - Ошибка: `No accepted recent dated articles`
-- Попыток: `9`
+- Попыток: `8`
 
-  - `homepage` → `ok` — https://metacoregames.com/
+  - `homepage` → `error` — https://metacoregames.com/ — ConnectionError: HTTPSConnectionPool(host='metacoregames.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError("HTTPSConnectionPool(host='metacoregames.com', port=443): Read timed out. (read timeout=8)"))
   - `feed-common` → `empty` — https://metacoregames.com/feed
   - `feed-common` → `empty` — https://metacoregames.com/rss
   - `feed-common` → `empty` — https://metacoregames.com/rss.xml
   - `feed-common` → `empty` — https://metacoregames.com/feed.xml
   - `feed-common` → `empty` — https://metacoregames.com/atom.xml
-  - `html-listing` → `empty` — https://metacoregames.com/
   - `robots` → `ok` — https://metacoregames.com/robots.txt
   - `sitemap` → `ok` — https://metacoregames.com/sitemap.xml
 
@@ -449,7 +496,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1388 ms`
+- Время: `1546 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -464,7 +511,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1981 ms`
+- Время: `2484 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -479,7 +526,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `4178 ms`
+- Время: `5433 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -494,7 +541,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8969 ms`
+- Время: `6923 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -516,7 +563,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3128 ms`
+- Время: `2956 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -572,7 +619,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `352 ms`
+- Время: `584 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -587,7 +634,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `719 ms`
+- Время: `978 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -602,7 +649,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1372 ms`
+- Время: `2032 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -616,6 +663,48 @@
   - `robots` → `ok` — https://tap-nation.io/robots.txt
   - `sitemap` → `ok` — https://www.tap-nation.io/sitemap.xml
 
+### Tech.eu (`tech-eu`)
+
+- Статус: `warning`
+- Категория: `blocked`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `685 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `8`
+
+  - `homepage` → `error` — https://tech.eu/ — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/
+  - `feed-common` → `error` — https://tech.eu/feed — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/feed
+  - `feed-common` → `error` — https://tech.eu/rss — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/rss
+  - `feed-common` → `error` — https://tech.eu/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/rss.xml
+  - `feed-common` → `error` — https://tech.eu/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/feed.xml
+  - `feed-common` → `error` — https://tech.eu/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/atom.xml
+  - `robots` → `error` — https://tech.eu/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/robots.txt
+  - `sitemap` → `error` — https://tech.eu/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/sitemap.xml
+
+### TechBriefly (`techbriefly-com`)
+
+- Статус: `warning`
+- Категория: `blocked`
+- Метод: `none`
+- Получено кандидатов: `0`
+- Принято: `0`
+- Причины отбраковки: `{}`
+- Время: `398 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `8`
+
+  - `homepage` → `error` — https://techbriefly.com/ — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/
+  - `feed-common` → `error` — https://techbriefly.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/feed
+  - `feed-common` → `error` — https://techbriefly.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/rss
+  - `feed-common` → `error` — https://techbriefly.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/rss.xml
+  - `feed-common` → `error` — https://techbriefly.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/feed.xml
+  - `feed-common` → `error` — https://techbriefly.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/atom.xml
+  - `robots` → `error` — https://techbriefly.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/robots.txt
+  - `sitemap` → `error` — https://techbriefly.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/sitemap.xml
+
 ### Tenjin Resources (`resources-tenjin-com`)
 
 - Статус: `warning`
@@ -624,7 +713,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1125 ms`
+- Время: `2508 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -645,7 +734,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `1660 ms`
+- Время: `1551 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -660,7 +749,7 @@
 - Получено кандидатов: `40`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 40}`
-- Время: `364 ms`
+- Время: `707 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -675,7 +764,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64174 ms`
+- Время: `64523 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -696,7 +785,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64442 ms`
+- Время: `65037 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -717,7 +806,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `286 ms`
+- Время: `413 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -739,7 +828,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5496 ms`
+- Время: `6475 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -773,7 +862,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `270 ms`
+- Время: `558 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -795,7 +884,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `244 ms`
+- Время: `575 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -817,7 +906,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1180 ms`
+- Время: `1823 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -839,15 +928,15 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `234 ms`
+- Время: `2748 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
-  - `homepage` → `error` — https://secrets.tbank.ru/ — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
-  - `feed-common` → `error` — https://secrets.tbank.ru/feed — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
-  - `feed-common` → `error` — https://secrets.tbank.ru/rss — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /rss (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
-  - `feed-common` → `error` — https://secrets.tbank.ru/rss.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /rss.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
-  - `feed-common` → `error` — https://secrets.tbank.ru/feed.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
-  - `feed-common` → `error` — https://secrets.tbank.ru/atom.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /atom.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
-  - `robots` → `error` — https://secrets.tbank.ru/robots.txt — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
-  - `sitemap` → `error` — https://secrets.tbank.ru/sitemap.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /sitemap.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1010)')))
+  - `homepage` → `error` — https://secrets.tbank.ru/ — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))
+  - `feed-common` → `error` — https://secrets.tbank.ru/feed — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /feed (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))
+  - `feed-common` → `error` — https://secrets.tbank.ru/rss — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /rss (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))
+  - `feed-common` → `error` — https://secrets.tbank.ru/rss.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /rss.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))
+  - `feed-common` → `error` — https://secrets.tbank.ru/feed.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /feed.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))
+  - `feed-common` → `error` — https://secrets.tbank.ru/atom.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /atom.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))
+  - `robots` → `error` — https://secrets.tbank.ru/robots.txt — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))
+  - `sitemap` → `error` — https://secrets.tbank.ru/sitemap.xml — SSLError: HTTPSConnectionPool(host='secrets.tbank.ru', port=443): Max retries exceeded with url: /sitemap.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1011)')))

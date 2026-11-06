@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T06:28:56Z",
-  "count": 15,
+  "generated_at": "2026-11-06T06:29:31Z",
+  "count": 21,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -49,6 +49,24 @@
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
+      "source_id": "elitegamedevelopers-substack-com",
+      "source_name": "Elite Game Developers",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://elitegamedevelopers.substack.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "gamingonphone-com",
+      "source_name": "GamingonPhone",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://gamingonphone.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
       "source_id": "homagames-com",
       "source_name": "Homa",
       "failure_kind": "no_articles_found",
@@ -85,6 +103,24 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
+      "source_id": "lancaric-substack-com",
+      "source_name": "Matej Lancaric Substack",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://lancaric.substack.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "metacoregames-com",
+      "source_name": "Metacore",
+      "failure_kind": "timeout",
+      "priority": "medium",
+      "reason": "sitemap_needs_path_filter",
+      "url": "https://metacoregames.com/sitemap.xml",
+      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
+    },
+    {
       "source_id": "say-games",
       "source_name": "SayGames",
       "failure_kind": "no_articles_found",
@@ -92,6 +128,24 @@
       "reason": "source_structure_unknown",
       "url": "https://say.games/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "tech-eu",
+      "source_name": "Tech.eu",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://tech.eu/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "techbriefly-com",
+      "source_name": "TechBriefly",
+      "failure_kind": "blocked",
+      "priority": "medium",
+      "reason": "blocked_on_github_runner",
+      "url": "https://techbriefly.com/",
+      "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
       "source_id": "resources-tenjin-com",
