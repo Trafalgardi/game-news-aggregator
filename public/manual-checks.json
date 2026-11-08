@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T06:25:41Z",
-  "count": 20,
+  "generated_at": "2026-11-08T06:26:38Z",
+  "count": 21,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -29,6 +29,15 @@
       "reason": "blocked_on_github_runner",
       "url": "https://hybridcasual.appquantum.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
+    },
+    {
+      "source_id": "blockchaingamer-biz",
+      "source_name": "BlockchainGamer.biz",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://blockchaingamer.biz/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
       "source_id": "businessofapps-com",
