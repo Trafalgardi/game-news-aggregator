@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19T06:30:30Z",
-  "count": 22,
+  "generated_at": "2026-11-20T06:30:08Z",
+  "count": 21,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -58,15 +58,6 @@
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
     },
     {
-      "source_id": "gamespress-com",
-      "source_name": "GamesPress",
-      "failure_kind": "timeout",
-      "priority": "low",
-      "reason": "source_structure_unknown",
-      "url": "https://gamespress.com/",
-      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-    },
-    {
       "source_id": "gamingonphone-com",
       "source_name": "GamingonPhone",
       "failure_kind": "blocked",
@@ -91,6 +82,15 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://is.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "kwalee-com",
+      "source_name": "Kwalee Blog",
+      "failure_kind": "timeout",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://kwalee.com/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
@@ -119,15 +119,6 @@
       "reason": "blocked_on_github_runner",
       "url": "https://lancaric.substack.com/",
       "instruction": "Проверить URL в обычном браузере. Если открывается, найти официальный RSS или подтвердить необходимость внешнего RSS-прокси."
-    },
-    {
-      "source_id": "metacoregames-com",
-      "source_name": "Metacore",
-      "failure_kind": "timeout",
-      "priority": "medium",
-      "reason": "sitemap_needs_path_filter",
-      "url": "https://metacoregames.com/sitemap.xml",
-      "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
     },
     {
       "source_id": "say-games",

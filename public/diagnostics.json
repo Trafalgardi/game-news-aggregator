@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-19T06:30:30Z",
+  "generated_at": "2026-11-20T06:30:08Z",
   "source_count": 87,
   "dropped_sources": [
     "appmetrica-yandex-com",
@@ -14,7 +14,7 @@
     "no_articles_found": 6,
     "no_recent_articles": 23,
     "rate_limited": 1,
-    "timeout": 5,
+    "timeout": 4,
     "tls": 1
   },
   "sources": [
@@ -22,12 +22,12 @@
       "source_id": "80-lv",
       "source_name": "80 Level",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:30Z",
+      "checked_at": "2026-11-20T06:28:04Z",
       "method": "feed-common",
       "fetched_count": 10,
       "accepted_count": 10,
-      "new_count": 8,
-      "elapsed_ms": 868,
+      "new_count": 10,
+      "elapsed_ms": 552,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -64,12 +64,12 @@
       "source_id": "appdevelopermagazine-com",
       "source_name": "App Developer Magazine",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:31Z",
+      "checked_at": "2026-11-20T06:28:05Z",
       "method": "feed",
       "fetched_count": 48,
       "accepted_count": 1,
       "new_count": 0,
-      "elapsed_ms": 2416,
+      "elapsed_ms": 2539,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -115,12 +115,12 @@
       "source_id": "app2top-ru",
       "source_name": "App2Top",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:27Z",
+      "checked_at": "2026-11-20T06:28:00Z",
       "method": "feed",
       "fetched_count": 50,
-      "accepted_count": 44,
-      "new_count": 10,
-      "elapsed_ms": 2828,
+      "accepted_count": 45,
+      "new_count": 9,
+      "elapsed_ms": 3557,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -154,13 +154,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 6
+        "too_old": 5
       },
       "rejection_examples": {
         "too_old": [
-          "https://app2top.ru/news/rovio-uvolila-bol-shuyu-chast-shtata-ruby-games-v-studii-ostanetsya-lish-neskol-ko-chelovek-dlya-podderzhki-stary-h-igr-245432.html",
-          "https://app2top.ru/news/smi-razrabotka-marvel-1943-rise-of-hydra-sil-no-prevy-sila-byudzhet-245429.html",
-          "https://app2top.ru/industry/belgiya-200-igrovyh-studij-regional-ny-e-osobennosti-rastsvet-indi-stseny-gospodderzhka-i-podvodny-e-kamni-245419.html"
+          "https://app2top.ru/news/novy-j-rossijskij-indi-hit-dreadmoor-zarabotala-na-starte-svy-she-milliona-dollarov-245462.html",
+          "https://app2top.ru/news/golovolomki-pochti-dognali-strategii-po-vy-ruchke-sensor-tower-podvela-itogi-tret-ego-kvartala-2026-go-dlya-mobil-nogo-gejminga-245458.html",
+          "https://app2top.ru/news/otkry-las-hidden-horses-studiya-veteranov-id-software-dolyami-v-kotoroj-vladeyut-vse-sotrudniki-245453.html"
         ]
       },
       "manual_check": null
@@ -169,12 +169,12 @@
       "source_id": "appfigures-com",
       "source_name": "Appfigures",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:58Z",
+      "checked_at": "2026-11-20T06:28:41Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 299,
+      "elapsed_ms": 1528,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -286,12 +286,12 @@
       "source_id": "appmagic-rocks",
       "source_name": "AppMagic Blog",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:36Z",
+      "checked_at": "2026-11-20T06:28:13Z",
       "method": "sitemap",
       "fetched_count": 12,
       "accepted_count": 12,
       "new_count": 0,
-      "elapsed_ms": 3011,
+      "elapsed_ms": 5337,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -402,7 +402,7 @@
           "status_code": 200,
           "final_url": "https://appmagic.rocks/sitemap-static.xml",
           "content_type": "text/xml",
-          "item_count": 99,
+          "item_count": 96,
           "error": null
         },
         {
@@ -417,80 +417,10 @@
         },
         {
           "stage": "article-enrich",
-          "url": "https://appmagic.rocks/tool-descriptions/app-transfers",
+          "url": "https://appmagic.rocks/research/steam-pricing-research",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://appmagic.rocks/tool-descriptions/app-transfers",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://appmagic.rocks/research/report-on-genres",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://appmagic.rocks/research/report-on-genres",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://appmagic.rocks/tool-descriptions/success-meter",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://appmagic.rocks/tool-descriptions/success-meter",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://appmagic.rocks/tool-descriptions/api",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://appmagic.rocks/tool-descriptions/api",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://appmagic.rocks/articles/how-appmagic-collects-your-data",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://appmagic.rocks/articles/how-appmagic-collects-your-data",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://appmagic.rocks/research/squad-busters-revenue",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://appmagic.rocks/research/squad-busters-revenue",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://appmagic.rocks/research/new-four-x-strategies",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://appmagic.rocks/research/new-four-x-strategies",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://appmagic.rocks/research/lessons-learned-launching-games",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://appmagic.rocks/research/lessons-learned-launching-games",
+          "final_url": "https://appmagic.rocks/research/steam-pricing-research",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
@@ -507,30 +437,100 @@
         },
         {
           "stage": "article-enrich",
-          "url": "https://appmagic.rocks/top-charts/apps",
+          "url": "https://appmagic.rocks/notifications/new-apps",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://appmagic.rocks/top-charts/apps",
+          "final_url": "https://appmagic.rocks/notifications/new-apps",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://appmagic.rocks/monetization-intelligence",
+          "url": "https://appmagic.rocks/notifications/new-apps-by-pub",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://appmagic.rocks/monetization-intelligence",
+          "final_url": "https://appmagic.rocks/notifications/new-apps-by-pub",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://appmagic.rocks/research/casual-report-2025",
+          "url": "https://appmagic.rocks/blog/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://appmagic.rocks/research/casual-report-2025",
+          "final_url": "https://appmagic.rocks/blog/",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://appmagic.rocks/research/casual-mobile-gaming-2023",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://appmagic.rocks/research/casual-mobile-gaming-2023",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://appmagic.rocks/research/product-strategy",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://appmagic.rocks/research/product-strategy",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://appmagic.rocks/research/appmagic-report-1",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://appmagic.rocks/research/appmagic-report-1",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://appmagic.rocks/tool-descriptions/semantic-core",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://appmagic.rocks/tool-descriptions/semantic-core",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://appmagic.rocks/research/live-ops-frozen-city",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://appmagic.rocks/research/live-ops-frozen-city",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://appmagic.rocks/live-ops-calendar",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://appmagic.rocks/live-ops-calendar",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://appmagic.rocks/top-charts/publishers",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://appmagic.rocks/top-charts/publishers",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
@@ -544,12 +544,12 @@
       "source_id": "appodeal-com",
       "source_name": "Appodeal",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:58Z",
+      "checked_at": "2026-11-20T06:28:41Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 3803,
+      "elapsed_ms": 5736,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -688,12 +688,12 @@
       "source_id": "appquantum-com",
       "source_name": "AppQuantum",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:41Z",
+      "checked_at": "2026-11-20T06:28:21Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 4215,
+      "elapsed_ms": 4427,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_articles_found",
       "discovered_feeds": [],
@@ -805,12 +805,12 @@
       "source_id": "hybridcasual-appquantum-com",
       "source_name": "AppQuantum Hybrid Casual",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:57Z",
+      "checked_at": "2026-11-20T06:28:41Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1086,
+      "elapsed_ms": 1639,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -912,12 +912,12 @@
       "source_id": "appsflyer-com",
       "source_name": "AppsFlyer",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:58Z",
+      "checked_at": "2026-11-20T06:28:42Z",
       "method": "feed-common",
       "fetched_count": 10,
       "accepted_count": 2,
-      "new_count": 2,
-      "elapsed_ms": 589,
+      "new_count": 0,
+      "elapsed_ms": 1096,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -962,12 +962,12 @@
       "source_id": "apptica-com",
       "source_name": "Apptica",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:52Z",
+      "checked_at": "2026-11-20T06:28:28Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 5391,
+      "elapsed_ms": 7173,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -1099,15 +1099,15 @@
     {
       "source_id": "azurgames-com",
       "source_name": "Azur Games Blog",
-      "status": "ok",
-      "checked_at": "2026-11-19T06:28:38Z",
+      "status": "warning",
+      "checked_at": "2026-11-20T06:28:14Z",
       "method": "feed-common",
       "fetched_count": 9,
-      "accepted_count": 1,
+      "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1723,
-      "error": null,
-      "failure_kind": null,
+      "elapsed_ms": 1760,
+      "error": "No accepted recent dated articles",
+      "failure_kind": "no_recent_articles",
       "discovered_feeds": [
         "https://azurgames.com/feed/"
       ],
@@ -1135,13 +1135,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 8
+        "too_old": 9
       },
       "rejection_examples": {
         "too_old": [
+          "https://azurgames.com/blog/creating-magical-vfx-for-midcore-games-using-curves-and-shapes",
           "https://azurgames.com/blog/lessons-from-integrating-llms-into-an-analytics-pipeline",
-          "https://azurgames.com/blog/how-we-integrated-llms-and-an-mcp-server-into-our-analytics-workflow",
-          "https://azurgames.com/blog/what-happens-when-int4-suddenly-isnt-big-enough"
+          "https://azurgames.com/blog/how-we-integrated-llms-and-an-mcp-server-into-our-analytics-workflow"
         ]
       },
       "manual_check": null
@@ -1150,12 +1150,12 @@
       "source_id": "blockchaingamer-biz",
       "source_name": "BlockchainGamer.biz",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:31Z",
+      "checked_at": "2026-11-20T06:28:05Z",
       "method": "feed",
       "fetched_count": 10,
-      "accepted_count": 6,
-      "new_count": 1,
-      "elapsed_ms": 638,
+      "accepted_count": 4,
+      "new_count": 0,
+      "elapsed_ms": 556,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -1186,13 +1186,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 4
+        "too_old": 6
       },
       "rejection_examples": {
         "too_old": [
-          "https://blockchaingamer.biz/news/43201/world-war-ii-tcg-launching-beta-28th-november-web3-features-to-follow",
-          "https://blockchaingamer.biz/news/43194/craft-world-tops-ronin-seasonal-standings",
-          "https://blockchaingamer.biz/news/43191/moca-network-okx-ventures-strategic-partnership"
+          "https://blockchaingamer.biz/news/43209/eve-frontier-adds-complex-materials-digital-chemistry",
+          "https://blockchaingamer.biz/news/43204/giglings-racing-continues-migrate-nfts-before-1-december",
+          "https://blockchaingamer.biz/news/43201/world-war-ii-tcg-launching-beta-28th-november-web3-features-to-follow"
         ]
       },
       "manual_check": null
@@ -1201,12 +1201,12 @@
       "source_id": "businessofapps-com",
       "source_name": "Business of Apps",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:29Z",
+      "checked_at": "2026-11-20T06:28:03Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 322,
+      "elapsed_ms": 308,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -1308,12 +1308,12 @@
       "source_id": "citybiz-co",
       "source_name": "citybiz",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:35Z",
+      "checked_at": "2026-11-20T06:28:11Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 10,
       "new_count": 10,
-      "elapsed_ms": 360,
+      "elapsed_ms": 1837,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -1351,12 +1351,12 @@
       "source_id": "crazylabs-com",
       "source_name": "CrazyLabs",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:41Z",
+      "checked_at": "2026-11-20T06:28:20Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 301,
+      "elapsed_ms": 307,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -1402,12 +1402,12 @@
       "source_id": "calcalistech-com",
       "source_name": "CTech",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:31Z",
+      "checked_at": "2026-11-20T06:28:06Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 4449,
+      "elapsed_ms": 4688,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_articles_found",
       "discovered_feeds": [],
@@ -1519,12 +1519,12 @@
       "source_id": "data-ai",
       "source_name": "data.ai",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:57Z",
+      "checked_at": "2026-11-20T06:28:38Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1290,
+      "elapsed_ms": 2961,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -1690,12 +1690,12 @@
       "source_id": "deconstructoroffun-com",
       "source_name": "Deconstructor of Fun",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:24Z",
+      "checked_at": "2026-11-20T06:27:57Z",
       "method": "sitemap",
       "fetched_count": 2,
       "accepted_count": 2,
       "new_count": 0,
-      "elapsed_ms": 1559,
+      "elapsed_ms": 2383,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -1822,12 +1822,12 @@
       "source_id": "dev-by",
       "source_name": "dev.by",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:30Z",
+      "checked_at": "2026-11-20T06:28:04Z",
       "method": "feed-common",
       "fetched_count": 30,
       "accepted_count": 30,
-      "new_count": 20,
-      "elapsed_ms": 3388,
+      "new_count": 19,
+      "elapsed_ms": 20287,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -1839,16 +1839,16 @@
         {
           "stage": "homepage",
           "url": "https://dev.by/",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://devby.io/",
-          "content_type": "text/html",
+          "outcome": "error",
+          "status_code": null,
+          "final_url": null,
+          "content_type": null,
           "item_count": null,
-          "error": null
+          "error": "ConnectionError: HTTPSConnectionPool(host='devby.io', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='devby.io', port=443): Read timed out. (read timeout=8)\"))"
         },
         {
           "stage": "feed-common",
-          "url": "https://devby.io/feed",
+          "url": "https://dev.by/feed",
           "outcome": "empty",
           "status_code": 200,
           "final_url": "https://devby.io/news",
@@ -1858,7 +1858,7 @@
         },
         {
           "stage": "feed-common",
-          "url": "https://devby.io/rss",
+          "url": "https://dev.by/rss",
           "outcome": "ok",
           "status_code": 200,
           "final_url": "https://devby.io/rss",
@@ -1875,16 +1875,15 @@
       "source_id": "devby-io",
       "source_name": "dev.by / devby.io",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:35Z",
+      "checked_at": "2026-11-20T06:28:11Z",
       "method": "feed-common",
       "fetched_count": 30,
       "accepted_count": 30,
-      "new_count": 20,
-      "elapsed_ms": 3101,
+      "new_count": 19,
+      "elapsed_ms": 20764,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
-        "https://devby.io/news",
         "https://devby.io/rss"
       ],
       "discovered_sitemaps": [],
@@ -1892,22 +1891,22 @@
         {
           "stage": "homepage",
           "url": "https://devby.io/",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://devby.io/",
-          "content_type": "text/html",
+          "outcome": "error",
+          "status_code": null,
+          "final_url": null,
+          "content_type": null,
           "item_count": null,
-          "error": null
+          "error": "ConnectionError: HTTPSConnectionPool(host='devby.io', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='devby.io', port=443): Read timed out. (read timeout=8)\"))"
         },
         {
           "stage": "feed-common",
           "url": "https://devby.io/feed",
-          "outcome": "empty",
-          "status_code": 200,
-          "final_url": "https://devby.io/news",
-          "content_type": "text/html",
-          "item_count": 0,
-          "error": null
+          "outcome": "error",
+          "status_code": null,
+          "final_url": null,
+          "content_type": null,
+          "item_count": null,
+          "error": "ConnectionError: HTTPSConnectionPool(host='devby.io', port=443): Max retries exceeded with url: /feed (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='devby.io', port=443): Read timed out. (read timeout=8)\"))"
         },
         {
           "stage": "feed-common",
@@ -1928,12 +1927,12 @@
       "source_id": "dtf-ru",
       "source_name": "DTF",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:29Z",
+      "checked_at": "2026-11-20T06:28:03Z",
       "method": "feed-common",
       "fetched_count": 12,
       "accepted_count": 12,
       "new_count": 12,
-      "elapsed_ms": 1679,
+      "elapsed_ms": 2332,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -1980,12 +1979,12 @@
       "source_id": "playducky-com",
       "source_name": "Ducky",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:58Z",
+      "checked_at": "2026-11-20T06:28:43Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1034,
+      "elapsed_ms": 1875,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -2092,12 +2091,12 @@
       "source_id": "elitegamedevelopers-substack-com",
       "source_name": "Elite Game Developers",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:24Z",
+      "checked_at": "2026-11-20T06:27:57Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 195,
+      "elapsed_ms": 263,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -2199,12 +2198,12 @@
       "source_id": "gamedeveloper-com",
       "source_name": "Game Developer",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:32Z",
+      "checked_at": "2026-11-20T06:28:06Z",
       "method": "feed-common",
       "fetched_count": 50,
-      "accepted_count": 21,
+      "accepted_count": 17,
       "new_count": 2,
-      "elapsed_ms": 1040,
+      "elapsed_ms": 1795,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -2255,13 +2254,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 29
+        "too_old": 33
       },
       "rejection_examples": {
         "too_old": [
-          "https://gamedeveloper.com/console/playstation-5-ships-100-million-consoles",
-          "https://gamedeveloper.com/console/katsuhiro-harada-i-wish-hardware-like-the-xbox-series-s-wouldnt-be-released",
-          "https://gamedeveloper.com/business/the-legend-of-zelda-ocarina-of-time-exceeds-5-million-copies-solid-in-first-week"
+          "https://gamedeveloper.com/business/tripwire-interactive-layoffs-come-after-announcing-new-publishing-initiative",
+          "https://gamedeveloper.com/production/genai-using-developers-say-they-mostly-use-it-for-research-and-brainstorming-",
+          "https://gamedeveloper.com/business/one-in-three-developers-have-been-laid-off-within-the-last-two-years"
         ]
       },
       "manual_check": null
@@ -2270,12 +2269,12 @@
       "source_id": "gameanalytics-com",
       "source_name": "GameAnalytics",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:41Z",
+      "checked_at": "2026-11-20T06:28:20Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 5885,
+      "elapsed_ms": 5076,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -2384,12 +2383,12 @@
       "source_id": "newsletter-gamediscover-co",
       "source_name": "GameDiscoverCo",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:24Z",
+      "checked_at": "2026-11-20T06:27:57Z",
       "method": "feed",
       "fetched_count": 20,
       "accepted_count": 2,
       "new_count": 0,
-      "elapsed_ms": 907,
+      "elapsed_ms": 776,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -2433,15 +2432,15 @@
     {
       "source_id": "gamerefinery-com",
       "source_name": "GameRefinery",
-      "status": "ok",
-      "checked_at": "2026-11-19T06:28:40Z",
+      "status": "warning",
+      "checked_at": "2026-11-20T06:28:19Z",
       "method": "feed",
       "fetched_count": 10,
-      "accepted_count": 1,
+      "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 2760,
-      "error": null,
-      "failure_kind": null,
+      "elapsed_ms": 1946,
+      "error": "No accepted recent dated articles",
+      "failure_kind": "no_recent_articles",
       "discovered_feeds": [
         "https://www.gamerefinery.com/feed/",
         "https://www.gamerefinery.com/comments/feed/"
@@ -2470,13 +2469,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 9
+        "too_old": 10
       },
       "rejection_examples": {
         "too_old": [
+          "https://gamerefinery.com/mobile-game-market-review-october-2026",
           "https://gamerefinery.com/why-duolingo-and-brawl-stars-collaboration-shouldnt-surprise-you",
-          "https://gamerefinery.com/mobile-game-market-review-september-2026",
-          "https://gamerefinery.com/how-a-toon-blast-side-event-became-its-own-genre"
+          "https://gamerefinery.com/mobile-game-market-review-september-2026"
         ]
       },
       "manual_check": null
@@ -2485,12 +2484,12 @@
       "source_id": "gamesindustry-biz",
       "source_name": "GamesIndustry.biz",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:27Z",
+      "checked_at": "2026-11-20T06:28:01Z",
       "method": "feed",
       "fetched_count": 50,
-      "accepted_count": 41,
-      "new_count": 9,
-      "elapsed_ms": 253,
+      "accepted_count": 38,
+      "new_count": 6,
+      "elapsed_ms": 376,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -2520,13 +2519,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 9
+        "too_old": 12
       },
       "rejection_examples": {
         "too_old": [
-          "https://gamesindustry.biz/lego-digital-play-acquires-forthstar-games-to-bring-lego-to-the-prominence-it-truly-deserves-on-mobile",
-          "https://gamesindustry.biz/gta-6-becomes-most-pre-ordered-game-on-playstation-and-xbox-storefronts",
-          "https://gamesindustry.biz/what-the-digital-fairness-act-means-for-the-games-industry"
+          "https://gamesindustry.biz/gdc-state-of-the-game-industry-report-40-of-developers-are-using-generative-ai-for-work",
+          "https://gamesindustry.biz/gdcs-mark-deloura-addresses-the-events-dip-in-attendance-in-2026-as-he-details-the-planned-changes-for-2027",
+          "https://gamesindustry.biz/its-about-giving-more-great-games-a-chance-why-launchable-thinks-it-can-help-more-independent-studios-reach-the-market-with-its-shared-success-model"
         ]
       },
       "manual_check": null
@@ -2534,120 +2533,57 @@
     {
       "source_id": "gamespress-com",
       "source_name": "GamesPress",
-      "status": "warning",
-      "checked_at": "2026-11-19T06:28:33Z",
-      "method": "none",
-      "fetched_count": 0,
-      "accepted_count": 0,
-      "new_count": 0,
-      "elapsed_ms": 68979,
-      "error": "No accepted recent dated articles",
-      "failure_kind": "timeout",
-      "discovered_feeds": [],
-      "discovered_sitemaps": [
-        "https://gamespress.com/sitemap.xml"
+      "status": "ok",
+      "checked_at": "2026-11-20T06:28:07Z",
+      "method": "feed",
+      "fetched_count": 20,
+      "accepted_count": 20,
+      "new_count": 20,
+      "elapsed_ms": 3555,
+      "error": null,
+      "failure_kind": null,
+      "discovered_feeds": [
+        "https://www.gamespress.com/en-US/News/RSS",
+        "https://www.gamespress.com/en-US/Files/RSS",
+        "https://www.gamespress.com/en-US/Files/ComboRSS"
       ],
+      "discovered_sitemaps": [],
       "attempts": [
         {
           "stage": "homepage",
           "url": "https://gamespress.com/",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://www.gamespress.com/en-US",
+          "content_type": "text/html",
           "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
+          "error": null
         },
         {
-          "stage": "feed-common",
-          "url": "https://gamespress.com/feed",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: /feed (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
-        },
-        {
-          "stage": "feed-common",
-          "url": "https://gamespress.com/rss",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: /rss (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
-        },
-        {
-          "stage": "feed-common",
-          "url": "https://gamespress.com/rss.xml",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: /rss.xml (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
-        },
-        {
-          "stage": "feed-common",
-          "url": "https://gamespress.com/feed.xml",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: /feed.xml (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
-        },
-        {
-          "stage": "feed-common",
-          "url": "https://gamespress.com/atom.xml",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: /atom.xml (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
-        },
-        {
-          "stage": "robots",
-          "url": "https://gamespress.com/robots.txt",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
-        },
-        {
-          "stage": "sitemap",
-          "url": "https://gamespress.com/sitemap.xml",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='www.gamespress.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.gamespress.com', port=443): Read timed out. (read timeout=8)\"))"
+          "stage": "feed-discovered",
+          "url": "https://www.gamespress.com/en-US/News/RSS",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://www.gamespress.com/en-US/News/RSS",
+          "content_type": "application/rss+xml",
+          "item_count": 20,
+          "error": null
         }
       ],
       "rejection_summary": {},
       "rejection_examples": {},
-      "manual_check": {
-        "priority": "low",
-        "reason": "source_structure_unknown",
-        "url": "https://gamespress.com/",
-        "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
-      }
+      "manual_check": null
     },
     {
       "source_id": "gamingonphone-com",
       "source_name": "GamingonPhone",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:33Z",
+      "checked_at": "2026-11-20T06:28:08Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 302,
+      "elapsed_ms": 346,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -2749,12 +2685,12 @@
       "source_id": "hackernoon-com",
       "source_name": "HackerNoon",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:34Z",
+      "checked_at": "2026-11-20T06:28:08Z",
       "method": "feed-common",
       "fetched_count": 20,
       "accepted_count": 20,
       "new_count": 20,
-      "elapsed_ms": 400,
+      "elapsed_ms": 485,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -2791,12 +2727,12 @@
       "source_id": "homagames-com",
       "source_name": "Homa",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:43Z",
+      "checked_at": "2026-11-20T06:28:25Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 3994,
+      "elapsed_ms": 2105,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_articles_found",
       "discovered_feeds": [],
@@ -2907,15 +2843,15 @@
     {
       "source_id": "howtomarketagame-com",
       "source_name": "How To Market A Game",
-      "status": "warning",
-      "checked_at": "2026-11-19T06:28:24Z",
+      "status": "ok",
+      "checked_at": "2026-11-20T06:27:57Z",
       "method": "feed",
       "fetched_count": 10,
-      "accepted_count": 0,
-      "new_count": 0,
-      "elapsed_ms": 498,
-      "error": "No accepted recent dated articles",
-      "failure_kind": "no_recent_articles",
+      "accepted_count": 1,
+      "new_count": 1,
+      "elapsed_ms": 1390,
+      "error": null,
+      "failure_kind": null,
       "discovered_feeds": [
         "https://howtomarketagame.com/feed/",
         "https://howtomarketagame.com/comments/feed/"
@@ -2944,7 +2880,7 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 10
+        "too_old": 9
       },
       "rejection_examples": {
         "too_old": [
@@ -2959,12 +2895,12 @@
       "source_id": "is-com",
       "source_name": "ironSource",
       "status": "warning",
-      "checked_at": "2026-11-19T06:29:20Z",
+      "checked_at": "2026-11-20T06:28:59Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 69435,
+      "elapsed_ms": 69337,
       "error": "No accepted recent dated articles",
       "failure_kind": "timeout",
       "discovered_feeds": [],
@@ -3066,14 +3002,14 @@
       "source_id": "kwalee-com",
       "source_name": "Kwalee Blog",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:47Z",
+      "checked_at": "2026-11-20T06:28:25Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 4788,
+      "elapsed_ms": 18736,
       "error": "No accepted recent dated articles",
-      "failure_kind": "no_recent_articles",
+      "failure_kind": "timeout",
       "discovered_feeds": [],
       "discovered_sitemaps": [
         "https://www.kwalee.com/sitemap.xml"
@@ -3097,7 +3033,7 @@
           "final_url": null,
           "content_type": null,
           "item_count": null,
-          "error": "HTTPError: 404 Client Error: Not Found for url: https://www.kwalee.com/feed"
+          "error": "ConnectionError: HTTPSConnectionPool(host='www.kwalee.com', port=443): Max retries exceeded with url: /feed (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.kwalee.com', port=443): Read timed out. (read timeout=8)\"))"
         },
         {
           "stage": "feed-common",
@@ -3162,30 +3098,35 @@
         {
           "stage": "sitemap",
           "url": "https://www.kwalee.com/sitemap.xml",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://www.kwalee.com/sitemap.xml",
-          "content_type": "application/xml",
-          "item_count": 304,
-          "error": null
+          "outcome": "error",
+          "status_code": null,
+          "final_url": null,
+          "content_type": null,
+          "item_count": null,
+          "error": "ConnectionError: HTTPSConnectionPool(host='www.kwalee.com', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.kwalee.com', port=443): Read timed out. (read timeout=8)\"))"
         }
       ],
       "rejection_summary": {},
       "rejection_examples": {},
-      "manual_check": null
+      "manual_check": {
+        "priority": "low",
+        "reason": "source_structure_unknown",
+        "url": "https://kwalee.com/",
+        "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+      }
     },
     {
       "source_id": "liftoff-io",
       "source_name": "Liftoff",
-      "status": "warning",
-      "checked_at": "2026-11-19T06:28:47Z",
+      "status": "ok",
+      "checked_at": "2026-11-20T06:28:27Z",
       "method": "feed-common",
       "fetched_count": 11,
-      "accepted_count": 0,
-      "new_count": 0,
-      "elapsed_ms": 3595,
-      "error": "No accepted recent dated articles",
-      "failure_kind": "no_recent_articles",
+      "accepted_count": 1,
+      "new_count": 1,
+      "elapsed_ms": 437,
+      "error": null,
+      "failure_kind": null,
       "discovered_feeds": [
         "https://liftoff.ai/feed/"
       ],
@@ -3213,7 +3154,7 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 11
+        "too_old": 10
       },
       "rejection_examples": {
         "too_old": [
@@ -3228,12 +3169,12 @@
       "source_id": "content-liftoff-io",
       "source_name": "Liftoff Content",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:52Z",
+      "checked_at": "2026-11-20T06:28:32Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1394,
+      "elapsed_ms": 2851,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_articles_found",
       "discovered_feeds": [],
@@ -3335,12 +3276,12 @@
       "source_id": "blog-liquidandgrit-com",
       "source_name": "Liquid & Grit",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:59Z",
+      "checked_at": "2026-11-20T06:28:43Z",
       "method": "feed-common",
       "fetched_count": 10,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 295,
+      "elapsed_ms": 891,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [
@@ -3390,12 +3331,12 @@
       "source_id": "lancaric-me",
       "source_name": "Matej Lancaric",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:24Z",
+      "checked_at": "2026-11-20T06:27:57Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 11611,
+      "elapsed_ms": 13787,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -3564,12 +3505,12 @@
       "source_id": "lancaric-substack-com",
       "source_name": "Matej Lancaric Substack",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:24Z",
+      "checked_at": "2026-11-20T06:27:58Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 738,
+      "elapsed_ms": 529,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -3671,12 +3612,12 @@
       "source_id": "corporate-mattel-com",
       "source_name": "Mattel Corporate",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:59Z",
+      "checked_at": "2026-11-20T06:28:44Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 3011,
+      "elapsed_ms": 1155,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -3783,12 +3724,12 @@
       "source_id": "maxpowergaming-co",
       "source_name": "Max Power Gaming",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:40Z",
+      "checked_at": "2026-11-20T06:28:19Z",
       "method": "feed",
       "fetched_count": 20,
       "accepted_count": 1,
       "new_count": 0,
-      "elapsed_ms": 558,
+      "elapsed_ms": 300,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -3833,14 +3774,14 @@
       "source_id": "metacoregames-com",
       "source_name": "Metacore",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:59Z",
+      "checked_at": "2026-11-20T06:28:44Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 26623,
+      "elapsed_ms": 25427,
       "error": "No accepted recent dated articles",
-      "failure_kind": "timeout",
+      "failure_kind": "no_recent_articles",
       "discovered_feeds": [
         "https://metacoregames.com/"
       ],
@@ -3851,12 +3792,12 @@
         {
           "stage": "homepage",
           "url": "https://metacoregames.com/",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://metacoregames.com/",
+          "content_type": "text/html",
           "item_count": null,
-          "error": "ConnectionError: HTTPSConnectionPool(host='metacoregames.com', port=443): Max retries exceeded with url: / (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='metacoregames.com', port=443): Read timed out. (read timeout=8)\"))"
+          "error": null
         },
         {
           "stage": "feed-common",
@@ -3909,6 +3850,16 @@
           "error": null
         },
         {
+          "stage": "html-listing",
+          "url": "https://metacoregames.com/",
+          "outcome": "empty",
+          "status_code": null,
+          "final_url": null,
+          "content_type": null,
+          "item_count": 0,
+          "error": null
+        },
+        {
           "stage": "robots",
           "url": "https://metacoregames.com/robots.txt",
           "outcome": "ok",
@@ -3931,23 +3882,18 @@
       ],
       "rejection_summary": {},
       "rejection_examples": {},
-      "manual_check": {
-        "priority": "medium",
-        "reason": "sitemap_needs_path_filter",
-        "url": "https://metacoregames.com/sitemap.xml",
-        "instruction": "Открыть sitemap и указать, какой дочерний sitemap или URL-префикс содержит именно новости: /blog/, /news/, /insights/ или другой."
-      }
+      "manual_check": null
     },
     {
       "source_id": "mintegral-com",
       "source_name": "Mintegral",
       "status": "ok",
-      "checked_at": "2026-11-19T06:29:02Z",
+      "checked_at": "2026-11-20T06:28:44Z",
       "method": "sitemap",
       "fetched_count": 10,
-      "accepted_count": 8,
+      "accepted_count": 9,
       "new_count": 0,
-      "elapsed_ms": 9706,
+      "elapsed_ms": 10283,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -4060,7 +4006,7 @@
           "url": "https://www.mintegral.com/cn",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://www.mintegral.com/en",
+          "final_url": "https://www.mintegral.com/cn",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
@@ -4167,7 +4113,7 @@
         }
       ],
       "rejection_summary": {
-        "duplicate_in_source": 2
+        "duplicate_in_source": 1
       },
       "rejection_examples": {},
       "manual_check": null
@@ -4176,12 +4122,12 @@
       "source_id": "mobidictum-com",
       "source_name": "Mobidictum",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:28Z",
+      "checked_at": "2026-11-20T06:28:02Z",
       "method": "feed",
       "fetched_count": 6,
       "accepted_count": 6,
-      "new_count": 2,
-      "elapsed_ms": 3305,
+      "new_count": 1,
+      "elapsed_ms": 4496,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -4218,12 +4164,12 @@
       "source_id": "maf-ad",
       "source_name": "MobileAction / MAF",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:38Z",
+      "checked_at": "2026-11-20T06:28:16Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1911,
+      "elapsed_ms": 2986,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -4237,7 +4183,7 @@
           "url": "https://maf.ad/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://maf.ad/",
+          "final_url": "https://maf.ad/en/",
           "content_type": "text/html",
           "item_count": null,
           "error": null
@@ -4269,12 +4215,12 @@
       "source_id": "mobilegamer-biz",
       "source_name": "MobileGamer.biz",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:27Z",
+      "checked_at": "2026-11-20T06:28:01Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 10,
-      "new_count": 3,
-      "elapsed_ms": 99,
+      "new_count": 2,
+      "elapsed_ms": 139,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -4312,12 +4258,12 @@
       "source_id": "naavik-co",
       "source_name": "Naavik",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:25Z",
+      "checked_at": "2026-11-20T06:27:58Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 2,
       "new_count": 0,
-      "elapsed_ms": 4302,
+      "elapsed_ms": 3944,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -4363,12 +4309,12 @@
       "source_id": "nintendo-com",
       "source_name": "Nintendo",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:41Z",
+      "checked_at": "2026-11-20T06:28:20Z",
       "method": "sitemap",
       "fetched_count": 12,
       "accepted_count": 10,
-      "new_count": 3,
-      "elapsed_ms": 27615,
+      "new_count": 4,
+      "elapsed_ms": 22448,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -4511,7 +4457,7 @@
           "status_code": 200,
           "final_url": "https://www.nintendo.com/au/sitemap/0.xml",
           "content_type": "application/xml",
-          "item_count": 4162,
+          "item_count": 4164,
           "error": null
         },
         {
@@ -4521,7 +4467,7 @@
           "status_code": 200,
           "final_url": "https://www.nintendo.com/jp/data/sitemap/sitemap.xml",
           "content_type": "",
-          "item_count": 6169,
+          "item_count": 6171,
           "error": null
         },
         {
@@ -4561,7 +4507,7 @@
           "status_code": 200,
           "final_url": "https://www.nintendo.com/jp/topics/sitemap/sitemap-pt-post-2026-11.xml",
           "content_type": "text/xml",
-          "item_count": 22,
+          "item_count": 23,
           "error": null
         },
         {
@@ -4706,40 +4652,40 @@
         },
         {
           "stage": "article-enrich",
-          "url": "https://www.nintendo.com/au/about/community-guidelines/",
+          "url": "https://www.nintendo.com/au/november-nintendo-sale/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://www.nintendo.com/au/about/community-guidelines/",
+          "final_url": "https://www.nintendo.com/au/november-nintendo-sale/",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://www.nintendo.com/jp/topics/article/9e9fce02-b4d6-4f31-a6ad-efced93a24d7",
+          "url": "https://www.nintendo.com/au/news-and-articles/whats-new-in-splatoon-3-version-12-0-0/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://www.nintendo.com/jp/topics/article/9e9fce02-b4d6-4f31-a6ad-efced93a24d7",
+          "final_url": "https://www.nintendo.com/au/news-and-articles/whats-new-in-splatoon-3-version-12-0-0/",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://www.nintendo.com/jp/topics/article/4a65892c-ff07-4760-aae5-36c23f24b7dd",
+          "url": "https://www.nintendo.com/au/support/articles/how-to-update-splatoon-3/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://www.nintendo.com/jp/topics/article/4a65892c-ff07-4760-aae5-36c23f24b7dd",
+          "final_url": "https://www.nintendo.com/au/support/articles/how-to-update-splatoon-3/",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://www.nintendo.com/au/games/nintendo-switch-2/ea-sports-madden-nfl-27/",
+          "url": "https://www.nintendo.com/jp/topics/article/58f76a8a-71be-4629-b9a6-795a09a46c2c",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://www.nintendo.com/au/games/nintendo-switch-2/ea-sports-madden-nfl-27/",
+          "final_url": "https://www.nintendo.com/jp/topics/article/58f76a8a-71be-4629-b9a6-795a09a46c2c",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
@@ -4755,12 +4701,12 @@
       "source_id": "tech-onliner-by",
       "source_name": "Onlíner Tech",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:34Z",
+      "checked_at": "2026-11-20T06:28:08Z",
       "method": "feed",
       "fetched_count": 18,
       "accepted_count": 18,
       "new_count": 11,
-      "elapsed_ms": 1536,
+      "elapsed_ms": 2308,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -4797,12 +4743,12 @@
       "source_id": "pcgamer-com",
       "source_name": "PC Gamer",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:34Z",
+      "checked_at": "2026-11-20T06:28:09Z",
       "method": "feed",
       "fetched_count": 50,
       "accepted_count": 50,
-      "new_count": 47,
-      "elapsed_ms": 856,
+      "new_count": 43,
+      "elapsed_ms": 1206,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -4839,12 +4785,12 @@
       "source_id": "blog-photonengine-com",
       "source_name": "Photon Blog",
       "status": "ok",
-      "checked_at": "2026-11-19T06:29:02Z",
+      "checked_at": "2026-11-20T06:28:44Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 1,
-      "new_count": 1,
-      "elapsed_ms": 497,
+      "new_count": 0,
+      "elapsed_ms": 727,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -4889,12 +4835,12 @@
       "source_id": "wiki-playgama-com",
       "source_name": "Playgama",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:53Z",
+      "checked_at": "2026-11-20T06:28:34Z",
       "method": "sitemap",
-      "fetched_count": 1,
-      "accepted_count": 1,
+      "fetched_count": 4,
+      "accepted_count": 4,
       "new_count": 0,
-      "elapsed_ms": 4188,
+      "elapsed_ms": 6733,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -5024,6 +4970,36 @@
         },
         {
           "stage": "article-enrich",
+          "url": "https://wiki.playgama.com/playgama/bridge-sdk/api/multiplayer",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://wiki.playgama.com/playgama/bridge-sdk/api/multiplayer",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://wiki.playgama.com/playgama/mcp",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://wiki.playgama.com/playgama/mcp",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://wiki.playgama.com/playgama/mcp/tools",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://wiki.playgama.com/playgama/mcp/tools",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
+        },
+        {
+          "stage": "article-enrich",
           "url": "https://wiki.playgama.com/playgama/game-requirements/content-requirements",
           "outcome": "ok",
           "status_code": 200,
@@ -5041,12 +5017,12 @@
       "source_id": "pocketgamer-com",
       "source_name": "Pocket Gamer",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:29Z",
+      "checked_at": "2026-11-20T06:28:02Z",
       "method": "feed-common",
       "fetched_count": 25,
       "accepted_count": 25,
-      "new_count": 12,
-      "elapsed_ms": 1038,
+      "new_count": 11,
+      "elapsed_ms": 2104,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -5093,12 +5069,12 @@
       "source_id": "pocketgamer-biz",
       "source_name": "PocketGamer.biz",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:26Z",
+      "checked_at": "2026-11-20T06:28:00Z",
       "method": "feed-common",
       "fetched_count": 50,
-      "accepted_count": 47,
-      "new_count": 11,
-      "elapsed_ms": 683,
+      "accepted_count": 46,
+      "new_count": 10,
+      "elapsed_ms": 418,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -5138,13 +5114,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 3
+        "too_old": 4
       },
       "rejection_examples": {
         "too_old": [
-          "https://pocketgamer.biz/the-dfa-is-game-over-for-the-european-games-industry",
-          "https://pocketgamer.biz/digital-fairness-act-raises-questions-over-mobile-game-monetisation",
-          "https://pocketgamer.biz/ukie-warns-eu-digital-fairness-act-could-harm-uk-games-industry-and-parental-choice"
+          "https://pocketgamer.biz/candy-crush-crossover-celebrates-25-years-of-xbox",
+          "https://pocketgamer.biz/nvidia-ceo-jensen-huang-resigns",
+          "https://pocketgamer.biz/supercell-ceo-believes-digital-fairness-act-will-hurt-consumers"
         ]
       },
       "manual_check": null
@@ -5153,12 +5129,12 @@
       "source_id": "premortem-games",
       "source_name": "PreMortem Games",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:25Z",
+      "checked_at": "2026-11-20T06:27:58Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 1,
-      "new_count": 1,
-      "elapsed_ms": 1210,
+      "new_count": 0,
+      "elapsed_ms": 1815,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -5204,15 +5180,15 @@
     {
       "source_id": "progamedev-net",
       "source_name": "ProGameDev",
-      "status": "ok",
-      "checked_at": "2026-11-19T06:28:24Z",
+      "status": "warning",
+      "checked_at": "2026-11-20T06:27:57Z",
       "method": "feed",
       "fetched_count": 10,
-      "accepted_count": 1,
+      "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 2316,
-      "error": null,
-      "failure_kind": null,
+      "elapsed_ms": 2673,
+      "error": "No accepted recent dated articles",
+      "failure_kind": "no_recent_articles",
       "discovered_feeds": [
         "https://progamedev.net/feed/",
         "https://progamedev.net/comments/feed/"
@@ -5241,13 +5217,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 9
+        "too_old": 10
       },
       "rejection_examples": {
         "too_old": [
+          "https://progamedev.net/investicionnye-trendy-na-konec-2026-goda",
           "https://progamedev.net/ai-in-development-log",
-          "https://progamedev.net/kak-zapustit-igru-v-azii",
-          "https://progamedev.net/ux-dlya-casual-igr-v-2026"
+          "https://progamedev.net/kak-zapustit-igru-v-azii"
         ]
       },
       "manual_check": null
@@ -5256,12 +5232,12 @@
       "source_id": "qubicgames-com",
       "source_name": "QubicGames",
       "status": "warning",
-      "checked_at": "2026-11-19T06:29:03Z",
+      "checked_at": "2026-11-20T06:28:45Z",
       "method": "feed-common",
       "fetched_count": 9,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 4279,
+      "elapsed_ms": 4607,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -5306,12 +5282,12 @@
       "source_id": "revenuecat-com",
       "source_name": "RevenueCat",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:55Z",
+      "checked_at": "2026-11-20T06:28:34Z",
       "method": "feed-common",
       "fetched_count": 50,
-      "accepted_count": 5,
+      "accepted_count": 6,
       "new_count": 2,
-      "elapsed_ms": 1558,
+      "elapsed_ms": 1026,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -5361,13 +5337,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 45
+        "too_old": 44
       },
       "rejection_examples": {
         "too_old": [
+          "https://revenuecat.com/blog/engineering/apple-subscription-bundles-and-suites",
           "https://revenuecat.com/blog/growth/mike-charniatsou-flo-sub-club-podcast-2026",
-          "https://revenuecat.com/blog/growth/measurement-paralysis",
-          "https://revenuecat.com/blog/engineering/android-paywall-improve"
+          "https://revenuecat.com/blog/growth/measurement-paralysis"
         ]
       },
       "manual_check": null
@@ -5376,12 +5352,12 @@
       "source_id": "rotrends-com",
       "source_name": "RO Trends",
       "status": "ok",
-      "checked_at": "2026-11-19T06:29:07Z",
+      "checked_at": "2026-11-20T06:28:45Z",
       "method": "sitemap",
       "fetched_count": 12,
       "accepted_count": 12,
       "new_count": 0,
-      "elapsed_ms": 11863,
+      "elapsed_ms": 16808,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -5516,7 +5492,7 @@
           "status_code": 200,
           "final_url": "https://www.rotrends.com/game/sitemap/1.xml",
           "content_type": "application/xml",
-          "item_count": 10014,
+          "item_count": 10061,
           "error": null
         },
         {
@@ -5668,12 +5644,12 @@
       "source_id": "rockpapershotgun-com",
       "source_name": "Rock Paper Shotgun",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:28Z",
+      "checked_at": "2026-11-20T06:28:02Z",
       "method": "feed",
       "fetched_count": 50,
       "accepted_count": 50,
-      "new_count": 10,
-      "elapsed_ms": 540,
+      "new_count": 8,
+      "elapsed_ms": 808,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -5710,12 +5686,12 @@
       "source_id": "say-games",
       "source_name": "SayGames",
       "status": "warning",
-      "checked_at": "2026-11-19T06:29:09Z",
+      "checked_at": "2026-11-20T06:28:47Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 6304,
+      "elapsed_ms": 7033,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_articles_found",
       "discovered_feeds": [],
@@ -5827,12 +5803,12 @@
       "source_id": "sensortower-com",
       "source_name": "Sensor Tower",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:55Z",
+      "checked_at": "2026-11-20T06:28:35Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 2646,
+      "elapsed_ms": 2943,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -5999,12 +5975,12 @@
       "source_id": "go-sensortower-com",
       "source_name": "Sensor Tower Resources",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:47Z",
+      "checked_at": "2026-11-20T06:28:27Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 8418,
+      "elapsed_ms": 7431,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -6171,12 +6147,12 @@
       "source_id": "singular-net",
       "source_name": "Singular",
       "status": "ok",
-      "checked_at": "2026-11-19T06:29:12Z",
+      "checked_at": "2026-11-20T06:28:49Z",
       "method": "feed-common",
       "fetched_count": 10,
-      "accepted_count": 2,
+      "accepted_count": 1,
       "new_count": 0,
-      "elapsed_ms": 394,
+      "elapsed_ms": 950,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -6206,13 +6182,13 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 8
+        "too_old": 9
       },
       "rejection_examples": {
         "too_old": [
+          "https://singular.net/blog/tiktok-attribution-source-optimization",
           "https://singular.net/blog/creative-volume-myth",
-          "https://singular.net/blog/beyond-last-touch-multi-touch-attribution",
-          "https://singular.net/blog/sync-your-singular-audiences-straight-into-chatgpt-ads"
+          "https://singular.net/blog/beyond-last-touch-multi-touch-attribution"
         ]
       },
       "manual_check": null
@@ -6221,12 +6197,12 @@
       "source_id": "smartranking-ru",
       "source_name": "Smart Ranking",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:25Z",
+      "checked_at": "2026-11-20T06:27:59Z",
       "method": "sitemap",
-      "fetched_count": 4,
-      "accepted_count": 4,
-      "new_count": 2,
-      "elapsed_ms": 8918,
+      "fetched_count": 3,
+      "accepted_count": 3,
+      "new_count": 0,
+      "elapsed_ms": 9703,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -6353,16 +6329,6 @@
           "content_type": "text/html",
           "item_count": 1,
           "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://smartranking.ru/ru/ranking/company/moyakomanda/",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://smartranking.ru/ru/ranking/company/moyakomanda/",
-          "content_type": "text/html",
-          "item_count": 1,
-          "error": null
         }
       ],
       "rejection_summary": {},
@@ -6373,12 +6339,12 @@
       "source_id": "socialpeta-com",
       "source_name": "SocialPeta",
       "status": "ok",
-      "checked_at": "2026-11-19T06:29:12Z",
+      "checked_at": "2026-11-20T06:28:50Z",
       "method": "sitemap",
       "fetched_count": 3,
       "accepted_count": 3,
-      "new_count": 1,
-      "elapsed_ms": 3649,
+      "new_count": 0,
+      "elapsed_ms": 3216,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -6515,12 +6481,12 @@
       "source_id": "supersonic-com",
       "source_name": "Supersonic / Unity LevelPlay",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:37Z",
+      "checked_at": "2026-11-20T06:28:13Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 883,
+      "elapsed_ms": 1074,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -6566,12 +6532,12 @@
       "source_id": "tap-nation-io",
       "source_name": "TapNation Blog",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:39Z",
+      "checked_at": "2026-11-20T06:28:18Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 2004,
+      "elapsed_ms": 2003,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -6678,12 +6644,12 @@
       "source_id": "tech-eu",
       "source_name": "Tech.eu",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:34Z",
+      "checked_at": "2026-11-20T06:28:10Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1024,
+      "elapsed_ms": 519,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -6785,12 +6751,12 @@
       "source_id": "techbriefly-com",
       "source_name": "TechBriefly",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:35Z",
+      "checked_at": "2026-11-20T06:28:11Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 422,
+      "elapsed_ms": 547,
       "error": "No accepted recent dated articles",
       "failure_kind": "blocked",
       "discovered_feeds": [],
@@ -6892,12 +6858,12 @@
       "source_id": "tenjin-com",
       "source_name": "Tenjin",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:57Z",
+      "checked_at": "2026-11-20T06:28:36Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 3,
-      "new_count": 0,
-      "elapsed_ms": 425,
+      "new_count": 1,
+      "elapsed_ms": 860,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -6932,9 +6898,9 @@
       },
       "rejection_examples": {
         "too_old": [
+          "https://tenjin.com/blog/can-ai-really-optimize-apple-ads-at-scale",
           "https://tenjin.com/blog/ai-marketing-agents-for-mobile-apps-start-small-scale-safely",
-          "https://tenjin.com/blog/how-deferred-deep-linking-works-in-mobile-apps",
-          "https://tenjin.com/blog/blog-mcp-server-mobile-app-marketing"
+          "https://tenjin.com/blog/how-deferred-deep-linking-works-in-mobile-apps"
         ]
       },
       "manual_check": null
@@ -6943,12 +6909,12 @@
       "source_id": "blog-tenjin-com",
       "source_name": "Tenjin Blog",
       "status": "ok",
-      "checked_at": "2026-11-19T06:29:15Z",
+      "checked_at": "2026-11-20T06:28:53Z",
       "method": "feed",
       "fetched_count": 10,
       "accepted_count": 3,
-      "new_count": 0,
-      "elapsed_ms": 489,
+      "new_count": 1,
+      "elapsed_ms": 2125,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -6983,9 +6949,9 @@
       },
       "rejection_examples": {
         "too_old": [
+          "https://tenjin.com/blog/can-ai-really-optimize-apple-ads-at-scale",
           "https://tenjin.com/blog/ai-marketing-agents-for-mobile-apps-start-small-scale-safely",
-          "https://tenjin.com/blog/how-deferred-deep-linking-works-in-mobile-apps",
-          "https://tenjin.com/blog/blog-mcp-server-mobile-app-marketing"
+          "https://tenjin.com/blog/how-deferred-deep-linking-works-in-mobile-apps"
         ]
       },
       "manual_check": null
@@ -6994,12 +6960,12 @@
       "source_id": "resources-tenjin-com",
       "source_name": "Tenjin Resources",
       "status": "warning",
-      "checked_at": "2026-11-19T06:29:15Z",
+      "checked_at": "2026-11-20T06:28:54Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1034,
+      "elapsed_ms": 2562,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_articles_found",
       "discovered_feeds": [],
@@ -7101,12 +7067,12 @@
       "source_id": "torick-ru",
       "source_name": "Torick",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:26Z",
+      "checked_at": "2026-11-20T06:28:00Z",
       "method": "feed",
       "fetched_count": 20,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1600,
+      "elapsed_ms": 1989,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -7151,15 +7117,15 @@
     {
       "source_id": "blog-udonis-co",
       "source_name": "Udonis Blog",
-      "status": "warning",
-      "checked_at": "2026-11-19T06:28:41Z",
+      "status": "ok",
+      "checked_at": "2026-11-20T06:28:19Z",
       "method": "feed",
       "fetched_count": 40,
-      "accepted_count": 0,
-      "new_count": 0,
-      "elapsed_ms": 358,
-      "error": "No accepted recent dated articles",
-      "failure_kind": "no_recent_articles",
+      "accepted_count": 1,
+      "new_count": 1,
+      "elapsed_ms": 450,
+      "error": null,
+      "failure_kind": null,
       "discovered_feeds": [
         "https://www.blog.udonis.co/rss.xml"
       ],
@@ -7187,7 +7153,7 @@
         }
       ],
       "rejection_summary": {
-        "too_old": 40
+        "too_old": 39
       },
       "rejection_examples": {
         "too_old": [
@@ -7202,12 +7168,12 @@
       "source_id": "unity-com",
       "source_name": "Unity",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:57Z",
+      "checked_at": "2026-11-20T06:28:36Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 64268,
+      "elapsed_ms": 64602,
       "error": "No accepted recent dated articles",
       "failure_kind": "timeout",
       "discovered_feeds": [],
@@ -7309,12 +7275,12 @@
       "source_id": "blog-unity-com",
       "source_name": "Unity Blog",
       "status": "warning",
-      "checked_at": "2026-11-19T06:29:16Z",
+      "checked_at": "2026-11-20T06:28:54Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 64469,
+      "elapsed_ms": 64954,
       "error": "No accepted recent dated articles",
       "failure_kind": "timeout",
       "discovered_feeds": [],
@@ -7416,12 +7382,12 @@
       "source_id": "venturebeat-com",
       "source_name": "VentureBeat",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:30Z",
+      "checked_at": "2026-11-20T06:28:04Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 531,
+      "elapsed_ms": 317,
       "error": "No accepted recent dated articles",
       "failure_kind": "rate_limited",
       "discovered_feeds": [],
@@ -7534,12 +7500,12 @@
       "source_id": "vkplay-ru",
       "source_name": "VK Play Медиа",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:35Z",
+      "checked_at": "2026-11-20T06:28:11Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 6389,
+      "elapsed_ms": 8160,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [
@@ -7652,7 +7618,7 @@
           "status_code": 200,
           "final_url": "https://vkplay.ru/sitemap/sitemap.0.xml",
           "content_type": "text/html",
-          "item_count": 29556,
+          "item_count": 29574,
           "error": null
         },
         {
@@ -7662,7 +7628,7 @@
           "status_code": 200,
           "final_url": "https://vkplay.ru/sitemap/sitemap.1.xml",
           "content_type": "text/html",
-          "item_count": 29555,
+          "item_count": 29574,
           "error": null
         },
         {
@@ -7732,7 +7698,7 @@
           "status_code": 200,
           "final_url": "https://vkplay.ru/sitemap/sitemap.news.2.xml",
           "content_type": "text/xml",
-          "item_count": 17927,
+          "item_count": 17967,
           "error": null
         },
         {
@@ -7742,7 +7708,7 @@
           "status_code": 200,
           "final_url": "https://vkplay.ru/sitemap/sitemap.news.latest.0.xml",
           "content_type": "text/xml",
-          "item_count": 198,
+          "item_count": 195,
           "error": null
         },
         {
@@ -7752,7 +7718,7 @@
           "status_code": 200,
           "final_url": "https://vkplay.ru/sitemap/sitemap.googlenews.news.xml",
           "content_type": "text/xml",
-          "item_count": 73,
+          "item_count": 72,
           "error": null
         },
         {
@@ -7762,7 +7728,7 @@
           "status_code": 200,
           "final_url": "https://vkplay.ru/sitemap/sitemap.googlenews.feat.xml",
           "content_type": "text/xml",
-          "item_count": 10,
+          "item_count": 8,
           "error": null
         }
       ],
@@ -7774,12 +7740,12 @@
       "source_id": "voodoo-io",
       "source_name": "Voodoo",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:51Z",
+      "checked_at": "2026-11-20T06:28:27Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 946,
+      "elapsed_ms": 696,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -7886,12 +7852,12 @@
       "source_id": "blog-voodoo-io",
       "source_name": "Voodoo Blog",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:46Z",
+      "checked_at": "2026-11-20T06:28:25Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1434,
+      "elapsed_ms": 1896,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -7998,12 +7964,12 @@
       "source_id": "xsolla-com",
       "source_name": "Xsolla",
       "status": "ok",
-      "checked_at": "2026-11-19T06:29:16Z",
+      "checked_at": "2026-11-20T06:28:56Z",
       "method": "sitemap",
-      "fetched_count": 11,
-      "accepted_count": 11,
-      "new_count": 11,
-      "elapsed_ms": 10714,
+      "fetched_count": 12,
+      "accepted_count": 12,
+      "new_count": 1,
+      "elapsed_ms": 4138,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -8103,16 +8069,6 @@
         },
         {
           "stage": "sitemap-child",
-          "url": "https://xsolla.com/sitemap/partner-spotlights.xml",
-          "outcome": "ok",
-          "status_code": 200,
-          "final_url": "https://xsolla.com/sitemap/partner-spotlights.xml",
-          "content_type": "text/xml",
-          "item_count": 46,
-          "error": null
-        },
-        {
-          "stage": "sitemap-child",
           "url": "https://xsolla.com/sitemap/newsroom.xml",
           "outcome": "ok",
           "status_code": 200,
@@ -8153,6 +8109,16 @@
         },
         {
           "stage": "sitemap-child",
+          "url": "https://xsolla.com/sitemap/partner-spotlights.xml",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://xsolla.com/sitemap/partner-spotlights.xml",
+          "content_type": "text/xml",
+          "item_count": 45,
+          "error": null
+        },
+        {
+          "stage": "sitemap-child",
           "url": "https://xsolla.com/sitemap/ebooks.xml",
           "outcome": "ok",
           "status_code": 200,
@@ -8160,16 +8126,6 @@
           "content_type": "text/xml",
           "item_count": 1,
           "error": null
-        },
-        {
-          "stage": "article-enrich",
-          "url": "https://xsolla.com/partner-spotlight/fusebox-opens-love-island-d2c-web-shop",
-          "outcome": "error",
-          "status_code": null,
-          "final_url": null,
-          "content_type": null,
-          "item_count": null,
-          "error": "HTTPError: 500 Server Error: Internal Server Error for url: https://xsolla.com/partner-spotlight/fusebox-opens-love-island-d2c-web-shop"
         },
         {
           "stage": "article-enrich",
@@ -8280,6 +8236,16 @@
           "content_type": "text/html",
           "item_count": 1,
           "error": null
+        },
+        {
+          "stage": "article-enrich",
+          "url": "https://xsolla.com/newsroom/xsolla-expands-dach-presence-with-xsolla-connect-berlin-and-sponsorship-of-games-ground-berlin",
+          "outcome": "ok",
+          "status_code": 200,
+          "final_url": "https://xsolla.com/newsroom/xsolla-expands-dach-presence-with-xsolla-connect-berlin-and-sponsorship-of-games-ground-berlin",
+          "content_type": "text/html",
+          "item_count": 1,
+          "error": null
         }
       ],
       "rejection_summary": {},
@@ -8290,12 +8256,12 @@
       "source_id": "xsolla-ru",
       "source_name": "Xsolla RU",
       "status": "warning",
-      "checked_at": "2026-11-19T06:29:19Z",
+      "checked_at": "2026-11-20T06:28:56Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1305,
+      "elapsed_ms": 2239,
       "error": "No accepted recent dated articles",
       "failure_kind": "no_recent_articles",
       "discovered_feeds": [],
@@ -8402,12 +8368,12 @@
       "source_id": "secrets-tbank-ru",
       "source_name": "Бизнес-секреты",
       "status": "warning",
-      "checked_at": "2026-11-19T06:28:26Z",
+      "checked_at": "2026-11-20T06:28:00Z",
       "method": "none",
       "fetched_count": 0,
       "accepted_count": 0,
       "new_count": 0,
-      "elapsed_ms": 1923,
+      "elapsed_ms": 1313,
       "error": "No accepted recent dated articles",
       "failure_kind": "tls",
       "discovered_feeds": [],
@@ -8509,12 +8475,12 @@
       "source_id": "kinzhal-media",
       "source_name": "Кинжал",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:35Z",
+      "checked_at": "2026-11-20T06:28:11Z",
       "method": "feed",
       "fetched_count": 30,
       "accepted_count": 2,
-      "new_count": 0,
-      "elapsed_ms": 2096,
+      "new_count": 1,
+      "elapsed_ms": 2254,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [
@@ -8548,9 +8514,9 @@
       },
       "rejection_examples": {
         "too_old": [
+          "https://kinzhal.media/pochemu-sotrudniki-molchat-o-problemah",
           "https://kinzhal.media/effekt-pigmaliona",
-          "https://kinzhal.media/mrachnye-detektivnye-serialy",
-          "https://kinzhal.media/mcp"
+          "https://kinzhal.media/mrachnye-detektivnye-serialy"
         ]
       },
       "manual_check": null
@@ -8559,12 +8525,12 @@
       "source_id": "t-j-ru",
       "source_name": "Т—Ж",
       "status": "ok",
-      "checked_at": "2026-11-19T06:28:36Z",
+      "checked_at": "2026-11-20T06:28:11Z",
       "method": "sitemap",
       "fetched_count": 12,
       "accepted_count": 12,
       "new_count": 12,
-      "elapsed_ms": 19397,
+      "elapsed_ms": 29940,
       "error": null,
       "failure_kind": null,
       "discovered_feeds": [],
@@ -8669,7 +8635,7 @@
           "status_code": 200,
           "final_url": "https://t-j.ru/sitemap-articles.xml",
           "content_type": "application/xml",
-          "item_count": 63668,
+          "item_count": 63791,
           "error": null
         },
         {
@@ -8679,7 +8645,7 @@
           "status_code": 200,
           "final_url": "https://t-j.ru/sitemap-flows.xml",
           "content_type": "application/xml",
-          "item_count": 481,
+          "item_count": 482,
           "error": null
         },
         {
@@ -8724,120 +8690,120 @@
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/news/gta6-is-finally-here/",
+          "url": "https://t-j.ru/netflix-still-alive/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L25ld3MvZ3RhNi1pcy1maW5hbGx5LWhlcmUv",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L25ldGZsaXgtc3RpbGwtYWxpdmUv",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/prava/gifts/",
+          "url": "https://t-j.ru/how-to-use-edits/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3ByYXZhL2dpZnRzLw",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2hvdy10by11c2UtZWRpdHMv",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/pochemu-upali-tseny-na-neft/",
+          "url": "https://t-j.ru/reality-kurs-dobra-zhizn-kak-chudo-28/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3BvY2hlbXUtdXBhbGktdHNlbnktbmEtbmVmdC8",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3JlYWxpdHkta3Vycy1kb2JyYS16aGl6bi1rYWstY2h1ZG8tMjgv",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/short/important-nalog-data/",
+          "url": "https://t-j.ru/ask/criminal-record/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3Nob3J0L2ltcG9ydGFudC1uYWxvZy1kYXRhLw",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2Fzay9jcmltaW5hbC1yZWNvcmQv",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/short/comfortable-workplace/",
+          "url": "https://t-j.ru/video-articles-overworking-2027/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3Nob3J0L2NvbWZvcnRhYmxlLXdvcmtwbGFjZS8",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3ZpZGVvLWFydGljbGVzLW92ZXJ3b3JraW5nLTIwMjcv",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/short/pereezd-bez-nervov/",
+          "url": "https://t-j.ru/nuzhna-li-na-kukhne-butylochnitsa/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3Nob3J0L3BlcmVlemQtYmV6LW5lcnZvdi8",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L251emhuYS1saS1uYS1rdWtobmUtYnV0eWxvY2huaXRzYS8",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/news/gta6-reviews/",
+          "url": "https://t-j.ru/astma-prizyv/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L25ld3MvZ3RhNi1yZXZpZXdzLw",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2FzdG1hLXByaXp5di8",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/guide/change-npf/",
+          "url": "https://t-j.ru/short/spec-cant-stop-smoking/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2d1aWRlL2NoYW5nZS1ucGYv",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3Nob3J0L3NwZWMtY2FudC1zdG9wLXNtb2tpbmcv",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/katki-spb-2026-2027/",
+          "url": "https://t-j.ru/list/football-presents/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2thdGtpLXNwYi0yMDI2LTIwMjcv",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2xpc3QvZm9vdGJhbGwtcHJlc2VudHMv",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/news/voyager-one-light-day/",
+          "url": "https://t-j.ru/claude-kyc-verification/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L25ld3Mvdm95YWdlci1vbmUtbGlnaHQtZGF5Lw",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2NsYXVkZS1reWMtdmVyaWZpY2F0aW9uLw",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/stomatologiya-po-oms/",
+          "url": "https://t-j.ru/place-ganina-yama/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3N0b21hdG9sb2dpeWEtcG8tb21zLw",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L3BsYWNlLWdhbmluYS15YW1hLw",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
         },
         {
           "stage": "article-enrich",
-          "url": "https://t-j.ru/long-dog-walk/",
+          "url": "https://t-j.ru/old-docs/",
           "outcome": "ok",
           "status_code": 200,
-          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L2xvbmctZG9nLXdhbGsv",
+          "final_url": "https://t-j.ru/cdwuid/mc-probe?o=L29sZC1kb2NzLw",
           "content_type": "text/html",
           "item_count": 1,
           "error": null
