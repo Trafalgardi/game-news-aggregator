@@ -1,34 +1,19 @@
 # Диагностика источников
 
-Обновлено: `2026-11-25T06:30:33Z`
+Обновлено: `2026-11-26T06:30:46Z`
 
 Исключено вручную: **5**
 
 ## Сводка
 
-- `no_recent_articles`: **26**
-- `blocked`: **9**
+- `no_recent_articles`: **28**
 - `no_articles_found`: **6**
+- `blocked`: **4**
 - `timeout`: **3**
 - `rate_limited`: **1**
 - `tls`: **1**
 
 ## Проблемные источники
-
-### App Developer Magazine (`appdevelopermagazine-com`)
-
-- Статус: `warning`
-- Категория: `no_recent_articles`
-- Метод: `feed`
-- Получено кандидатов: `48`
-- Принято: `0`
-- Причины отбраковки: `{"too_old": 48}`
-- Время: `4295 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `2`
-
-  - `homepage` → `ok` — https://appdevelopermagazine.com/
-  - `feed-discovered` → `ok` — https://appdevelopermagazine.com/RSS
 
 ### Appfigures (`appfigures-com`)
 
@@ -38,7 +23,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `568 ms`
+- Время: `253 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -60,7 +45,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5522 ms`
+- Время: `3774 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `12`
 
@@ -85,7 +70,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2563 ms`
+- Время: `2641 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -107,7 +92,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1457 ms`
+- Время: `1071 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -120,6 +105,21 @@
   - `robots` → `error` — https://hybridcasual.appquantum.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://hybridcasual.appquantum.com/robots.txt
   - `sitemap` → `error` — https://hybridcasual.appquantum.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://hybridcasual.appquantum.com/sitemap.xml
 
+### AppsFlyer (`appsflyer-com`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `feed-common`
+- Получено кандидатов: `10`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `344 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `2`
+
+  - `homepage` → `ok` — https://appsflyer.com/
+  - `feed-common` → `ok` — https://www.appsflyer.com:443/feed
+
 ### Apptica (`apptica-com`)
 
 - Статус: `warning`
@@ -128,7 +128,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `5473 ms`
+- Время: `5354 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `11`
 
@@ -152,7 +152,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `1863 ms`
+- Время: `3662 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -167,7 +167,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `645 ms`
+- Время: `263 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -188,7 +188,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `1236 ms`
+- Время: `458 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -203,7 +203,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4843 ms`
+- Время: `3940 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -225,7 +225,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2539 ms`
+- Время: `750 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `14`
 
@@ -252,7 +252,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1027 ms`
+- Время: `968 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -266,27 +266,6 @@
   - `robots` → `ok` — https://playducky.com/robots.txt
   - `sitemap` → `ok` — https://playducky.com/sitemap.xml
 
-### Elite Game Developers (`elitegamedevelopers-substack-com`)
-
-- Статус: `warning`
-- Категория: `blocked`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `434 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://elitegamedevelopers.substack.com/ — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/
-  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/feed
-  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/rss
-  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/rss.xml
-  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/feed.xml
-  - `feed-common` → `error` — https://elitegamedevelopers.substack.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/atom.xml
-  - `robots` → `error` — https://elitegamedevelopers.substack.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/robots.txt
-  - `sitemap` → `error` — https://elitegamedevelopers.substack.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://elitegamedevelopers.substack.com/sitemap.xml
-
 ### GameAnalytics (`gameanalytics-com`)
 
 - Статус: `warning`
@@ -295,7 +274,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `3271 ms`
+- Время: `845 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -317,33 +296,12 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `3253 ms`
+- Время: `3061 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
   - `homepage` → `ok` — https://gamerefinery.com/
   - `feed-discovered` → `ok` — https://www.gamerefinery.com/feed/
-
-### GamingonPhone (`gamingonphone-com`)
-
-- Статус: `warning`
-- Категория: `blocked`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `535 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://gamingonphone.com/ — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/
-  - `feed-common` → `error` — https://gamingonphone.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/feed
-  - `feed-common` → `error` — https://gamingonphone.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/rss
-  - `feed-common` → `error` — https://gamingonphone.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/rss.xml
-  - `feed-common` → `error` — https://gamingonphone.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/feed.xml
-  - `feed-common` → `error` — https://gamingonphone.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/atom.xml
-  - `robots` → `error` — https://gamingonphone.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/robots.txt
-  - `sitemap` → `error` — https://gamingonphone.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://gamingonphone.com/sitemap.xml
 
 ### Homa (`homagames-com`)
 
@@ -353,7 +311,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `585 ms`
+- Время: `416 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -375,7 +333,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `68987 ms`
+- Время: `69463 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -396,7 +354,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2939 ms`
+- Время: `3740 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -418,7 +376,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2408 ms`
+- Время: `1050 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -439,7 +397,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `387 ms`
+- Время: `398 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -454,7 +412,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `13633 ms`
+- Время: `11793 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -474,27 +432,6 @@
   - `sitemap-child` → `ok` — https://lancaric.me/xpro-themer-sitemap.xml
   - `sitemap-child` → `ok` — https://lancaric.me/author-sitemap.xml
 
-### Matej Lancaric Substack (`lancaric-substack-com`)
-
-- Статус: `warning`
-- Категория: `blocked`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `641 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://lancaric.substack.com/ — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/
-  - `feed-common` → `error` — https://lancaric.substack.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/feed
-  - `feed-common` → `error` — https://lancaric.substack.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/rss
-  - `feed-common` → `error` — https://lancaric.substack.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/rss.xml
-  - `feed-common` → `error` — https://lancaric.substack.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/feed.xml
-  - `feed-common` → `error` — https://lancaric.substack.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/atom.xml
-  - `robots` → `error` — https://lancaric.substack.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/robots.txt
-  - `sitemap` → `error` — https://lancaric.substack.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://lancaric.substack.com/sitemap.xml
-
 ### Mattel Corporate (`corporate-mattel-com`)
 
 - Статус: `warning`
@@ -503,7 +440,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1433 ms`
+- Время: `4301 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -525,7 +462,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `10287 ms`
+- Время: `30319 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -547,12 +484,42 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2469 ms`
+- Время: `1988 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
   - `homepage` → `ok` — https://maf.ad/
   - `feed-discovered` → `ok` — https://maf.ad/en/feed/
+
+### Photon Blog (`blog-photonengine-com`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `455 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `2`
+
+  - `homepage` → `ok` — https://blog.photonengine.com/
+  - `feed-discovered` → `ok` — https://blog.photonengine.com/feed/
+
+### PreMortem Games (`premortem-games`)
+
+- Статус: `warning`
+- Категория: `no_recent_articles`
+- Метод: `feed`
+- Получено кандидатов: `10`
+- Принято: `0`
+- Причины отбраковки: `{"too_old": 10}`
+- Время: `1864 ms`
+- Ошибка: `No accepted recent dated articles`
+- Попыток: `2`
+
+  - `homepage` → `ok` — https://premortem.games/
+  - `feed-discovered` → `ok` — https://premortem.games/feed/
 
 ### ProGameDev (`progamedev-net`)
 
@@ -562,7 +529,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `2456 ms`
+- Время: `1966 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -577,7 +544,7 @@
 - Получено кандидатов: `9`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 9}`
-- Время: `4479 ms`
+- Время: `3793 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -592,7 +559,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1184 ms`
+- Время: `479 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -614,7 +581,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2233 ms`
+- Время: `2444 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -642,7 +609,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `6196 ms`
+- Время: `5412 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `15`
 
@@ -670,7 +637,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `666 ms`
+- Время: `220 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -685,7 +652,7 @@
 - Получено кандидатов: `10`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 10}`
-- Время: `961 ms`
+- Время: `692 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -700,7 +667,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `4544 ms`
+- Время: `3361 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -714,48 +681,6 @@
   - `robots` → `ok` — https://tap-nation.io/robots.txt
   - `sitemap` → `ok` — https://www.tap-nation.io/sitemap.xml
 
-### Tech.eu (`tech-eu`)
-
-- Статус: `warning`
-- Категория: `blocked`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `1160 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://tech.eu/ — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/
-  - `feed-common` → `error` — https://tech.eu/feed — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/feed
-  - `feed-common` → `error` — https://tech.eu/rss — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/rss
-  - `feed-common` → `error` — https://tech.eu/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/rss.xml
-  - `feed-common` → `error` — https://tech.eu/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/feed.xml
-  - `feed-common` → `error` — https://tech.eu/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/atom.xml
-  - `robots` → `error` — https://tech.eu/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/robots.txt
-  - `sitemap` → `error` — https://tech.eu/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://tech.eu/sitemap.xml
-
-### TechBriefly (`techbriefly-com`)
-
-- Статус: `warning`
-- Категория: `blocked`
-- Метод: `none`
-- Получено кандидатов: `0`
-- Принято: `0`
-- Причины отбраковки: `{}`
-- Время: `664 ms`
-- Ошибка: `No accepted recent dated articles`
-- Попыток: `8`
-
-  - `homepage` → `error` — https://techbriefly.com/ — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/
-  - `feed-common` → `error` — https://techbriefly.com/feed — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/feed
-  - `feed-common` → `error` — https://techbriefly.com/rss — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/rss
-  - `feed-common` → `error` — https://techbriefly.com/rss.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/rss.xml
-  - `feed-common` → `error` — https://techbriefly.com/feed.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/feed.xml
-  - `feed-common` → `error` — https://techbriefly.com/atom.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/atom.xml
-  - `robots` → `error` — https://techbriefly.com/robots.txt — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/robots.txt
-  - `sitemap` → `error` — https://techbriefly.com/sitemap.xml — HTTPError: 403 Client Error: Forbidden for url: https://techbriefly.com/sitemap.xml
-
 ### Tenjin Resources (`resources-tenjin-com`)
 
 - Статус: `warning`
@@ -764,7 +689,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2202 ms`
+- Время: `1230 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -785,7 +710,7 @@
 - Получено кандидатов: `20`
 - Принято: `0`
 - Причины отбраковки: `{"too_old": 20}`
-- Время: `1651 ms`
+- Время: `1601 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `2`
 
@@ -800,7 +725,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64485 ms`
+- Время: `64233 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -821,7 +746,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `64894 ms`
+- Время: `64465 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
@@ -842,7 +767,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `328 ms`
+- Время: `262 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -864,7 +789,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `8820 ms`
+- Время: `10805 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `21`
 
@@ -898,7 +823,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `536 ms`
+- Время: `242 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -920,7 +845,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2074 ms`
+- Время: `2552 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -942,7 +867,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `2347 ms`
+- Время: `1379 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `9`
 
@@ -964,7 +889,7 @@
 - Получено кандидатов: `0`
 - Принято: `0`
 - Причины отбраковки: `{}`
-- Время: `1464 ms`
+- Время: `246 ms`
 - Ошибка: `No accepted recent dated articles`
 - Попыток: `8`
 
