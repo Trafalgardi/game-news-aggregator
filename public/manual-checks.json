@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-27T06:30:43Z",
-  "count": 23,
+  "generated_at": "2026-11-28T06:27:52Z",
+  "count": 24,
   "checks": [
     {
       "source_id": "appfigures-com",
@@ -136,6 +136,15 @@
       "priority": "low",
       "reason": "source_structure_unknown",
       "url": "https://mobidictum.com/",
+      "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
+    },
+    {
+      "source_id": "naavik-co",
+      "source_name": "Naavik",
+      "failure_kind": "unknown",
+      "priority": "low",
+      "reason": "source_structure_unknown",
+      "url": "https://naavik.co/",
       "instruction": "Найти на сайте раздел новостей, официальный RSS или sitemap с публикациями и прислать URL."
     },
     {
